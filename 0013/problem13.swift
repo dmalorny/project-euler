@@ -101,22 +101,24 @@ let numbers: [String] = [
 	"53503534226472524250874054075591789781264330331690"
 ]
 
-func substring(str: String, start: Int, length: Int) ->  String {
-    let a = str.index(str.startIndex, offsetBy: start)
-    let b = str.index(str.startIndex, offsetBy: start+length)
-    let range = a..<b;
+extension String {
+    func left(length: Int) -> String {
+        let a = self.index(self.startIndex, offsetBy: 0)
+    	let b = self.index(self.startIndex, offsetBy: length)
+    	let range = a..<b;
     
-    return String(str[range])
+    	return String(self[range])
+    }
 }
 
 func problem13(numbers: [String]) {
     var sum: UInt = 0;
     
     for str in numbers {
-    	sum += UInt(substring(str: str, start: 0, length: 12))!
+    	sum += UInt(str.left(length: 12))!
     }
     
-    let start = substring(str: String(sum), start: 0, length: 10)
+    let start = String(sum).left(length: 10)
     
     print("sum = \(start)")
 }
