@@ -1,23 +1,25 @@
-func collatz(n: Int) -> [Int] {
+var collatz = [Int: Int]()
+
+func collatz(n: Int) -> Int {
 	if (n == 1) {
-		return [1];
+		return 1;
 	}
 	
-	if (n % 2 == 0) {
-		let next = n/2
-		return [n] + collatz(n: next)
+	if (collatz[n] != nil) {
+		return collatz[n]!;
 	}
 	
-	let next = 3*n + 1
-	return [n] + collatz(n: next)
+	var next = (n % 2 == 0) ? n/2 : 3*n + 1
+	let result = 1 + collatz(n: next)
+	collatz[n] = result
+	return result
 }
 
 func problem14(n: Int) {
 	var max_length = 0
 	var start = 0
 	for i in 1 ... n {
-		let res = collatz(n: i)
-		let len = res.count
+		let len = collatz(n: i)
     	print("\(i) -> \(len)")
     	
     	if (len > max_length) {
