@@ -30,4 +30,5 @@
 //problem30(5)
 //problem31()
 //problem32()
-problem33()
+//problem33()
+problem34()

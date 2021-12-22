@@ -1,6 +1,6 @@
 # Problem 33
 
-* The fraction $$^{49}/_{98}$$ is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that $$^{49}/_{98}$$ = $$^4/_8$$, which is correct, is obtained by cancelling the 9s.
+The fraction $$^{49}/_{98}$$ is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that $$^{49}/_{98}$$ = $$^4/_8$$, which is correct, is obtained by cancelling the 9s.
 
 We shall consider fractions like, $$^{30}/_{50}$$ = $$^3/_5$$, to be trivial examples.
 

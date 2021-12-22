@@ -1,4 +1,5 @@
 import Foundation
+import BigInt
 
 precedencegroup PowerPrecedence { higherThan: MultiplicationPrecedence }
 infix operator ^^ : PowerPrecedence
@@ -13,6 +14,13 @@ func even(_ x: Int) -> Bool {
 
 func square(_ x: Int) -> Int {
     return x*x
+}
+
+func factorial(_ n: Int) -> BigInt {
+    if (n <= 1) {
+        return 1
+    }
+    return (1 ... n).map { BigInt($0) }.reduce(BigInt(1), *)
 }
 
 func divisors(_ n: Int) -> [Int] {
