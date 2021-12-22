@@ -63,3 +63,11 @@ func permutate(_ list: [Int]) -> [[Int]] {
 func isPalindrome(_ s: String) -> Bool {
     return String(s.reversed()) == s
 }
+
+func substring(str: String, start: Int, length: Int) ->  String {
+    let a = str.index(str.startIndex, offsetBy: start)
+    let b = str.index(str.startIndex, offsetBy: start+length)
+    let range = a..<b;
+    
+    return String(str[range])
+}

@@ -1,7 +1,7 @@
 func sum_of_squares(n: Int) -> Int {
 	var sum = 0
 	for i in 1 ... n {
-		sum += square(x: i)
+		sum += square(i)
 	}
 	return sum
 }
@@ -11,7 +11,7 @@ func square_of_sum(n: Int) -> Int {
 	for i in 1 ... n {
 		sum += i
 	}
-	return square(x: sum)
+	return square(sum)
 }
 
 func problem6(n: Int) {

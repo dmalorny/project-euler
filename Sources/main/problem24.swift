@@ -1,5 +1,3 @@
-
-
 func to_string(_ list: [Int]) -> String {
 	var str = ""
 	for item in list {
