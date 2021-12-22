@@ -1,3 +1,5 @@
+import Algorithms
+
 var result: Set<Int> = []
 
 func to_int(_ list: [Int]) -> Int {
@@ -26,7 +28,7 @@ func check(_ arr: [Int]) {
 }
 
 func problem32() {
-	let permutations = permutate([1,2,3,4,5,6,7,8,9])
+    let permutations = [1,2,3,4,5,6,7,8,9].permutations()
 	for permutation in permutations {
 		check(permutation)
 	}
