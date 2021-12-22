@@ -1,11 +1,3 @@
-import Foundation
-
-precedencegroup PowerPrecedence { higherThan: MultiplicationPrecedence }
-infix operator ^^ : PowerPrecedence
-func ^^ (radix: Int, power: Int) -> Int {
-    return Int(pow(Double(radix), Double(power)))
-}
-
 func powersum(n: Int, p: Int) -> Int {	
 	var sum = 0
 	for d in Array(String(n)) {

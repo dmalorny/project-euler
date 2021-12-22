@@ -1,21 +1,11 @@
-extension String {
-    func left(length: Int) -> String {
-        let a = self.index(self.startIndex, offsetBy: 0)
-    	let b = self.index(self.startIndex, offsetBy: length)
-    	let range = a..<b;
-    
-    	return String(self[range])
-    }
-}
-
 func problem13(numbers: [String]) {
     var sum: UInt = 0;
     
     for str in numbers {
-    	sum += UInt(str.left(length: 12))!
+    	sum += UInt(str.left(12))!
     }
     
-    let start = String(sum).left(length: 10)
+    let start = String(sum).left(10)
     
     print("sum = \(start)")
 }

@@ -1,7 +1,5 @@
 import Foundation
 
-
-
 var cache = [[Int?]](repeating: [Int?](repeating: nil, count: 100), count: 100)
 
 func readFile() -> String {

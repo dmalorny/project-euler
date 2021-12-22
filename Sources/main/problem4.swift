@@ -3,7 +3,7 @@ func problem4(lo: Int, hi: Int) {
     for a in lo ... hi {
         for b in lo ... hi {
             let c = a*b
-            if (isPalindrome(String(c))) {
+            if (String(c).isPalindrome()) {
                 if (c>max) {
                     max=c
                     print(max)

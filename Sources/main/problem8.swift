@@ -10,7 +10,7 @@ func product_of_digits(str: String) -> Int {
 func problem8(str: String, n: Int) {
     var max = 0
     for i in 0 ... str.count-n {
-        let substr = substring(str: str, start: i, length: n)
+        let substr = str.substring(start: i, length: n)
         let product = product_of_digits(str: substr)
         if (product > max) {
             print("\(substr) --> \(product)")
