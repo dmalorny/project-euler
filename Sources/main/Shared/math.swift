@@ -38,3 +38,22 @@ func divisors(_ n: Int) -> [Int] {
     divisors.sort()
     return divisors;
 }
+
+func primes(to n: Int) -> [Int] {
+    if n <= 5 {
+        return [2, 3, 5].filter { $0 <= n }
+    }
+
+    var arr = Array(stride(from: 3, through: n, by: 2))
+
+    let squareRootN = Int(Double(n).squareRoot())
+    for index in 0... {
+        if arr[index] > squareRootN { break }
+        let num = arr.remove(at: index)
+        arr = arr.filter { $0 % num != 0 }
+        arr.insert(num, at: index)
+    }
+
+    arr.insert(2, at: 0)
+    return arr
+}

@@ -12,6 +12,10 @@ extension String {
         return self.substring(start: 0, length: length)
     }
     
+    func right(_ length: Int) -> String {
+        return self.substring(start: self.count-length, length: length)
+    }
+    
     func isPalindrome() -> Bool {
         return String(self.reversed()) == self
     }

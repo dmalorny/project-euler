@@ -31,4 +31,5 @@
 //problem31()
 //problem32()
 //problem33()
-problem34()
+//problem34()
+problem35(max: 1000000)
