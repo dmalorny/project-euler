@@ -38,4 +38,5 @@
 //problem38()
 //problem39()
 //problem40()
-problem41()
+//problem41()
+problem42()

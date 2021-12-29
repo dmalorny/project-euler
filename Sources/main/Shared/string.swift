@@ -33,4 +33,13 @@ extension String {
         
         return true
     }
+    
+    var wordValue: Int {
+        var value = 0
+        for c in Array(self) {
+            value += Int(c.asciiValue! - 64)
+        }
+        return value
+    }
+    
 }

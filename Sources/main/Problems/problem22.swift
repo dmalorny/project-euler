@@ -1,13 +1,5 @@
 import Foundation
 
-func value(_ name: String) -> Int {
-	var value = 0
-	for c in Array(name) {
-		value += Int(c.asciiValue! - 64)
-	}
-	return value
-}
-
 func problem22() {
     let url = Bundle.module.url(forResource: "Resources/names", withExtension: "txt")!
 	var str = try! String(contentsOf: url, encoding: .utf8)
@@ -20,7 +12,7 @@ func problem22() {
 	var sum=0
 	for name in names {
 		i += 1
-		let value = value(String(name))
+        let value = String(name).wordValue
 		let score = i * value
 		sum += score
 		print("\(i): \(name): \(score)")
