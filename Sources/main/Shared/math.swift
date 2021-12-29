@@ -8,22 +8,26 @@ func ^^ (radix: Int, power: Int) -> Int {
 }
 
 extension Int {
+    var isEven: Bool {
+        return self % 2 == 0
+    }
+    
+    var isOdd: Bool {
+        return self % 2 != 0
+    }
+    
     var isPrime: Bool {
         guard self >= 2     else { return false }
         guard self != 2     else { return true  }
         guard self % 2 != 0 else { return false }
         return !stride(from: 3, through: Int(sqrt(Double(self))), by: 2).contains { self % $0 == 0 }
     }
+    
+    var squared: Int {
+        return self*self
+    }
 }
 
-// Integer functions
-func even(_ x: Int) -> Bool {
-    return x % 2 == 0
-}
-
-func square(_ x: Int) -> Int {
-    return x*x
-}
 
 func factorial(_ n: Int) -> BigInt {
     if (n <= 1) {

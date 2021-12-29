@@ -5,7 +5,7 @@ func problem2(max: Int) {
     while b < max {
         (a,b) = (b, a+b)
         
-        if even(a){
+        if (a.isEven){
             sum += a
         }
     }
