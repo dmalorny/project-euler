@@ -11,6 +11,14 @@ func digits(_ n: Int) -> [Int] {
     return digits
 }
 
+func fromDigits(_ digits: [Int]) -> Int {
+    var sum = 0
+    for d in digits {
+        sum = 10*sum + d
+    }
+    return sum
+}
+
 func split_text_to_array(str: String) -> [[Int]] {
     var result = [[Int]]()
     for line in str.split(separator:"\n") {

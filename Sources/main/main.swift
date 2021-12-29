@@ -37,4 +37,5 @@
 //problem37(max: 1000000)
 //problem38()
 //problem39()
-problem40()
+//problem40()
+problem41()

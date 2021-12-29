@@ -9,20 +9,6 @@ func concatenated_product(s: Int, n: Int) -> String{
     return str
 }
 
-func is_pandigital(_ str: String) -> Bool {
-    if (str.count) != 9 {
-        return false
-    }
-    
-    for i in 1 ... 9 {
-        if (!str.contains(String(i))) {
-            return false
-        }
-    }
-    
-    return true
-}
-
 func problem38() {
     var max = 0;
     for a in 1 ... 10000 {
@@ -30,7 +16,7 @@ func problem38() {
             let str = concatenated_product(s: a, n: b)
             let val = Int(str) ?? 0
             
-            if (is_pandigital(str)) {
+            if (str.isPandigital(9)) {
                 print("\(a), \(b): \(str)")
                 if (val > max) {
                     max = val

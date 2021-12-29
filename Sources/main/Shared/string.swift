@@ -19,4 +19,18 @@ extension String {
     func isPalindrome() -> Bool {
         return String(self.reversed()) == self
     }
+    
+    func isPandigital(_ n: Int) -> Bool {
+        if (self.count) != n {
+            return false
+        }
+        
+        for i in 1 ... n {
+            if (!self.contains(String(i))) {
+                return false
+            }
+        }
+        
+        return true
+    }
 }
