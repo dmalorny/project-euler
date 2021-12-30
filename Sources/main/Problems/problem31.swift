@@ -15,8 +15,8 @@ func problem31(value: Int) -> Int {
 								if (sum > value) {
 									break
 								}
-								let h = value - sum
-								print("\(a)×2£, \(b)×1£, \(c)×50p, \(d)×20p, \(e)×10p, \(f)×5p, \(g)×2p, \(h)×1p")
+								//let h = value - sum
+								//print("\(a)×2£, \(b)×1£, \(c)×50p, \(d)×20p, \(e)×10p, \(f)×5p, \(g)×2p, \(h)×1p")
 								count += 1
 							}
 						}
