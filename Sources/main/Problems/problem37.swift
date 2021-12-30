@@ -14,7 +14,7 @@ func truncate_right(_ n: Int, _ c: Int) -> Int {
     return Int(res)!
 }
 
-func problem37(max: Int) {
+func problem37(max: Int) -> Int {
     let primes = primes(to: max)
     
     var sum = 0
@@ -46,4 +46,5 @@ func problem37(max: Int) {
     }
     
     print("sum = \(sum)")
+    return sum
 }

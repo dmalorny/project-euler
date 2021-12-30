@@ -1,4 +1,4 @@
-func problem33() {
+func problem33() -> Int {
     var (res_n, res_d) = (1,1)
     
     for d in 1 ... 9 {
@@ -29,4 +29,5 @@ func problem33() {
     }
     
     print("result: \(res_n)/\(res_d)")
+    return res_d/res_n
 }

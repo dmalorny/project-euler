@@ -22,9 +22,9 @@ func count_solutions(u: Int) -> Int {
     return count
 }
 
-func problem39() {
+func problem39(max: Int) -> Int {
     var (max_l, max_c) = (0,0)
-    for l in 6 ... 1000 {
+    for l in 6 ... max {
         let c = count_solutions(u: l)
         if (c>max_c) {
             max_c = c
@@ -34,4 +34,5 @@ func problem39() {
     }
     
     print ("max_l: \(max_l) -> \(max_c)")
+    return max_l
 }

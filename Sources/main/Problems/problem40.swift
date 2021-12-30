@@ -17,7 +17,7 @@ func check_digit(i: Int, len: Int, step: Int, pos: Int)  -> Int {
     return 1
 }
  
-func problem40() {
+func problem40() -> Int {
     var len=0
     var i=1
     var prod = 1
@@ -38,4 +38,5 @@ func problem40() {
     }
     
     print("product: \(prod)")
+    return prod
 }

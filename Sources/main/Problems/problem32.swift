@@ -27,11 +27,13 @@ func check(_ arr: [Int]) {
 	}
 }
 
-func problem32() {
+func problem32() -> Int {
     let permutations = [1,2,3,4,5,6,7,8,9].permutations()
 	for permutation in permutations {
 		check(permutation)
 	}
 	
-	print(result.reduce(0, +))
+    let sum = result.reduce(0, +)
+	print(sum)
+    return sum
 }

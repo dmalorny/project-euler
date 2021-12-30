@@ -9,7 +9,7 @@ func concatenated_product(s: Int, n: Int) -> String{
     return str
 }
 
-func problem38() {
+func problem38() -> Int {
     var max = 0;
     for a in 1 ... 10000 {
         for b in 2 ... 9 {
@@ -26,5 +26,6 @@ func problem38() {
     }
     
     print("maximum: \(max)")
+    return max
 }
 

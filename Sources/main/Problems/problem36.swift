@@ -13,7 +13,7 @@ func is_double_base_palindromic(_ n: Int) -> Bool {
     return true
 }
 
-func problem36(max: Int) {
+func problem36(max: Int) -> Int {
     var sum = 0
     for n in 1...max {
         if (is_double_base_palindromic(n)) {
@@ -22,4 +22,5 @@ func problem36(max: Int) {
     }
     
     print("sum = \(sum)")
+    return sum
 }

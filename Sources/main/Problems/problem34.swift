@@ -1,6 +1,6 @@
 import BigInt
 
-func problem34() {
+func problem34() -> Int {
     var sum = 0
     for n in 3 ... 100000 {
         let digits = digits(n)
@@ -20,4 +20,5 @@ func problem34() {
     }
     
     print("sum = \(sum)")
+    return sum
 }

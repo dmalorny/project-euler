@@ -7,7 +7,7 @@ func rotate(_ n: Int, _ c: Int) -> Int {
     return Int(res)!
 }
 
-func problem35(max: Int) {
+func problem35(max: Int) -> Int {
     let primes = primes(to: max)
     var primeset = Set(primes)
     
@@ -39,4 +39,5 @@ func problem35(max: Int) {
     }
     
     print("\(count) circular primes")
+    return count
 }
