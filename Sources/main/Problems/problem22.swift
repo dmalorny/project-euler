@@ -1,7 +1,7 @@
 import Foundation
 
 func problem22() -> Int {
-    let url = Bundle.main.url(forResource: "Resources/names", withExtension: "txt")!
+    let url = Bundle.module.url(forResource: "Resources/names", withExtension: "txt")!
 	var str = try! String(contentsOf: url, encoding: .utf8)
     
 	str.removeAll(where: { ["\""].contains($0) })
@@ -15,7 +15,7 @@ func problem22() -> Int {
         let value = String(name).wordValue
 		let score = i * value
 		sum += score
-		print("\(i): \(name): \(score)")
+		//print("\(i): \(name): \(score)")
 	}
 	
 	print("Total score: \(sum)")

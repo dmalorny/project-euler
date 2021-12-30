@@ -1,6 +1,6 @@
 import BigInt
 
-func problem29(_ limit: Int) {
+func problem29(_ limit: Int) -> Int {
 	var results: Set<BigInt> = []
 	for a: BigInt in 2 ... BigInt(limit) {
 		for b: Int in 2 ... limit {
@@ -9,4 +9,5 @@ func problem29(_ limit: Int) {
 		}
 	}
 	print(results.count)
+    return results.count
 }

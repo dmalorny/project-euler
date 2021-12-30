@@ -45,7 +45,7 @@ func problem19() -> Int {
 	var sum = 0
 	while (year < 2001) {
 		(day, month, year) = next_sunday(date: (day, month, year)) 
-		print((day, month, year)) 
+		//print((day, month, year)) 
 		if (day == 1 && year > 1900 && year < 2001) {
 			sum += 1
 		}

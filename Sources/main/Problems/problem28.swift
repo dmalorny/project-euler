@@ -1,4 +1,4 @@
-func problem28(_ max: Int) {	
+func problem28(_ max: Int) -> Int {
 	var (sum, n, step) = (1, 1, 2)
 	
 	while (n < max*max) {
@@ -10,4 +10,5 @@ func problem28(_ max: Int) {
 	}
 	
 	print("sum = \(sum)")
+    return sum
 }

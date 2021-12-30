@@ -20,7 +20,7 @@ func problem16(n: Int) -> Int {
     
 	for _ in 1 ... n {
 		double(&arr)
-		print ("\(arr)")
+		//print ("\(arr)")
 	}
 	var sum = 0
 	for i in arr {

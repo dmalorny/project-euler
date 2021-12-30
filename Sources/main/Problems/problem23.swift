@@ -13,7 +13,7 @@ func list_of_abudant(_ maximum: Int) -> [Int] {
 	return list
 }
 
-func problem23(_ maximum: Int) {
+func problem23(_ maximum: Int) -> Int {
 	let abudants = list_of_abudant(maximum)
 	
 	var all : Set<Int> = []
@@ -23,7 +23,7 @@ func problem23(_ maximum: Int) {
 	}
 	
 	for a in abudants {
-		print(a)
+		//print(a)
 		for b in abudants {
 			let c = a+b
 			if (c<=maximum) {
@@ -34,5 +34,5 @@ func problem23(_ maximum: Int) {
 	
 	let sum = array_sum(Array(all))
  	print("sum = \(sum)") 
-
+    return sum
 }

@@ -85,7 +85,40 @@ final class problemTests: XCTestCase {
         XCTAssertEqual(problem21(max: 250), 220)
         XCTAssertEqual(problem21(max: 10000), 31626)
     }
-//    func testProblem22() throws {
-//        XCTAssertEqual(problem22(), 871198282)
-//    }
+    func testProblem22() throws {
+        XCTAssertEqual(problem22(), 871198282)
+    }
+    func testProblem23() throws {
+        XCTAssertEqual(problem23(23), 276)
+        XCTAssertEqual(problem23(24), 276)
+        //XCTAssertEqual(problem23(28123), 4179871)
+    }
+    func testProblem24() throws {
+        XCTAssertEqual(problem24(p: 2, n: 4), 120)
+        XCTAssertEqual(problem24(p: 9, n: 1000000), 2783915460)
+    }
+    func testProblem25() throws {
+        XCTAssertEqual(problem25(3), 12)
+        //XCTAssertEqual(problem25(1000), 4782)
+    }
+    func testProblem26() throws {
+        XCTAssertEqual(problem26(max: 10), 7)
+        XCTAssertEqual(problem26(max: 1000), 983)
+    }
+    func testProblem27() throws {
+        XCTAssertEqual(problem27(min: -9, max: 9), -21)
+        //XCTAssertEqual(problem27(min: -999, max: 999), -59231)
+    }
+    func testProblem28() throws {
+        XCTAssertEqual(problem28(5), 101)
+        XCTAssertEqual(problem28(1001), 669171001)
+    }
+    func testProblem29() throws {
+        XCTAssertEqual(problem29(5), 15)
+        XCTAssertEqual(problem29(100), 9183)
+    }
+    func testProblem30() throws {
+        XCTAssertEqual(problem30(4), 19316)
+        XCTAssertEqual(problem30(5), 443839)
+    }
 }

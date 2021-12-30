@@ -14,12 +14,12 @@ func max_langth(a: Int, b: Int) -> Int {
     return n
 }
 
-func problem27() {
+func problem27(min: Int, max: Int) -> Int {
     var max_length = 0
     var best_a = 0
     var best_b = 0
-    for a in -999 ... 999 {
-        for b in stride(from: -999, to: 999, by: 2) {
+    for a in min ... max {
+        for b in stride(from: min, to: max, by: 2) {
             let len = max_langth(a:a, b:b)
             if (len > max_length) {
                 max_length = len
@@ -31,4 +31,5 @@ func problem27() {
     
     let product = best_a * best_b
     print("\(best_a),\(best_b): \(max_length), product: \(product)")
+    return product
 }

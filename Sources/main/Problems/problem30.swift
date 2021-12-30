@@ -9,7 +9,7 @@ func powersum(n: Int, p: Int) -> Int {
 	return sum
 }
 
-func problem30(_ p: Int) {
+func problem30(_ p: Int) -> Int {
 	var total = 0
 	for n in 2 ... 1000000 {
 		if (n == powersum(n:n, p:p)) {
@@ -18,4 +18,5 @@ func problem30(_ p: Int) {
 		}
 	}
 	print("total = \(total)")
+    return total
 }

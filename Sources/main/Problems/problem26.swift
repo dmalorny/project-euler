@@ -33,16 +33,17 @@ func cycle_length(_ nominator: Int, _ denominator: Int) -> Int {
 	return c
 }
 
-func problem26() {
+func problem26(max: Int) -> Int {
 	var max_length = 0
 	var index = 0
-	for d in 1 ... 1000 {
+	for d in 1 ... max {
 		let l = cycle_length(1,d)
-		print ("\(d): \(l)")
+		//print ("\(d): \(l)")
 		if (l > max_length) {
 			max_length = l
 			index = d
 		}
 	}
 	print("maximum: \(index): \(max_length)")
+    return index
 }

@@ -8,9 +8,12 @@ func to_string(_ list: [Int]) -> String {
 	return str
 }
 
-func problem24() {
-    let permutations = [0,1,2,3,4,5,6,7,8,9].permutations()
-    let millionth_item = permutations.striding(by: 999999).dropFirst().firstNonNil({$0})!
+func problem24(p: Int, n: Int) -> Int{
+    let set = Array(stride(from: 0, to: p+1, by: 1))
+    print (set)
+    let permutations = set.permutations()
+    let millionth_item = permutations.striding(by: (n-1)).dropFirst().firstNonNil({$0})!
     
-    print(to_string(millionth_item))
+    let result = to_string(millionth_item)
+    return Int(result)!
 }
