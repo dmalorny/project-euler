@@ -7,7 +7,7 @@ func is_dividable(n: Int, primes: [Int]) -> Bool {
 	return false
 }
 
-func problem7(n: Int) {
+func problem7(n: Int) -> Int {
     var primes:[Int] = []
 	var x = 2
 	var i = 0
@@ -17,11 +17,12 @@ func problem7(n: Int) {
 			x += 1
 			continue
 		} else {
-			print (x)
+			//print (x)
 			primes.append(x)
 			i += 1
 		}
 	}
 	
 	print("\(i). prime = \(x)")
+    return x
 }

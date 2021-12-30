@@ -1,4 +1,4 @@
-func factor(x: Int, f: Int) {
+func factor(x: Int, f: Int) -> Int {
     if (x % f == 0) {
         print("factor \(f)")
         return factor(x: x/f, f: f)
@@ -8,9 +8,10 @@ func factor(x: Int, f: Int) {
         return factor(x: x, f: f+1)
     } else {
         print("largest prime factor: \(f)")
+        return f
     }
 }
 
-func problem3(n: Int) {
-    factor(x: n, f: 2)
+func problem3(n: Int) -> Int {
+    return factor(x: n, f: 2)
 }

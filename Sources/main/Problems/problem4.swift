@@ -1,4 +1,4 @@
-func problem4(lo: Int, hi: Int) {
+func problem4(lo: Int, hi: Int) -> Int{
     var max = 0
     for a in lo ... hi {
         for b in lo ... hi {
@@ -6,10 +6,10 @@ func problem4(lo: Int, hi: Int) {
             if (String(c).isPalindrome()) {
                 if (c>max) {
                     max=c
-                    print(max)
                 }
             }
         }
     }
     print("largest palindrome number: \(max)")
+    return max
 }

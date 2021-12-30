@@ -1,4 +1,4 @@
-func problem9(sum: Int) {
+func problem9(sum: Int) -> Int{
     for c in 1 ... sum {
         for b in 1 ... c {
             let a = sum - b - c
@@ -10,7 +10,9 @@ func problem9(sum: Int) {
                 print("a + b + c = \(sum)");
                 print("a * b * c = \(a*b*c)");
                 print()
+                return a*b*c
             }
         }
     }
+    return 0
 }

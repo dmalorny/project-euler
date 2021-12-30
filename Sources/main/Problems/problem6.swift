@@ -14,11 +14,12 @@ func square_of_sum(n: Int) -> Int {
     return sum.squared
 }
 
-func problem6(n: Int) {
+func problem6(n: Int) -> Int {
 	let a = square_of_sum(n: n)
 	let b = sum_of_squares(n: n)
 	
 	let c = a - b
 	
 	print("\(a) - \(b) = \(c)")
+    return c
 }

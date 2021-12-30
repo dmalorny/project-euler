@@ -25,7 +25,7 @@ func countDivisors(n: Int) -> Int
     return cnt;
 }
 
-func problem12(n: Int) {
+func problem12(n: Int) -> Int {
 	var i = 1
 	var divisors = 0
 	var triangle_num = 0
@@ -36,4 +36,5 @@ func problem12(n: Int) {
 		divisors = countDivisors(n: triangle_num);
 		print ("\(triangle_num): \(divisors)");
 	}
+    return triangle_num
 }

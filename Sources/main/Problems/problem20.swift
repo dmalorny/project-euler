@@ -18,9 +18,10 @@ func digitsum(_ n: BigInt) -> Int {
 }
 
 
-func problem20(_ n: Int) {
+func problem20(_ n: Int) -> Int {
 	let f = fact(BigInt(n))
 	let q = digitsum(f)
 	print(f)
 	print(q)
+    return q
 }

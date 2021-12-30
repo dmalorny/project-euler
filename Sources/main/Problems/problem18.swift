@@ -9,21 +9,14 @@ func maxsum18(arr: [[Int]], row: Int, column: Int) -> Int {
 	return [sum1, sum2].max()!
 }
 
-func problem18(str: String) {
-	print(str)
+func problem18(str: String) -> Int {
 	let triangle = split_text_to_array(str: str)
 	let maxsum = maxsum18(arr: triangle, row: 0, column: 0)
 	print("maxsum = \(maxsum)")
+    return maxsum
 }
 
-func problem18() {
-    let _ = """
-    3
-    7 4
-    2 4 6
-    8 5 9 3
-    """
-
+func problem18() -> Int {
     let triangle = """
     75
     95 64
@@ -42,5 +35,5 @@ func problem18() {
     04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
     """
     
-    problem18(str: triangle)
+    return problem18(str: triangle)
 }

@@ -11,7 +11,7 @@ func triangle_numbers(count: Int) -> [Int] {
 func problem42() {
     let triangle_numbers = triangle_numbers(count: 30)
     
-    let url = Bundle.module.url(forResource: "Resources/words", withExtension: "txt")!
+    let url = Bundle.main.url(forResource: "Resources/words", withExtension: "txt")!
     var str = try! String(contentsOf: url, encoding: .utf8)
 
     str.removeAll(where: { ["\""].contains($0) })

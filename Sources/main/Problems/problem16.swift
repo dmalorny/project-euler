@@ -1,6 +1,4 @@
-var arr = [1] 
-
-func double() {
+func double(_ arr: inout [Int]) {
 	var overflow = 0
 	for i in 0 ... arr.count-1 {
 		var digit = 2 * arr[i] + overflow
@@ -17,9 +15,11 @@ func double() {
 }
 
 
-func problem16(n: Int) {
+func problem16(n: Int) -> Int {
+    var arr = [1]
+    
 	for _ in 1 ... n {
-		double()
+		double(&arr)
 		print ("\(arr)")
 	}
 	var sum = 0
@@ -27,4 +27,5 @@ func problem16(n: Int) {
 		sum += i
 	}
 	print ("sum: \(sum)")
+    return sum
 }

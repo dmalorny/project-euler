@@ -15,12 +15,12 @@ func collatz(n: Int) -> Int {
 	return result
 }
 
-func problem14(n: Int) {
+func problem14(n: Int) -> Int {
 	var max_length = 0
 	var start = 0
 	for i in 1 ... n {
 		let len = collatz(n: i)
-    	print("\(i) -> \(len)")
+    	//print("\(i) -> \(len)")
     	
     	if (len > max_length) {
     		max_length = len
@@ -29,4 +29,5 @@ func problem14(n: Int) {
     	
 	}
 	print("max: \(max_length), start: \(start)")
+    return start
  }

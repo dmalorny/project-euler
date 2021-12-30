@@ -5,14 +5,15 @@ func is_amicable(_ n: Int) -> Bool {
 	return (b == n && a != b)
 }
 
-func problem21() {
+func problem21(max: Int) -> Int {
 	var sum = 0;
-	for i in 2 ... 10000 {
+	for i in 2 ... max {
 		if (is_amicable(i)) {
 			sum += i
 			print(i)
 		} 
 	}
 	print("sum = \(sum)")
+    return sum
 }
 

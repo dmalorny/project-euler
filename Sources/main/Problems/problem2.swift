@@ -1,4 +1,4 @@
-func problem2(max: Int) {
+func problem2(max: Int) -> Int {
     var sum = 0
     var a = 0
     var b = 1
@@ -10,5 +10,5 @@ func problem2(max: Int) {
         }
     }
     
-    print("sum: \(sum)")
+    return sum
 }

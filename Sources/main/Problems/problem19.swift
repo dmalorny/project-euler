@@ -38,7 +38,7 @@ func next_sunday(date: (Int,Int,Int)) -> (Int,Int,Int) {
 	return (day, month, year)
 }
 
-func problem19() {
+func problem19() -> Int {
 	let start = (31,12,1899)
 	var (day, month, year) = start
 	
@@ -52,4 +52,5 @@ func problem19() {
 	}
 	
 	print("\(sum) sundays on 1st of month")
+    return sum
 }

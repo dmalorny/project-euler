@@ -1,4 +1,4 @@
-func problem5(max: Int) {
+func problem5(max: Int) -> Int {
     var num = max
     var found = false
     while (!found) {
@@ -16,4 +16,5 @@ func problem5(max: Int) {
         }
     }
     print("result: \(num)")
+    return num
 }

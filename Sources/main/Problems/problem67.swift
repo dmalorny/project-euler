@@ -1,9 +1,9 @@
-import Foundation
+import class Foundation.Bundle
 
 var cache = [[Int?]](repeating: [Int?](repeating: nil, count: 100), count: 100)
 
 func readFile() -> String {
-    let url = Bundle.module.url(forResource: "Resources/triangle", withExtension: "txt")!
+    let url = Bundle.main.url(forResource: "Resources/triangle", withExtension: "txt")!
     let str = try! String(contentsOf: url, encoding: .utf8)
     return str
 }
