@@ -27,5 +27,9 @@ let package = Package(
             name: "problemTests",
             dependencies: ["euler"]
         ),
+        .executableTarget(
+            name: "main",
+            dependencies: ["euler"]
+        ),
     ]
 )
