@@ -1,5 +1,5 @@
 import XCTest
-@testable import main
+@testable import euler
 
 final class problemTests: XCTestCase {
     func testProblem1() throws {

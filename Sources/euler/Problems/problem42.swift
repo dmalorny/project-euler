@@ -22,7 +22,7 @@ func problem42() -> Int {
         let value = String(word).wordValue
         if (triangle_numbers.contains(value)) {
             count += 1
-            print("\(word): \(value)")
+            //print("\(word): \(value)")
         }
     }
 
