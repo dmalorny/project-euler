@@ -3,8 +3,8 @@ func maxsum18(arr: [[Int]], row: Int, column: Int) -> Int {
 		return arr[row][column]
 	}
 	
-	let sum1 = arr[row][column] + maxsum(arr: arr, row: row+1, column: column)
-	let sum2 = arr[row][column] + maxsum(arr: arr, row: row+1, column: column+1)
+	let sum1 = arr[row][column] + maxsum18(arr: arr, row: row+1, column: column)
+	let sum2 = arr[row][column] + maxsum18(arr: arr, row: row+1, column: column+1)
 	
 	return [sum1, sum2].max()!
 }

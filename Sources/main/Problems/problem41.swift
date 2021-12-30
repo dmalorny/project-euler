@@ -12,9 +12,14 @@ func check(n: Int) -> Int {
     return 0
 }
 
-func problem41() {
+func problem41() -> Int {
+    var max = 0
     for n in 1 ... 9 {
         let p = check(n: n)
         print("n=\(n) -> \(p)")
+        if (p>max) {
+            max = p
+        }
     }
+    return max
 }
