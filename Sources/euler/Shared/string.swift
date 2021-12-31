@@ -20,12 +20,12 @@ extension String {
         return String(self.reversed()) == self
     }
     
-    func isPandigital(_ n: Int) -> Bool {
-        if (self.count) != n {
+    func isPandigital(from: Int, to: Int) -> Bool {
+        if (self.count) != to-from+1 {
             return false
         }
         
-        for i in 1 ... n {
+        for i in from ... to {
             if (!self.contains(String(i))) {
                 return false
             }

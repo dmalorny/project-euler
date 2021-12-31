@@ -16,7 +16,7 @@ func problem38() -> Int {
             let str = concatenated_product(s: a, n: b)
             let val = Int(str) ?? 0
             
-            if (str.isPandigital(9)) {
+            if (str.isPandigital(from: 1, to: 9)) {
                 print("\(a), \(b): \(str)")
                 if (val > max) {
                     max = val

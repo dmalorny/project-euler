@@ -15,13 +15,15 @@ final class stringTests: XCTestCase {
     
     func testPandigital() throws
     {
-        XCTAssertEqual("1234".isPandigital(4), true)
-        XCTAssertEqual("4321".isPandigital(4), true)
-        XCTAssertEqual("4321".isPandigital(5), false)
-        XCTAssertEqual("14352".isPandigital(5), true)
-        XCTAssertEqual("123456789".isPandigital(9), true)
-        XCTAssertEqual("975318642".isPandigital(9), true)
-        XCTAssertEqual("975308642".isPandigital(9), false)
+        XCTAssertEqual("1234".isPandigital(from: 1, to: 4), true)
+        XCTAssertEqual("4321".isPandigital(from: 1, to: 4), true)
+        XCTAssertEqual("5876".isPandigital(from: 5, to: 8), true)
+        XCTAssertEqual("4321".isPandigital(from: 1, to: 5), false)
+        XCTAssertEqual("14352".isPandigital(from: 1, to: 5), true)
+        XCTAssertEqual("123456789".isPandigital(from: 1, to: 9), true)
+        XCTAssertEqual("975318642".isPandigital(from: 1, to: 9), true)
+        XCTAssertEqual("975308642".isPandigital(from: 1, to: 9), false)
+        XCTAssertEqual("1406357289".isPandigital(from: 0, to: 9), true)
     }
     
     func testWordValue() throws {

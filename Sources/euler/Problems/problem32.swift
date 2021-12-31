@@ -1,21 +1,11 @@
 import Algorithms
 
-var result: Set<Int> = []
-
-func to_int(_ list: [Int]) -> Int {
-	var str = ""
-	for item in list {
-		str += String(item)
-	}
-	return Int(str)!
-}
-
-func check(_ arr: [Int]) {
-	let p = to_int(Array(arr[0...3]))
-	let a = to_int(Array(arr[4...6]))
-	let b = to_int(Array(arr[7...8]))
-	let c = to_int(Array(arr[4...7]))
-	let d = to_int(Array(arr[8...8]))
+func check32(_ arr: [Int], _ result: inout Set<Int>) {
+	let p = fromDigits(Array(arr[0...3]))
+	let a = fromDigits(Array(arr[4...6]))
+	let b = fromDigits(Array(arr[7...8]))
+	let c = fromDigits(Array(arr[4...7]))
+	let d = fromDigits(Array(arr[8...8]))
 	
 	if (p == a * b) {
 		print("\(p) = \(a) * \(b)")
@@ -28,9 +18,11 @@ func check(_ arr: [Int]) {
 }
 
 func problem32() -> Int {
+    var result: Set<Int> = []
+    
     let permutations = [1,2,3,4,5,6,7,8,9].permutations()
 	for permutation in permutations {
-		check(permutation)
+		check32(permutation, &result)
 	}
 	
     let sum = result.reduce(0, +)
