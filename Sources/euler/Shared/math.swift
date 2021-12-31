@@ -78,8 +78,27 @@ func fibonacci(_ n: Int) -> Int {
     return fibonacci(n-1) + fibonacci(n-2)
 }
 
+func triangle(_ n: Int) -> Int {
+    return n*(n + 1)/2
+}
+
 func pentagonal(_ n: Int) -> Int {
     return n*(3*n - 1)/2
+}
+
+func hexagonal(_ n: Int) -> Int {
+    return n*(2*n - 1)
+}
+
+func isTriangle(_ t: Int) -> Bool {
+    let d = Double(8*t + 1)
+    
+    if (d > 0) {
+        let candidate = Int((-1.0 + d.squareRoot()) / 2.0)
+        return (triangle(candidate) == t)
+    }
+    
+    return false
 }
 
 func isPentagonal(_ p: Int) -> Bool {
@@ -88,6 +107,17 @@ func isPentagonal(_ p: Int) -> Bool {
     if (d > 0) {
         let candidate = Int((1.0 + d.squareRoot()) / 6.0)
         return (pentagonal(candidate) == p)
+    }
+    
+    return false
+}
+
+func isHexagonal(_ h: Int) -> Bool {
+    let d = Double(8*h + 1)
+    
+    if (d > 0) {
+        let candidate = Int((1.0 + d.squareRoot()) / 4.0)
+        return (hexagonal(candidate) == h)
     }
     
     return false

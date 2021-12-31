@@ -62,11 +62,33 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(fibonacci(12), 144)
     }
     
+    func testTriangle() throws {
+        XCTAssertEqual(triangle(1), 1)
+        XCTAssertEqual(triangle(2), 3)
+        XCTAssertEqual(triangle(3), 6)
+        XCTAssertEqual(triangle(5), 15)
+    }
+    
     func testPentagonal() throws {
         XCTAssertEqual(pentagonal(1), 1)
         XCTAssertEqual(pentagonal(2), 5)
         XCTAssertEqual(pentagonal(8), 92)
         XCTAssertEqual(pentagonal(10), 145)
+    }
+    
+    func testHexagonal() throws {
+        XCTAssertEqual(hexagonal(1), 1)
+        XCTAssertEqual(hexagonal(2), 6)
+        XCTAssertEqual(hexagonal(3), 15)
+        XCTAssertEqual(hexagonal(5), 45)
+    }
+    
+    func testIsTriangle() throws {
+        XCTAssertEqual(isTriangle(1), true)
+        XCTAssertEqual(isTriangle(3), true)
+        XCTAssertEqual(isTriangle(6), true)
+        XCTAssertEqual(isTriangle(15), true)
+        XCTAssertEqual(isTriangle(12), false)
     }
     
     func testIsPentagonal() throws {
@@ -75,5 +97,13 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(isPentagonal(92), true)
         XCTAssertEqual(isPentagonal(145), true)
         XCTAssertEqual(isPentagonal(48), false)
+    }
+    
+    func testIsHexagonal() throws {
+        XCTAssertEqual(isHexagonal(1), true)
+        XCTAssertEqual(isHexagonal(6), true)
+        XCTAssertEqual(isHexagonal(15), true)
+        XCTAssertEqual(isHexagonal(45), true)
+        XCTAssertEqual(isHexagonal(48), false)
     }
 }
