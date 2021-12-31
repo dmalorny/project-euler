@@ -28,7 +28,10 @@ extension Int {
     }
 }
 
-
+/// Calculates the factorial n! of a given integer
+/// - Parameters:
+///     - n: an integer to calculate the factoriel
+/// - Returns: the factorial n! of a given integer
 func factorial(_ n: Int) -> BigInt {
     if (n <= 1) {
         return 1
@@ -36,6 +39,7 @@ func factorial(_ n: Int) -> BigInt {
     return (1 ... n).map { BigInt($0) }.reduce(BigInt(1), *)
 }
 
+/// returns a list of all divisors (incl. 1 and the number itself)
 func divisors(_ n: Int) -> [Int] {
     var divisors = [Int]()
     for i in 1 ... Int(Double(n).squareRoot()) {

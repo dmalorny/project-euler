@@ -1,0 +1,420 @@
+# Problems 26-50
+
+Problem descriptions of problems 26 to 50
+
+##  Problem 26
+
+Reciprocal cycles
+
+A unit fraction contains 1 in the numerator. The decimal representation of the unit fractions with denominators 2 to 10 are given:
+
+    1/2        =     0.5
+    1/3        =     0.(3)
+    1/4        =     0.25
+    1/5        =     0.2
+    1/6        =     0.1(6)
+    1/7        =     0.(142857)
+    1/8        =     0.125
+    1/9        =     0.(1)
+    1/10       =     0.1
+
+Where 0.1(6) means 0.166666..., and has a 1-digit recurring cycle. It can be seen that 1/7 has a 6-digit recurring cycle.
+
+Find the value of d < 1000 for which 1/d contains the longest recurring cycle in its decimal fraction part.
+
+##  Problem 27
+
+Quadratic primes
+
+Euler discovered the remarkable quadratic formula:
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msup>
+    <mi>n</mi>
+    <mn>2</mn>
+  </msup>
+  <mo>+</mo>
+  <mi>n</mi>
+  <mo>+</mo>
+  <mn>41</mn>
+</math>
+
+It turns out that the formula will produce 40 primes for the consecutive integer values 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mn>0</mn>
+  <mo>&#x2264;</mo>
+  <mi>n</mi>
+  <mo>&#x2264;</mo>
+  <mn>39</mn>
+</math>. However, when 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>n</mi>
+  <mo>=</mo>
+  <mn>40</mn>
+  <mo>,</mo>
+  <msup>
+    <mn>40</mn>
+    <mn>2</mn>
+  </msup>
+  <mo>+</mo>
+  <mn>40</mn>
+  <mo>+</mo>
+  <mn>41</mn>
+  <mo>=</mo>
+  <mn>40</mn>
+  <mo stretchy="false">(</mo>
+  <mn>40</mn>
+  <mo>+</mo>
+  <mn>1</mn>
+  <mo stretchy="false">)</mo>
+  <mo>+</mo>
+  <mn>41</mn>
+</math> is divisible by 41, and certainly when 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>n</mi>
+  <mo>=</mo>
+  <mn>41</mn>
+  <mo>,</mo>
+  <msup>
+    <mn>41</mn>
+    <mn>2</mn>
+  </msup>
+  <mo>+</mo>
+  <mn>41</mn>
+  <mo>+</mo>
+  <mn>41</mn>
+</math> is clearly divisible by 41.
+
+The incredible formula 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>n</mi>
+    <mn>2</mn>
+  </msup>
+  <mo>&#x2212;</mo>
+  <mn>79</mn>
+  <mi>n</mi>
+  <mo>+</mo>
+  <mn>1601</mn>
+</math> was discovered, which produces 80 primes for the consecutive values 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mn>0</mn>
+  <mo>&#x2264;</mo>
+  <mi>n</mi>
+  <mo>&#x2264;</mo>
+  <mn>79</mn>
+</math>. The product of the coefficients, −79 and 1601, is −126479.
+
+Considering quadratics of the form:
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>n</mi>
+    <mn>2</mn>
+  </msup>
+  <mo>+</mo>
+  <mi>a</mi>
+  <mi>n</mi>
+  <mo>+</mo>
+  <mi>b</mi>
+</math>, where 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mo stretchy="false">|</mo>
+  <mi>a</mi>
+  <mrow data-mjx-texclass="ORD">
+    <mo stretchy="false">|</mo>
+  </mrow>
+  <mo>&lt;</mo>
+  <mn>1000</mn>
+</math> and 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mo stretchy="false">|</mo>
+  <mi>b</mi>
+  <mrow data-mjx-texclass="ORD">
+    <mo stretchy="false">|</mo>
+  </mrow>
+  <mo>&#x2264;</mo>
+  <mn>1000</mn>
+</math>
+
+where 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mo stretchy="false">|</mo>
+  <mi>n</mi>
+  <mo stretchy="false">|</mo>
+</math>
+ is the modulus/absolute value of 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>n</mi>
+</math>
+
+e.g. 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mo stretchy="false">|</mo>
+  <mn>11</mn>
+  <mrow data-mjx-texclass="ORD">
+    <mo stretchy="false">|</mo>
+  </mrow>
+  <mo>=</mo>
+  <mn>11</mn>
+</math> and 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mo stretchy="false">|</mo>
+  <mo>&#x2212;</mo>
+  <mn>4</mn>
+  <mrow data-mjx-texclass="ORD">
+    <mo stretchy="false">|</mo>
+  </mrow>
+  <mo>=</mo>
+  <mn>4</mn>
+</math>
+
+Find the product of the coefficients, 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>a</mi>
+</math> and 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>b</mi>
+</math>, for the quadratic expression that produces the maximum number of primes for consecutive values of 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>n</mi>
+</math>, starting with 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>n</mi>
+  <mo>=</mo>
+  <mn>0</mn>
+</math>.
+
+##  Problem 28
+
+Number spiral diagonals
+
+Starting with the number 1 and moving to the right in a clockwise direction a 5 by 5 spiral is formed as follows:
+
+    21 22 23 24 25
+    20  7  8  9 10
+    19  6  1  2 11
+    18  5  4  3 12
+    17 16 15 14 13
+
+It can be verified that the sum of the numbers on the diagonals is 101.
+
+What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed in the same way?
+
+##  Problem 29
+
+Distinct powers
+
+Consider all integer combinations of ab for $$2 ≤ a ≤ 5$$ and $$2 ≤ b ≤ 5$$:
+
+$$2^2=4$$, $$2^3=8$$, $$2^4=16$$, $$2^5=32$$
+
+$$3^2=9$$, $$3^3=27$$, $$3^4=81$$, $$3^5=243$$
+
+$$4^2=16$$, $$4^3=64$$, $$4^4=256$$, $$4^5=1024$$
+
+$$5^2=25$$, $$5^3=125$$, $$5^4=625$$, $$5^5=3125$$
+
+If they are then placed in numerical order, with any repeats removed, we get the following sequence of 15 distinct terms:
+
+    4, 8, 9, 16, 25, 27, 32, 64, 81, 125, 243, 256, 625, 1024, 3125
+
+How many distinct terms are in the sequence generated by $$a^b$$ for $$2 ≤ a ≤ 100$$ and $$2 ≤ b ≤ 100$$?
+
+##  Problem 30
+
+Digit fifth powers
+
+Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits:
+
+$$1634 = 1^4 + 6^4 + 3^4 + 4^4$$  
+$$8208 = 8^4 + 2^4 + 0^4 + 8^4$$  
+$$9474 = 9^4 + 4^4 + 7^4 + 4^4$$  
+As $$1 = 1^4$$ is not a sum it is not included.
+
+The sum of these numbers is 1634 + 8208 + 9474 = 19316.
+
+Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
+
+##  Problem 31
+
+Coin sums
+
+In the United Kingdom the currency is made up of pound (£) and pence (p). There are eight coins in general circulation:
+
+1p, 2p, 5p, 10p, 20p, 50p, £1 (100p), and £2 (200p).
+It is possible to make £2 in the following way:
+
+1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p
+How many different ways can £2 be made using any number of coins?
+
+##  Problem 32
+
+Pandigital products
+
+We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once; for example, the 5-digit number, 15234, is 1 through 5 pandigital.
+
+The product 7254 is unusual, as the identity, 39 × 186 = 7254, containing multiplicand, multiplier, and product is 1 through 9 pandigital.
+
+Find the sum of all products whose multiplicand/multiplier/product identity can be written as a 1 through 9 pandigital.
+
+> Tip: Some products can be obtained in more than one way so be sure to only include it once in your sum.
+
+## Problem 33
+
+Digit cancelling fractions
+
+The fraction $$^{49}/_{98}$$ is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that $$^{49}/_{98}$$ = $$^4/_8$$, which is correct, is obtained by cancelling the 9s.
+
+We shall consider fractions like, $$^{30}/_{50}$$ = $$^3/_5$$, to be trivial examples.
+
+There are exactly four non-trivial examples of this type of fraction, less than one in value, and containing two digits in the numerator and denominator.
+
+If the product of these four fractions is given in its lowest common terms, find the value of the denominator.
+
+## Problem 34
+
+Digit factorials
+
+145 is a curious number, as 1! + 4! + 5! = 1 + 24 + 120 = 145.
+
+Find the sum of all numbers which are equal to the sum of the factorial of their digits.
+
+> Note: As 1! = 1 and 2! = 2 are not sums they are not included.
+
+## Problem 35
+
+Circular primes
+
+The number, 197, is called a circular prime because all rotations of the digits: 197, 971, and 719, are themselves prime.
+
+There are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.
+
+How many circular primes are there below one million?
+
+## Problem 36
+
+Double-base palindromes
+
+The decimal number, $$585 = 1001001001_2$$ (binary), is palindromic in both bases.
+
+Find the sum of all numbers, less than one million, which are palindromic in base 10 and base 2.
+
+> Note: Please note that the palindromic number, in either base, may not include leading zeros.
+
+## Problem 37
+
+Truncatable primes
+
+The number 3797 has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: 3797, 797, 97, and 7. Similarly we can work from right to left: 3797, 379, 37, and 3.
+
+Find the sum of the only eleven primes that are both truncatable from left to right and right to left.
+
+> Note: 2, 3, 5, and 7 are not considered to be truncatable primes.
+
+## Problem 38
+
+Pandigital multiples
+
+Take the number 192 and multiply it by each of 1, 2, and 3:
+
+    192 × 1 = 192
+    192 × 2 = 384
+    192 × 3 = 576
+    
+By concatenating each product we get the 1 to 9 pandigital, 192384576. We will call 192384576 the concatenated product of 192 and (1,2,3)
+
+The same can be achieved by starting with 9 and multiplying by 1, 2, 3, 4, and 5, giving the pandigital, 918273645, which is the concatenated product of 9 and (1,2,3,4,5).
+
+What is the largest 1 to 9 pandigital 9-digit number that can be formed as the concatenated product of an integer with (1,2, ... , n) where n > 1?
+
+## Problem 39
+
+Integer right triangles
+
+If p is the perimeter of a right angle triangle with integral length sides, {a,b,c}, there are exactly three solutions for p = 120.
+
+{20,48,52}, {24,45,51}, {30,40,50}
+
+For which value of p ≤ 1000, is the number of solutions maximised?
+
+## Problem 40
+
+Champernowne's constant
+
+An irrational decimal fraction is created by concatenating the positive integers:
+
+0.12345678910<span style="color:red">1</span>112131415161718192021...
+
+It can be seen that the $$12^{th}$$ digit of the fractional part is $$1$$.
+
+If $$d_n$$ represents the $$n^{th}$$ digit of the fractional part, find the value of the following expression.
+
+$$d_1 × d_{10} × d_{100} × d_{1000} × d_{10000} × d_{100000} × d_{1000000}$$
+
+## Problem 41
+
+Pandigital prime
+
+We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once. For example, 2143 is a 4-digit pandigital and is also prime.
+
+What is the largest n-digit pandigital prime that exists?
+
+## Problem 42
+
+Coded triangle numbers
+
+The $$n^{th}$$ term of the sequence of triangle numbers is given by, $$tn = \frac{1}{2}n(n+1)$$; so the first ten triangle numbers are:
+
+$$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...$$
+
+By converting each letter in a word to a number corresponding to its alphabetical position and adding these values we form a word value. For example, the word value for `SKY` is $$19 + 11 + 25 = 55 = t_{10}$$. If the word value is a triangle number then we shall call the word a triangle word.
+
+Using words.txt, a 16K text file containing nearly two-thousand common English words, how many are triangle words?
+
+## Problem 43
+
+Sub-string divisibility
+
+The number, 1406357289, is a 0 to 9 pandigital number because it is made up of each of the digits 0 to 9 in some order, but it also has a rather interesting sub-string divisibility property.
+
+Let $$d_1$$ be the $$1^st$$ digit, $$d_2$$ be the $$2^nd$$ digit, and so on. In this way, we note the following:
+
+$$d_2d_3d_4=406$$ is divisible by 2  
+$$d_3d_4d_5=063$$ is divisible by 3  
+$$d_4d_5d_6=635$$ is divisible by 5  
+$$d_5d_6d_7=357$$ is divisible by 7  
+$$d_6d_7d_8=572$$ is divisible by 11  
+$$d_7d_8d_9=728$$ is divisible by 13  
+$$d_8d_9d_{10}=289$$ is divisible by 17  
+
+Find the sum of all 0 to 9 pandigital numbers with this property.
+
+## Problem 44
+
+Pentagon numbers
+
+Pentagonal numbers are generated by the formula, $$P_n=n(3n−1)/2$$. The first ten pentagonal numbers are:
+
+    1, 5, 12, 22, 35, 51, 70, 92, 117, 145, ...
+
+It can be seen that $$P_4 + P_7 = 22 + 70 = 92 = P_8$$. However, their difference, $$70 − 22 = 48$$, is not pentagonal.
+
+Find the pair of pentagonal numbers, $$P_j$$ and $$P_k$$, for which their sum and difference are pentagonal and $$D = |P_k − P_j|$$ is minimised; what is the value of $$D$$?
+
+## Problem 45
+
+Triangular, pentagonal, and hexagonal
+
+Triangle, pentagonal, and hexagonal numbers are generated by the following formulae:
+
+| Series     | Equation          | First entries         |
+| ---------- | ----------------- | --------------------- |
+| Triangle   | $$T_n=n(n+1)/2$$  | 1, 3, 6, 10, 15, ...  |
+| Pentagonal | $$P_n=n(3n−1)/2$$ | 1, 5, 12, 22, 35, ... |
+| Hexagonal  | $$H_n=n(2n−1)$$   | 1, 6, 15, 28, 45, ... |
+
+It can be verified that $$T_{285} = P_{165} = H_{143} = 40755$$.
+
+Find the next triangle number that is also pentagonal and hexagonal.
+
