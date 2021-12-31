@@ -61,4 +61,19 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(fibonacci(10), 55)
         XCTAssertEqual(fibonacci(12), 144)
     }
+    
+    func testPentagonal() throws {
+        XCTAssertEqual(pentagonal(1), 1)
+        XCTAssertEqual(pentagonal(2), 5)
+        XCTAssertEqual(pentagonal(8), 92)
+        XCTAssertEqual(pentagonal(10), 145)
+    }
+    
+    func testIsPentagonal() throws {
+        XCTAssertEqual(isPentagonal(1), true)
+        XCTAssertEqual(isPentagonal(5), true)
+        XCTAssertEqual(isPentagonal(92), true)
+        XCTAssertEqual(isPentagonal(145), true)
+        XCTAssertEqual(isPentagonal(48), false)
+    }
 }

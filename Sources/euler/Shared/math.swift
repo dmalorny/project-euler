@@ -77,3 +77,18 @@ func fibonacci(_ n: Int) -> Int {
     }
     return fibonacci(n-1) + fibonacci(n-2)
 }
+
+func pentagonal(_ n: Int) -> Int {
+    return n*(3*n - 1)/2
+}
+
+func isPentagonal(_ p: Int) -> Bool {
+    let d = Double(24*p + 1)
+    
+    if (d > 0) {
+        let candidate = Int((1.0 + d.squareRoot()) / 6.0)
+        return (pentagonal(candidate) == p)
+    }
+    
+    return false
+}
