@@ -70,3 +70,10 @@ func primes(to n: Int) -> [Int] {
     arr.insert(2, at: 0)
     return arr
 }
+
+func fibonacci(_ n: Int) -> Int {
+    if (n<3) {
+        return 1
+    }
+    return fibonacci(n-1) + fibonacci(n-2)
+}

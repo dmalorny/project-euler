@@ -26,5 +26,6 @@ final class stringTests: XCTestCase {
     
     func testWordValue() throws {
         XCTAssertEqual("COLIN".wordValue, 53)
+        XCTAssertEqual("SKY".wordValue, 55)
     }
 }
