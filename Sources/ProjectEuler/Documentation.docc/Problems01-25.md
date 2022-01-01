@@ -50,64 +50,13 @@ Sum square difference
 
 The sum of the squares of the first ten natural numbers is,
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <msup>
-    <mn>1</mn>
-    <mn>2</mn>
-  </msup>
-  <mo>+</mo>
-  <msup>
-    <mn>2</mn>
-    <mn>2</mn>
-  </msup>
-  <mo>+</mo>
-  <mo>.</mo>
-  <mo>.</mo>
-  <mo>.</mo>
-  <mo>+</mo>
-  <msup>
-    <mn>10</mn>
-    <mn>2</mn>
-  </msup>
-  <mo>=</mo>
-  <mn>385</mn>
-</math>
+$$1^2 + 2^2 + ... + 10^2 = 385$$
 
 The square of the sum of the first ten natural numbers is,
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mo stretchy="false">(</mo>
-  <mn>1</mn>
-  <mo>+</mo>
-  <mn>2</mn>
-  <mo>+</mo>
-  <mo>.</mo>
-  <mo>.</mo>
-  <mo>.</mo>
-  <mo>+</mo>
-  <mn>10</mn>
-  <msup>
-    <mo stretchy="false">)</mo>
-    <mn>2</mn>
-  </msup>
-  <mo>=</mo>
-  <msup>
-    <mn>55</mn>
-    <mn>2</mn>
-  </msup>
-  <mo>=</mo>
-  <mn>3025</mn>
-</math>
+$$(1 + 2 + ... + 10)^2 = 55^2 = 3025$$
 
-Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 
-
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mn>3025</mn>
-  <mo>&#x2212;</mo>
-  <mn>385</mn>
-  <mo>=</mo>
-  <mn>2640</mn>
-</math>
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is $$3025 - 385 = 2640$$
 
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
@@ -154,22 +103,7 @@ Special Pythagorean triplet
 
 A Pythagorean triplet is a set of three natural numbers, $$a < b < c$$, for which,
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <msup>
-    <mn>a</mn>
-    <mn>2</mn>
-  </msup>
-  <mo>+</mo>
-  <msup>
-    <mn>b</mn>
-    <mn>2</mn>
-  </msup>
-  <mo>=</mo>
-  <msup>
-    <mn>c</mn>
-    <mn>2</mn>
-  </msup>
-</math>
+$$a^2 + b^2 = c^2$$
 
 For example, $$3^2 + 4^2 = 9 + 16 = 25 = 5^2$$
 
