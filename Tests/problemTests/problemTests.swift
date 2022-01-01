@@ -197,6 +197,9 @@ final class problemTests: XCTestCase {
     func testProblem45() throws {
         XCTAssertEqual(problem45(), 1533776805)
     }
+    func testProblem46() throws {
+        XCTAssertEqual(problem46(), 5777)
+    }
     func testProblem67() throws {
         XCTAssertEqual(problem67(), 7273)
     }

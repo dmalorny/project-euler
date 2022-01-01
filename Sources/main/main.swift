@@ -1,3 +1,3 @@
 @testable import ProjectEuler
 
-print(problem45())
+print(problem46())
