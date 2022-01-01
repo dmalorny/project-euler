@@ -56,6 +56,25 @@ func divisors(_ n: Int) -> [Int] {
     return divisors;
 }
 
+/// calculates all prime factors of the given integer
+func primeFactors(_ n: Int) -> [Int] {
+    var factor = 2
+    var rest = n
+    var result: Array<Int> = []
+    
+    while (factor<=rest) {
+        if (rest % factor == 0) {
+            result.append(factor)
+            while (rest % factor == 0) {
+                rest /= factor
+            }
+        }
+        factor += 1
+    }
+    
+    return result
+}
+
 func primes(to n: Int) -> [Int] {
     if n <= 5 {
         return [2, 3, 5].filter { $0 <= n }

@@ -49,6 +49,14 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(divisors(284), [1, 2, 4, 71, 142, 284])
     }
     
+    func testPrimeFactors() throws {
+        XCTAssertEqual(primeFactors(3), [3])
+        XCTAssertEqual(primeFactors(6), [2, 3])
+        XCTAssertEqual(primeFactors(8), [2])
+        XCTAssertEqual(primeFactors(13195), [5, 7, 13, 29])
+        XCTAssertEqual(primeFactors(600851475143), [71, 839, 1471, 6857])
+    }
+    
     func testPrimes() throws {
         XCTAssertEqual(primes(to: 3), [2, 3])
         XCTAssertEqual(primes(to: 13), [2, 3, 5, 7, 11, 13])

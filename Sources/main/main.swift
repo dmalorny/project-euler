@@ -1,3 +1,5 @@
 @testable import ProjectEuler
 
-print(problem46())
+print(problem47(n: 4))
+
+//print(primeFactors(13195))
