@@ -310,3 +310,11 @@ The first three consecutive numbers to have three distinct prime factors are:
     646 = 2  × 17 × 19
 
 Find the first four consecutive integers to have four distinct prime factors each. What is the first of these numbers?
+
+## Problem 48
+
+Self powers
+
+The series, $$1^1 + 2^2 + 3^3 + ... + 10^{10} = 10405071317$$.
+
+Find the last ten digits of the series, $$1^1 + 2^2 + 3^3 + ... + 1000^{1000}$$.
