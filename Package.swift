@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "project-euler",
+    name: "ProjectEuler",
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/attaswift/BigInt.git", from: "5.3.0"),
@@ -14,7 +14,7 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "euler",
+            name: "ProjectEuler",
             dependencies: [
                 "BigInt",
                 .product(name: "Algorithms", package: "swift-algorithms"),
@@ -25,11 +25,11 @@ let package = Package(
         ),
         .testTarget(
             name: "problemTests",
-            dependencies: ["euler"]
+            dependencies: ["ProjectEuler"]
         ),
         .executableTarget(
             name: "main",
-            dependencies: ["euler"]
+            dependencies: ["ProjectEuler"]
         ),
     ]
 )
