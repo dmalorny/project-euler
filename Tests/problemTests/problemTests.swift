@@ -213,6 +213,11 @@ final class problemTests: XCTestCase {
     func testProblem49() throws {
         XCTAssertEqual(problem49(), "296962999629")
     }
+    func testProblem50() throws {
+        XCTAssertEqual(problem50(max: 100), 41)
+        XCTAssertEqual(problem50(max: 1000), 953)
+        XCTAssertEqual(problem50(max: 1000000), 997651)
+    }
     func testProblem67() throws {
         XCTAssertEqual(problem67(), 7273)
     }
