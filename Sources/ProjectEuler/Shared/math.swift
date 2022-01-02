@@ -150,3 +150,31 @@ func binom(_ n: Int, _ r: Int) -> BigUInt? {
     guard r <= n else { return nil }
     return factorial(n) / (factorial(r) * factorial(n-r))
 }
+
+func gcd(_ a: Int, _ b: Int) -> Int {
+    if (a == b) {
+        return a
+    }
+    if (a < b) {
+        return gcd(b,a)
+    }
+    var (z,n,r) = (a,b,1)
+    while (r != 0) {
+        r = z % n
+        (z,n) = (n,r)
+    }
+    
+    return z
+}
+
+func lcm(_ a: Int, _ b: Int) -> Int {
+    return a*b/gcd(a,b)
+}
+
+func phi(_ n: Int) -> Int {
+    var prod = n
+    for d in primeFactors(n) {
+        prod = Int(Double(prod) * (1.0 - 1.0/Double(d)))
+    }
+    return prod
+}

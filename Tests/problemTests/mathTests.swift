@@ -121,4 +121,27 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(binom(23, 10), 1144066)
         XCTAssertEqual(binom(5,6), nil)
     }
+    
+    func testGcd() throws {
+        XCTAssertEqual(gcd(13,7), 1)
+        XCTAssertEqual(gcd(391,544), 17)
+    }
+    
+    func testLcm() throws {
+        XCTAssertEqual(lcm(13,7), 91)
+        XCTAssertEqual(lcm(391,544), 12512)
+    }
+    
+    func testPhi() throws {
+        XCTAssertEqual(phi(2), 1)
+        XCTAssertEqual(phi(3), 2)
+        XCTAssertEqual(phi(4), 2)
+        XCTAssertEqual(phi(5), 4)
+        XCTAssertEqual(phi(6), 2)
+        XCTAssertEqual(phi(7), 6)
+        XCTAssertEqual(phi(8), 4)
+        XCTAssertEqual(phi(9), 6)
+        XCTAssertEqual(phi(10), 4)
+        XCTAssertEqual(phi(900), 240)
+    }
 }
