@@ -13,27 +13,22 @@ func readKeyLogFile() -> [Int] {
 
 func check79(permutation: [Int], keylog: [Int]) -> Bool {
     
-    var i = 0
     for keylogEntry in keylog {
-        i += 1
         let key = digits(keylogEntry)
-        //print(permutation, key)
         var keyindex = 0
         
-        for p in permutation {
-            if (key[keyindex] == p) {
+        for n in permutation {
+            if (key[keyindex] == n) {
                 keyindex += 1
-            } else {
-                continue
             }
-            if (keyindex == 2) {
+            if (keyindex == 3) {
                 break
             }
         }
-        if (keyindex < 2) {
+        if (keyindex < 3) {
             return false
         }
-        //print(permutation, key, i)
+        //print(permutation, key)
     }
     
     return true
