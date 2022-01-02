@@ -5,7 +5,7 @@ func problem34() -> Int {
     for n in 3 ... 100000 {
         let digits = digits(n)
         
-        var factsum: BigInt = 0
+        var factsum: BigUInt = 0
         for d in digits {
             factsum += factorial(d)
             if(factsum > n) {

@@ -114,4 +114,11 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(isHexagonal(45), true)
         XCTAssertEqual(isHexagonal(48), false)
     }
+    
+    func testBinom() throws {
+        XCTAssertEqual(binom(5,5), 1)
+        XCTAssertEqual(binom(5,3), 10)
+        XCTAssertEqual(binom(23, 10), 1144066)
+        XCTAssertEqual(binom(5,6), nil)
+    }
 }

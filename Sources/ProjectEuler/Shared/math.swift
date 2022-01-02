@@ -32,11 +32,11 @@ extension Int {
 /// - Parameters:
 ///     - n: an integer to calculate the factoriel
 /// - Returns: the factorial n! of a given integer
-func factorial(_ n: Int) -> BigInt {
+func factorial(_ n: Int) -> BigUInt {
     if (n <= 1) {
         return 1
     }
-    return (1 ... n).map { BigInt($0) }.reduce(BigInt(1), *)
+    return (1 ... n).map { BigUInt($0) }.reduce(BigUInt(1), *)
 }
 
 /// returns a list of all divisors (incl. 1 and the number itself)
@@ -144,4 +144,9 @@ func isHexagonal(_ h: Int) -> Bool {
     }
     
     return false
+}
+
+func binom(_ n: Int, _ r: Int) -> BigUInt? {
+    guard r <= n else { return nil }
+    return factorial(n) / (factorial(r) * factorial(n-r))
 }

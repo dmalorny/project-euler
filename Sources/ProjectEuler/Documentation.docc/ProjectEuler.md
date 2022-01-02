@@ -10,6 +10,8 @@ Project Euler ist located at [https://projecteuler.net](https://projecteuler.net
 
 ### Problems
 
-- <doc:Problems01-25>
-- <doc:Problems26-50>
-- <doc:Problems51-75>
+- <doc:Problems001-025>
+- <doc:Problems026-050>
+- <doc:Problems051-075>
+- <doc:Problems076-100>
+
