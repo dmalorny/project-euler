@@ -218,6 +218,10 @@ final class problemTests: XCTestCase {
         XCTAssertEqual(problem50(max: 1000), 953)
         XCTAssertEqual(problem50(max: 1000000), 997651)
     }
+    func testProblem52() throws {
+        XCTAssertEqual(problem52(to: 2), 125874)
+        XCTAssertEqual(problem52(to: 6), 142857)
+    }
     func testProblem53() throws {
         XCTAssertEqual(problem53(maxN: 10, maxResult: 100), 7)
         XCTAssertEqual(problem53(maxN: 100, maxResult: 1000000), 4075)

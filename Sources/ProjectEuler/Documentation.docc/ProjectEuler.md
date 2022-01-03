@@ -6,6 +6,8 @@ Project Euler exists to encourage, challenge, and develop the skills and enjoyme
 
 Project Euler ist located at [https://projecteuler.net](https://projecteuler.net)
 
+For Swift documentation, see [https://www.swift.org](https://www.swift.org) 
+
 ## Topics
 
 ### Problems

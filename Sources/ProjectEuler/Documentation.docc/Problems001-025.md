@@ -1,4 +1,4 @@
-# Problems 01-25
+# Problems 1 - 25
 
 Problem descriptions of problems 1 to 25
 

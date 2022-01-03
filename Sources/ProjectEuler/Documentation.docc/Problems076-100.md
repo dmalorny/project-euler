@@ -1,4 +1,4 @@
-# Problem 76-100
+# Problems 76 - 100
 
 Problem descriptions of problems 76 to 100
 

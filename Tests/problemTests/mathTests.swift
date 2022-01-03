@@ -144,4 +144,10 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(phi(10), 4)
         XCTAssertEqual(phi(900), 240)
     }
+    
+    func testHasSameDigits() throws {
+        XCTAssertEqual(hasSameDigits(12345, 53241), true)
+        XCTAssertEqual(hasSameDigits(97531, 15379), true)
+        XCTAssertEqual(hasSameDigits(97531, 16379), false)
+    }
 }

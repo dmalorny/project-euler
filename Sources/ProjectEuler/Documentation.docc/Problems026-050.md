@@ -1,4 +1,4 @@
-# Problems 26-50
+# Problems 26 - 50
 
 Problem descriptions of problems 26 to 50
 

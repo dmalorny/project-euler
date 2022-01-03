@@ -178,3 +178,7 @@ func phi(_ n: Int) -> Int {
     }
     return prod
 }
+
+func hasSameDigits(_ a: Int, _ b: Int) -> Bool {
+    return Array(String(a)).sorted() == Array(String(b)).sorted()
+}
