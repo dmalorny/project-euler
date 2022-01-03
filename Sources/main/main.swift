@@ -1,3 +1,3 @@
 @testable import ProjectEuler
 
-print(problem52(to: 6))
+print(problem51(expectedSize: 8, primedigits: 6))
