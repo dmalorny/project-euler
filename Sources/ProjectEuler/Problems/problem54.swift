@@ -8,168 +8,129 @@ func cardValue(card: String) -> (value: Int, suit: Int) {
     return (value: valueDict[a[0]]!, suit: suitDict[a[1]]!)
 }
 
-func groupByValue(cards: [String]) -> [Int:Int] {
-    var group: [Int:Int] = [:]
+func groupByValueAndSuit(cards: [String]) -> ([Int:Int], [Int:Int]) {
+    var valuegroup: [Int:Int] = [:]
+    var suitgroup: [Int:Int] = [:]
     for card in cards {
         let cv = cardValue(card: card)
-        group[cv.value] = group[cv.value] != nil ? group[cv.value]! + 1 : 1
+        valuegroup[cv.value] = valuegroup[cv.value] != nil ? valuegroup[cv.value]! + 1 : 1
+        suitgroup[cv.suit] = suitgroup[cv.suit] != nil ? suitgroup[cv.suit]! + 1 : 1
     }
-    return group
+    return (valuegroup, suitgroup)
 }
 
-func groupBySuit(cards: [String]) -> [Int:Int] {
-    var group: [Int:Int] = [:]
-    for card in cards {
-        let cv = cardValue(card: card)
-        group[cv.suit] = group[cv.suit] != nil ? group[cv.suit]! + 1 : 1
-    }
-    return group
-}
-
-func isPair(valuegroups: [Int:Int]) -> Int? {
+func pair(valuegroups: [Int:Int]) -> Int? {
     for group in valuegroups {
         if (group.value == 2) {
-            return group.key
+            return 100 + group.key
         }
     }
     return nil
 }
 
-func isThreeOfAKind(valuegroups: [Int:Int]) -> Int? {
+func threeOfAKind(valuegroups: [Int:Int]) -> Int? {
     for group in valuegroups {
         if (group.value == 3) {
-            return group.key
+            return 300 + group.key
         }
     }
     return nil
 }
 
-func isFourOfAKind(valuegroups: [Int:Int]) -> Int? {
+func fourOfAKind(valuegroups: [Int:Int]) -> Int? {
     for group in valuegroups {
         if (group.value == 4) {
-            return group.key
+            return 700 + group.key
         }
     }
     return nil
 }
 
-func isTwoPairs(valuegroups: [Int:Int]) -> Int? {
+func twoPairs(valuegroups: [Int:Int]) -> Int? {
     var count = 0
-    var higestPair = 0
+    var highestPair = 0
     for group in valuegroups {
         if (group.value == 2) {
             count += 1
-            if (group.key>higestPair) {
-                higestPair = group.key
+            if (group.key>highestPair) {
+                highestPair = group.key
             }
         }
     }
-    return count == 2 ? higestPair : nil
+    return count == 2 ? 200 + highestPair : nil
 }
 
-func isFullHouse(valuegroups: [Int:Int]) -> Int? {
-    let pair = isPair(valuegroups: valuegroups)
-    let triple = isThreeOfAKind(valuegroups: valuegroups)
-    return (pair != nil && triple != nil) ? triple : nil
+func fullHouse(valuegroups: [Int:Int]) -> Int? {
+    let pair = pair(valuegroups: valuegroups)
+    let triple = threeOfAKind(valuegroups: valuegroups)
+    return (pair != nil && triple != nil) ? 600 + triple! : nil
 }
 
-func isStraight(valuegroups: [Int:Int]) -> Int? {
+func straight(valuegroups: [Int:Int]) -> Int? {
     let keys = valuegroups.keys.sorted()
     
     if (keys.count == 5 && keys[4]-keys[0] == 4) {
-        return keys[4]
+        return 400 + keys[4]
     }
     return nil
 }
 
-func isFlush(suitgroups: [Int:Int]) -> Int? {
+func flush(suitgroups: [Int:Int]) -> Int? {
     let keys = suitgroups.keys.sorted()
     
     if (keys.count == 1) {
-        return keys[0]
+        return 500 + keys[0]
     }
     return nil
 }
 
-func isStraightFlush(valuegroups: [Int:Int], suitgroups: [Int:Int]) -> Int? {
-    let straight = isStraight(valuegroups: valuegroups)
-    let flush = isFlush(suitgroups: suitgroups)
-    return (straight != nil && flush != nil) ? straight : nil
+func straightFlush(valuegroups: [Int:Int], suitgroups: [Int:Int]) -> Int? {
+    let straight = straight(valuegroups: valuegroups)
+    let flush = flush(suitgroups: suitgroups)
+    return (straight != nil && flush != nil) ? 800 + straight! : nil
 }
 
-func isRoyalFlush(valuegroups: [Int:Int], suitgroups: [Int:Int]) -> Int? {
-    let straight = isStraight(valuegroups: valuegroups)
-    let flush = isFlush(suitgroups: suitgroups)
-    return (straight == 14 && flush != nil) ? flush : nil
+func royalFlush(valuegroups: [Int:Int], suitgroups: [Int:Int]) -> Int? {
+    let straight = straight(valuegroups: valuegroups)
+    let flush = flush(suitgroups: suitgroups)
+    return (straight == 14 && flush != nil) ? 900 + flush! : nil
 }
 
 
-func rankHand(hand: String) -> (rank: Int, highest: Int, cardvalues: [Int]) {
+func rankHand(hand: String) -> (rank: Int, cardvalues: [Int]) {
     let cards = hand.split(separator: " ").sorted().map({String($0)})
-    let valuegroups = groupByValue(cards: cards)
-    let suitgroups = groupBySuit(cards: cards)
+    let (valuegroups, suitgroups) = groupByValueAndSuit(cards: cards)
     let cardValues = cards.map({cardValue(card: $0).value}).sorted(by: >)
     
-    let isPair = isPair(valuegroups: valuegroups)
-    let isThreeOfAKind = isThreeOfAKind(valuegroups: valuegroups)
-    let isFourOfAKind = isFourOfAKind(valuegroups: valuegroups)
-    let isTwoPairs = isTwoPairs(valuegroups: valuegroups)
-    let isFullHouse = isFullHouse(valuegroups: valuegroups)
-    let isStraight = isStraight(valuegroups: valuegroups)
-    let isFlush = isFlush(suitgroups: suitgroups)
-    let isStraightFlush = isStraightFlush(valuegroups: valuegroups, suitgroups: suitgroups)
-    let isRoyalFlush = isRoyalFlush(valuegroups: valuegroups, suitgroups: suitgroups)
+    let pair: Int? = pair(valuegroups: valuegroups)
+    let threeOfAKind: Int? = threeOfAKind(valuegroups: valuegroups)
+    let fourOfAKind: Int? = fourOfAKind(valuegroups: valuegroups)
+    let twoPairs: Int? = twoPairs(valuegroups: valuegroups)
+    let fullHouse: Int? = fullHouse(valuegroups: valuegroups)
+    let straight: Int? = straight(valuegroups: valuegroups)
+    let flush: Int? = flush(suitgroups: suitgroups)
+    let straightFlush: Int? = straightFlush(valuegroups: valuegroups, suitgroups: suitgroups)
+    let royalFlush: Int? = royalFlush(valuegroups: valuegroups, suitgroups: suitgroups)
 
-    if (isRoyalFlush != nil) {
-        return (rank: 9, highest: isRoyalFlush!, cardvalues: cardValues)
-    }
-    if (isStraightFlush != nil) {
-        return (rank: 8, highest: isStraightFlush!, cardvalues: cardValues)
-    }
-    if (isFourOfAKind != nil) {
-        return (rank: 7, highest: isFourOfAKind!, cardvalues: cardValues)
-    }
-    if (isFullHouse != nil) {
-        return (rank: 6, highest: isFullHouse!, cardvalues: cardValues)
-    }
-    if (isFlush != nil) {
-        return (rank: 5, highest: isFlush!, cardvalues: cardValues)
-    }
-    if (isStraight != nil) {
-        return (rank: 4, highest: isStraight!, cardvalues: cardValues)
-    }
-    if (isThreeOfAKind != nil) {
-        return (rank: 3, highest: isThreeOfAKind!, cardvalues: cardValues)
-    }
-    if (isTwoPairs != nil) {
-        return (rank: 2, highest: isTwoPairs!, cardvalues: cardValues)
-    }
-    if (isPair != nil) {
-        return (rank: 1, highest: isPair!, cardvalues: cardValues)
-    }
+    let lowerRank = straight ?? threeOfAKind ?? twoPairs ?? pair ?? 0
+    let rank = royalFlush ?? straightFlush ?? fourOfAKind ?? fullHouse ?? flush ?? lowerRank
     
-    return (rank: 0, highest: 0, cardvalues: cardValues)
+    return (rank: rank, cardvalues: cardValues)
 }
 
 func problem54(player1: String, player2: String) -> Bool {
     let hand1 = rankHand(hand: player1)
     let hand2 = rankHand(hand: player2)
    
-    print("1: \(hand1.rank),\(hand1.highest),\(hand1.cardvalues), 2: \(hand2.rank),\(hand2.highest),\(hand2.cardvalues)")
-    
+    //print("1: \(player1)\t\(hand1.rank)\t\(hand1.cardvalues)\t\t2: \(player2)\t\(hand2.rank)\t\(hand2.cardvalues)")
+
     if (hand1.rank > hand2.rank) {
         return true // player 1 wins
     } else if (hand1.rank < hand2.rank) {
         return false // player 2 wins
     }
-    
-    if (hand1.highest > hand2.highest) {
-        return true // player 1 wins
-    } else if (hand1.highest < hand2.highest) {
-        return false // player 2 wins
-    }
 
-    // compare values
+    // compare card values
     for i in 0 ... 4 {
         if (hand1.cardvalues[i] > hand2.cardvalues[i]) {
             return true // Player 1 wins
