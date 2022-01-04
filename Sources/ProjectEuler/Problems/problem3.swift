@@ -1,17 +1,21 @@
-func factor(x: Int, f: Int) -> Int {
-    if (x % f == 0) {
-        print("factor \(f)")
-        return factor(x: x/f, f: f)
-    }
+class problem3 {
+    init() {}
     
-    if (f<x) {
-        return factor(x: x, f: f+1)
-    } else {
-        print("largest prime factor: \(f)")
-        return f
+    func factor(x: Int, f: Int) -> Int {
+        if (x % f == 0) {
+            print("factor \(f)")
+            return factor(x: x/f, f: f)
+        }
+        
+        if (f<x) {
+            return factor(x: x, f: f+1)
+        } else {
+            print("largest prime factor: \(f)")
+            return f
+        }
     }
-}
 
-func problem3(n: Int) -> Int {
-    return factor(x: n, f: 2)
+    func run(n: Int) -> Int {
+        return factor(x: n, f: 2)
+    }
 }

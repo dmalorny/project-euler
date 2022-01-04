@@ -1,33 +1,6 @@
-func problem11(grid: [[Int]]) -> Int {
-    var max = 0;
+class problem11 {
+    init() {}
     
-    for x in 0 ... 19 {
-        for y in 0 ... 19 {
-            var ph=0
-            var pv=0
-            var pd1=0
-            var pd2=0
-            if (x<=16) {
-                ph = grid[x][y] * grid[x+1][y] * grid[x+2][y] * grid[x+3][y];
-            }
-            if (y<=16) {
-                pv = grid[x][y] * grid[x][y+1] * grid[x][y+2] * grid[x][y+3];
-            }
-            if (x<=16 && y<=16) {
-                pd1 = grid[x][y] * grid[x+1][y+1] * grid[x+2][y+2] * grid[x+3][y+3];
-            }
-            if (x>=3 && y<=16) {
-                pd2 = grid[x][y] * grid[x-1][y+1] * grid[x-2][y+2] * grid[x-3][y+3];
-            }
-            max = [max, ph, pv, pd1, pd2].max()!
-        }
-    }
-    
-    print("max = \(max)")
-    return max
-}
-
-func problem11() -> Int {
     let grid: [[Int]] = [
         [08,02,22,97,38,15,00,40,00,75,04,05,07,78,52,12,50,77,91,08],
         [49,49,99,40,17,81,18,57,60,87,17,40,98,43,69,48,04,56,62,00],
@@ -50,6 +23,33 @@ func problem11() -> Int {
         [20,73,35,29,78,31,90,01,74,31,49,71,48,86,81,16,23,57,05,54],
         [01,70,54,71,83,51,54,69,16,92,33,48,61,43,52,01,89,19,67,48]
     ]
-    
-    return problem11(grid: grid)
+
+    func run() -> Int {
+        var max = 0;
+        
+        for x in 0 ... 19 {
+            for y in 0 ... 19 {
+                var ph=0
+                var pv=0
+                var pd1=0
+                var pd2=0
+                if (x<=16) {
+                    ph = grid[x][y] * grid[x+1][y] * grid[x+2][y] * grid[x+3][y];
+                }
+                if (y<=16) {
+                    pv = grid[x][y] * grid[x][y+1] * grid[x][y+2] * grid[x][y+3];
+                }
+                if (x<=16 && y<=16) {
+                    pd1 = grid[x][y] * grid[x+1][y+1] * grid[x+2][y+2] * grid[x+3][y+3];
+                }
+                if (x>=3 && y<=16) {
+                    pd2 = grid[x][y] * grid[x-1][y+1] * grid[x-2][y+2] * grid[x-3][y+3];
+                }
+                max = [max, ph, pv, pd1, pd2].max()!
+            }
+        }
+        
+        print("max = \(max)")
+        return max
+    }
 }

@@ -1,17 +1,6 @@
-func problem13(numbers: [String]) -> Int {
-    var sum: UInt = 0;
+class problem13 {
+    init() {}
     
-    for str in numbers {
-    	sum += UInt(str.left(12))!
-    }
-    
-    let start = String(sum).left(10)
-    
-    print("sum = \(start)")
-    return Int(start)!
-}
-
-func problem13() -> Int {
     let numbers: [String] = [
         "37107287533902102798797998220837590246510135740250",
         "46376937677490009712648124896970078050417018260538",
@@ -115,5 +104,16 @@ func problem13() -> Int {
         "53503534226472524250874054075591789781264330331690"
     ]
     
-    return problem13(numbers: numbers);
+    func run() -> Int {
+        var sum: UInt = 0;
+        
+        for str in numbers {
+            sum += UInt(str.left(12))!
+        }
+        
+        let start = String(sum).left(10)
+        
+        print("sum = \(start)")
+        return Int(start)!
+    }
 }
