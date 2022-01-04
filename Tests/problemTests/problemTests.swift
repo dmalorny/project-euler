@@ -246,6 +246,10 @@ final class problemTests: XCTestCase {
         XCTAssertEqual(problem55().isLychrel(4994), true)
         XCTAssertEqual(problem55().run(), 249)
     }
+    func testProblem56() throws {
+        XCTAssertEqual(problem56().run(n: 9), 45)
+        XCTAssertEqual(problem56().run(n: 99), 972)
+    }
     func testProblem67() throws {
         XCTAssertEqual(problem67().run(), 7273)
     }
