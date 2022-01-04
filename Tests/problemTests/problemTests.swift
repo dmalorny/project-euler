@@ -239,6 +239,13 @@ final class problemTests: XCTestCase {
         XCTAssertEqual(problem54().run(player1: "2H 2D 4C 4D 4S", player2: "3C 3D 3S 9S 9D"), true)
         XCTAssertEqual(problem54().run(), 376)
     }
+    func testProblem55() throws {
+        XCTAssertEqual(problem55().isLychrel(47), false)
+        XCTAssertEqual(problem55().isLychrel(349), false)
+        XCTAssertEqual(problem55().isLychrel(196), true)
+        XCTAssertEqual(problem55().isLychrel(4994), true)
+        XCTAssertEqual(problem55().run(), 249)
+    }
     func testProblem67() throws {
         XCTAssertEqual(problem67().run(), 7273)
     }
