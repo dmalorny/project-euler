@@ -231,6 +231,14 @@ final class problemTests: XCTestCase {
         XCTAssertEqual(problem53(maxN: 10, maxResult: 100), 7)
         XCTAssertEqual(problem53(maxN: 100, maxResult: 1000000), 4075)
     }
+    func testProblem54() throws {
+        XCTAssertEqual(problem54(player1: "5H 5C 6S 7S KD", player2: "2C 3S 8S 8D TD"), false)
+        XCTAssertEqual(problem54(player1: "5D 8C 9S JS AC", player2: "2C 5C 7D 8S QH"), true)
+        XCTAssertEqual(problem54(player1: "2D 9C AS AH AC", player2: "3D 6D 7D TD QD"), false)
+        XCTAssertEqual(problem54(player1: "4D 6S 9H QH QC", player2: "3D 6D 7H QD QS"), true)
+        XCTAssertEqual(problem54(player1: "2H 2D 4C 4D 4S", player2: "3C 3D 3S 9S 9D"), true)
+        XCTAssertEqual(problem54(), 376)
+    }
     func testProblem67() throws {
         XCTAssertEqual(problem67(), 7273)
     }
