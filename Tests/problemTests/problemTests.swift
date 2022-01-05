@@ -318,6 +318,10 @@ final class problemTests: XCTestCase {
         XCTAssertEqual(p.run(maxRatio: 0.5), 11)
         XCTAssertEqual(p.run(maxRatio: 0.1), 26241)
     }
+    func testProblem59() throws {
+        let p = problem59()
+        XCTAssertEqual(p.run(), 129448)
+    }
     func testProblem67() throws {
         let p = problem67()
         XCTAssertEqual(p.run(), 7273)

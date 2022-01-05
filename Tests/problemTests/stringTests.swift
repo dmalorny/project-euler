@@ -30,4 +30,11 @@ final class stringTests: XCTestCase {
         XCTAssertEqual("COLIN".wordValue, 53)
         XCTAssertEqual("SKY".wordValue, 55)
     }
+    
+    func testChrOrd() throws {
+        XCTAssertEqual(chr(65), "A")
+        XCTAssertEqual(chr(42), "*")
+        XCTAssertEqual(ord("A"), 65)
+        XCTAssertEqual(ord("*"), 42)
+    }
 }

@@ -43,3 +43,11 @@ extension String {
     }
     
 }
+
+func chr(_ b: Int) -> Character {
+    return Character(UnicodeScalar(b)!)
+}
+
+func ord(_ c: Character) -> Int {
+    return Int(c.asciiValue!)
+}

@@ -1,3 +1,4 @@
 @testable import ProjectEuler
 
-print(problem58().run(maxRatio: 0.5))
+let problem = problem59()
+print(problem.run())
