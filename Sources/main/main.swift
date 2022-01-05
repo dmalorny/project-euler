@@ -1,3 +1,3 @@
 @testable import ProjectEuler
 
-print(problem56().run(n: 99))
+print(problem57().run(max: 1000))
