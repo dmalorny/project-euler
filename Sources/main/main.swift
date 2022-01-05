@@ -1,3 +1,3 @@
 @testable import ProjectEuler
 
-print(problem57().run(max: 1000))
+print(problem58().run(maxRatio: 0.5))

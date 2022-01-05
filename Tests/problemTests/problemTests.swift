@@ -255,6 +255,10 @@ final class problemTests: XCTestCase {
         XCTAssertEqual(problem57().run(max: 100), 15)
         XCTAssertEqual(problem57().run(max: 1000), 153)
     }
+    func testProblem58() throws {
+        XCTAssertEqual(problem58().run(maxRatio: 0.5), 11)
+        XCTAssertEqual(problem58().run(maxRatio: 0.1), 26241)
+    }
     func testProblem67() throws {
         XCTAssertEqual(problem67().run(), 7273)
     }
