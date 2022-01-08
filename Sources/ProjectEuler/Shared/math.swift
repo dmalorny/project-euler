@@ -105,6 +105,10 @@ func triangle(_ n: Int) -> Int {
     return n*(n + 1)/2
 }
 
+func square(_ n: Int) -> Int {
+    return n*n
+}
+
 func pentagonal(_ n: Int) -> Int {
     return n*(3*n - 1)/2
 }
@@ -113,12 +117,31 @@ func hexagonal(_ n: Int) -> Int {
     return n*(2*n - 1)
 }
 
+func heptagonal(_ n: Int) -> Int {
+    return n*(5*n - 3)/2
+}
+
+func octagonal(_ n: Int) -> Int {
+    return n*(3*n - 2)
+}
+
 func isTriangle(_ t: Int) -> Bool {
     let d = Double(8*t + 1)
     
     if (d > 0) {
         let candidate = Int((-1.0 + d.squareRoot()) / 2.0)
         return (triangle(candidate) == t)
+    }
+    
+    return false
+}
+
+func isSquare(_ s: Int) -> Bool {
+    let d = Double(s)
+    
+    if (d > 0) {
+        let candidate = Int(d.squareRoot())
+        return (square(candidate) == s)
     }
     
     return false
@@ -141,6 +164,28 @@ func isHexagonal(_ h: Int) -> Bool {
     if (d > 0) {
         let candidate = Int((1.0 + d.squareRoot()) / 4.0)
         return (hexagonal(candidate) == h)
+    }
+    
+    return false
+}
+
+func isHeptagonal(_ h: Int) -> Bool {
+    let d = Double(40*h + 9)
+    
+    if (d > 0) {
+        let candidate = Int((3.0 + d.squareRoot()) / 10.0)
+        return (heptagonal(candidate) == h)
+    }
+    
+    return false
+}
+
+func isOctagonal(_ o: Int) -> Bool {
+    let d = Double(3*o + 1)
+    
+    if (d > 0) {
+        let candidate = Int((1.0 + d.squareRoot()) / 3.0)
+        return (octagonal(candidate) == o)
     }
     
     return false

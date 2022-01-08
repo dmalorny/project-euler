@@ -77,6 +77,13 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(triangle(5), 15)
     }
     
+    func testSquare() throws {
+        XCTAssertEqual(square(1), 1)
+        XCTAssertEqual(square(2), 4)
+        XCTAssertEqual(square(3), 9)
+        XCTAssertEqual(square(5), 25)
+    }
+    
     func testPentagonal() throws {
         XCTAssertEqual(pentagonal(1), 1)
         XCTAssertEqual(pentagonal(2), 5)
@@ -84,11 +91,18 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(pentagonal(10), 145)
     }
     
-    func testHexagonal() throws {
-        XCTAssertEqual(hexagonal(1), 1)
-        XCTAssertEqual(hexagonal(2), 6)
-        XCTAssertEqual(hexagonal(3), 15)
-        XCTAssertEqual(hexagonal(5), 45)
+    func testHeptagonal() throws {
+        XCTAssertEqual(heptagonal(1), 1)
+        XCTAssertEqual(heptagonal(2), 7)
+        XCTAssertEqual(heptagonal(3), 18)
+        XCTAssertEqual(heptagonal(5), 55)
+    }
+    
+    func testOctagonal() throws {
+        XCTAssertEqual(octagonal(1), 1)
+        XCTAssertEqual(octagonal(2), 8)
+        XCTAssertEqual(octagonal(3), 21)
+        XCTAssertEqual(octagonal(5), 65)
     }
     
     func testIsTriangle() throws {
@@ -97,6 +111,14 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(isTriangle(6), true)
         XCTAssertEqual(isTriangle(15), true)
         XCTAssertEqual(isTriangle(12), false)
+    }
+    
+    func testIsSquare() throws {
+        XCTAssertEqual(isSquare(1), true)
+        XCTAssertEqual(isSquare(4), true)
+        XCTAssertEqual(isSquare(9), true)
+        XCTAssertEqual(isSquare(25), true)
+        XCTAssertEqual(isSquare(26), false)
     }
     
     func testIsPentagonal() throws {
@@ -113,6 +135,22 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(isHexagonal(15), true)
         XCTAssertEqual(isHexagonal(45), true)
         XCTAssertEqual(isHexagonal(48), false)
+    }
+    
+    func testIsHeptagonal() throws {
+        XCTAssertEqual(isHeptagonal(1), true)
+        XCTAssertEqual(isHeptagonal(7), true)
+        XCTAssertEqual(isHeptagonal(18), true)
+        XCTAssertEqual(isHeptagonal(55), true)
+        XCTAssertEqual(isHeptagonal(48), false)
+    }
+    
+    func testIsOctagonal() throws {
+        XCTAssertEqual(isOctagonal(1), true)
+        XCTAssertEqual(isOctagonal(8), true)
+        XCTAssertEqual(isOctagonal(21), true)
+        XCTAssertEqual(isOctagonal(65), true)
+        XCTAssertEqual(isOctagonal(48), false)
     }
     
     func testBinom() throws {
