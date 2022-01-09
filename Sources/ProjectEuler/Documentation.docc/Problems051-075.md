@@ -185,6 +185,14 @@ The ordered set of three 4-digit numbers: 8128, 2882, 8281, has three interestin
 
 Find the sum of the only ordered set of six cyclic 4-digit numbers for which each polygonal type: triangle, square, pentagonal, hexagonal, heptagonal, and octagonal, is represented by a different number in the set.
 
+## Problem 62
+
+Cubic permutations
+
+The cube, 41063625 $$(345^3)$$, can be permuted to produce two other cubes: 56623104 $$(384^3)$$ and 66430125 $$(405^3)$$. In fact, 41063625 is the smallest cube which has exactly three permutations of its digits which are also cube.
+
+Find the smallest cube for which exactly five permutations of its digits are cube.
+
 ## Problem 67
 
 Maximum path sum II
