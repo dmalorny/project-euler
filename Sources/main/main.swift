@@ -1,4 +1,4 @@
 @testable import ProjectEuler
 
-let problem = problem62()
-print(problem.run(n: 5))
+let problem = problem63()
+print(problem.run())
