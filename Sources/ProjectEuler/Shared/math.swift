@@ -227,3 +227,13 @@ func phi(_ n: Int) -> Int {
 func hasSameDigits(_ a: Int, _ b: Int) -> Bool {
     return Array(String(a)).sorted() == Array(String(b)).sorted()
 }
+
+func digitSum(_ n: BigUInt) -> Int {
+    var sum = 0;
+    
+    for c in Array(String(n)) {
+        sum += Int(String(c))!
+    }
+    
+    return sum
+}
