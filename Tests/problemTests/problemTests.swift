@@ -375,4 +375,10 @@ final class problemTests: XCTestCase {
         let p = problem89()
         XCTAssertEqual(p.run(), 743)
     }
+    func testProblem92() throws {
+        let p = problem92()
+        XCTAssertEqual(p.run(max: 99), 80)
+        XCTAssertEqual(p.run(max: 9999), 8558)
+        //XCTAssertEqual(p.run(max: 9999999), 8581146)
+    }
 }
