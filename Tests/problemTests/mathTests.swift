@@ -193,5 +193,8 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(digitSum(1), 1)
         XCTAssertEqual(digitSum(123), 6)
         XCTAssertEqual(digitSum(1457), 17)
+        XCTAssertEqual(digitSum(1457, complete: true), 8)
+        XCTAssertEqual(digitSum(99999999999), 99)
+        XCTAssertEqual(digitSum(99999999999, complete: true), 9)
     }
 }
