@@ -241,3 +241,73 @@ func digitSum(_ n: BigUInt, complete: Bool = false) -> Int {
     
     return sum
 }
+
+func toRoman(_ n: Int) -> String {
+    var str = ""
+    var r = n
+    
+    while (r >= 1000) {
+        str += "M"
+        r -= 1000
+    }
+    while (r >= 100) {
+        str += "C"
+        r -= 100
+    }
+    while (r >= 10) {
+        str += "X"
+        r -= 10
+    }
+    while (r >= 1) {
+        str += "I"
+        r -= 1
+    }
+    
+    str = str.replacingOccurrences(of: "CCCCCCCCC", with: "CM")
+    str = str.replacingOccurrences(of: "CCCCC", with: "D")
+    str = str.replacingOccurrences(of: "CCCC", with: "CD")
+    
+    str = str.replacingOccurrences(of: "XXXXXXXXX", with: "XC")
+    str = str.replacingOccurrences(of: "XXXXX", with: "L")
+    str = str.replacingOccurrences(of: "XXXX", with: "XL")
+    
+    str = str.replacingOccurrences(of: "IIIIIIIII", with: "IX")
+    str = str.replacingOccurrences(of: "IIIII", with: "V")
+    str = str.replacingOccurrences(of: "IIII", with: "IV")
+    
+    return str
+}
+
+func fromRoman(_ s: String) -> Int {
+    var str = s
+    var r = 0
+    
+    str = str.replacingOccurrences(of: "IV", with: "IIII")
+    str = str.replacingOccurrences(of: "V", with: "IIIII")
+    str = str.replacingOccurrences(of: "IX", with: "IIIIIIIII")
+    
+    str = str.replacingOccurrences(of: "XL", with: "XXXX")
+    str = str.replacingOccurrences(of: "L", with: "XXXXX")
+    str = str.replacingOccurrences(of: "XC", with: "XXXXXXXXX")
+    
+    str = str.replacingOccurrences(of: "CD", with: "CCCC")
+    str = str.replacingOccurrences(of: "D", with: "CCCCC")
+    str = str.replacingOccurrences(of: "CM", with: "CCCCCCCCC")
+    
+    for c in Array(str) {
+        if (c == "M") {
+            r += 1000
+        }
+        if (c == "C") {
+            r += 100
+        }
+        if (c == "X") {
+            r += 10
+        }
+        if (c == "I") {
+            r += 1
+        }
+    }
+    
+    return r
+}
