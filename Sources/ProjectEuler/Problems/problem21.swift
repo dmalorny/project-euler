@@ -1,5 +1,4 @@
 class problem21 {
-    init() {}
     
     func is_amicable(_ n: Int) -> Bool {
         let a = array_sum(divisors(n))-n

@@ -1,5 +1,4 @@
 class problem45 {
-    init() {}
     
     func run() -> Int {
         var i = 285;

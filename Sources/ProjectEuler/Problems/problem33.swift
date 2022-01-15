@@ -1,5 +1,4 @@
 class problem33 {
-    init() {}
     
     func run() -> Int {
         var (res_n, res_d) = (1,1)

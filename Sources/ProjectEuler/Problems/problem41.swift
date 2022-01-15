@@ -1,5 +1,4 @@
 class problem41 {
-    init() {}
     
     func check(n: Int) -> Int {
         let set = Array(stride(from: n, to: 0, by: -1))

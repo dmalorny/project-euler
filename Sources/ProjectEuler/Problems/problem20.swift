@@ -1,7 +1,6 @@
 import BigInt
 
 class problem20 {
-    init() {}
     
     func fact(_ n: BigInt) -> BigInt {
         if (n == 1) {

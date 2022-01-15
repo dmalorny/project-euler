@@ -1,5 +1,4 @@
 class problem47 {
-    init() {}
     
     func run(n: Int) -> Int {
         var count = 0

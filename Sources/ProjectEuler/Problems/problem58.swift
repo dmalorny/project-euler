@@ -1,5 +1,4 @@
 class problem58 {
-    init() {}
     
     func run(maxRatio: Double) -> Int {
         var (layer, n, step) = (0, 1, 0)

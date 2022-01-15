@@ -1,5 +1,4 @@
 class problem49 {
-    init() {}
     
     func run() -> String {
         let four_digit_primes = primes(to: 9999).filter { $0 >= 1000 }

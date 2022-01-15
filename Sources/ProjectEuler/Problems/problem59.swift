@@ -1,7 +1,6 @@
 import Foundation
 
 class problem59 {
-    init() {}
     
     func readFile() -> [Int] {
         let url = Bundle.module.url(forResource: "Resources/cipher", withExtension: "txt")!

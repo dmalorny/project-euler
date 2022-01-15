@@ -1,7 +1,6 @@
 class problem92 {
     
     var resultSet: Set<Int> = []
-        
     
     func chainArrivesAt89(_ n: Int, _ acc: [Int] = []) -> Bool {
         if (n == 89) {

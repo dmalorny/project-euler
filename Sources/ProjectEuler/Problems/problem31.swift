@@ -1,5 +1,4 @@
 class problem31 {
-    init() {}
     
     func sum(p200: Int, p100: Int, p50: Int, p20: Int, p10: Int, p5: Int, p2: Int, p1: Int) -> Int {
         return p200*200 + p100*100 + p50*50 + p20*20 + p10*10 + p5*5 + p2*2 + p1*1

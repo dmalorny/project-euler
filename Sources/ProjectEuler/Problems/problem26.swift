@@ -1,5 +1,4 @@
 class problem26 {
-    init() {}
     
     func cycle_length(_ nominator: Int, _ denominator: Int) -> Int {
         var n = nominator

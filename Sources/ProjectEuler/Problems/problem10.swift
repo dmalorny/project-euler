@@ -1,5 +1,4 @@
 class problem10 {
-    init() {}
 
     func run(max: Int) -> Int {
         let primes = primes(to: max)

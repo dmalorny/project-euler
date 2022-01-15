@@ -1,7 +1,6 @@
 import BigInt
 
 class problem27 {
-    init() {}
     
     func calculate(a: Int, b: Int, n: Int) -> Int {
         return n * (n + a) + b

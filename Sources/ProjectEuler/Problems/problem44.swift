@@ -1,5 +1,4 @@
 class problem44 {
-    init() {}
     
     func run() -> Int {
         var k = 1;

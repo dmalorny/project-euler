@@ -1,7 +1,6 @@
 import Foundation
 
 class problem67 {
-    init() {}
     
     func readFile() -> String {
         let url = Bundle.module.url(forResource: "Resources/triangle", withExtension: "txt")!

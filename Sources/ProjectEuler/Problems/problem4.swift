@@ -1,5 +1,4 @@
 class problem4 {
-    init() {}
     
     func run(lo: Int, hi: Int) -> Int{
         var max = 0

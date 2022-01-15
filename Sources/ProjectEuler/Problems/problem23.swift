@@ -1,5 +1,4 @@
 class problem23 {
-    init() {}
     
     func is_abudant(_ n: Int) -> Bool {
         let a = array_sum(divisors(n))-n

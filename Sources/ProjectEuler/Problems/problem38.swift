@@ -1,5 +1,4 @@
 class problem38 {
-    init() {}
     
     func concatenated_product(s: Int, n: Int) -> String{
         var str = ""

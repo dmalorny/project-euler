@@ -1,5 +1,4 @@
 class problem14 {
-    init() {}
     
     var collatz = [Int: Int]()
 

@@ -1,7 +1,6 @@
 import BigInt
 
 class problem62 {
-    init() {}
     
     func digitClass(_ a: Int) -> String {
         return String(Array(String(BigUInt(a).power(3))).sorted())

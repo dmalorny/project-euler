@@ -1,5 +1,4 @@
 class problem30 {
-    init() {}
     
     func powersum(n: Int, p: Int) -> Int {
         var sum = 0

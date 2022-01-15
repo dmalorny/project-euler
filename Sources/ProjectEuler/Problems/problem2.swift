@@ -1,5 +1,4 @@
 class problem2 {
-    init() {}
     
     func run(max: Int) -> Int {
         var sum = 0

@@ -1,7 +1,6 @@
 import BigInt
 
 class problem29 {
-    init() {}
     
     func run(_ limit: Int) -> Int {
         var results: Set<BigInt> = []

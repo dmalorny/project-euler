@@ -1,5 +1,4 @@
 class problem16 {
-    init() {}
     
     func double(_ arr: inout [Int]) {
         var overflow = 0

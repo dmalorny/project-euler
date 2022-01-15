@@ -1,5 +1,4 @@
 class problem19 {
-    init() {}
     
     func is_leap_year(year: Int) -> Bool {
         if (year % 400 == 0) {

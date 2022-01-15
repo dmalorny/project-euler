@@ -1,7 +1,6 @@
 import BigInt
 
 class problem37 {
-    init() {}
     
     func truncate_left(_ n: Int, _ c: Int) -> Int {
         let str = String(n)

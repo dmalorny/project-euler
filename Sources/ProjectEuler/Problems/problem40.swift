@@ -1,5 +1,4 @@
 class problem40 {
-    init() {}
     
     func number_of_digits(_ i: Int) -> Int {
         return String(i).count

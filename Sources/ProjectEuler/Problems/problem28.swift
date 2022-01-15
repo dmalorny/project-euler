@@ -1,5 +1,4 @@
 class problem28 {
-    init() {}
     
     func run(_ max: Int) -> Int {
         var (sum, n, step) = (1, 1, 2)

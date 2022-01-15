@@ -1,5 +1,4 @@
 class problem3 {
-    init() {}
     
     func factor(x: Int, f: Int) -> Int {
         if (x % f == 0) {

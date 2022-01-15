@@ -1,5 +1,4 @@
 class problem1 {
-    init() {}
     
     func is_multiple_of_3_or_5(x: Int) -> Bool {
         return x % 3 == 0 || x % 5 == 0

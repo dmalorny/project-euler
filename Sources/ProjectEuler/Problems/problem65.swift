@@ -1,7 +1,6 @@
 import BigInt
 
 class problem65 {
-    init() {}
     
     var dict: [Int:(BigUInt, BigUInt)] = [:]
     

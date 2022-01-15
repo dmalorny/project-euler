@@ -1,7 +1,6 @@
 import BigInt
 
 class problem35 {
-    init() {}
     
     func rotate(_ n: Int, _ c: Int) -> Int {
         let str = String(n)

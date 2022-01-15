@@ -1,5 +1,4 @@
 class problem18 {
-    init() {}
     
     func maxsum(arr: [[Int]], row: Int, column: Int) -> Int {
         if (row == arr.count-1) {

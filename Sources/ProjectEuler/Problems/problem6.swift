@@ -1,5 +1,4 @@
 class problem6 {
-    init() {}
 
     func sum_of_squares(n: Int) -> Int {
         var sum = 0

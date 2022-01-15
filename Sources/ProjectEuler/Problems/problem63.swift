@@ -1,8 +1,6 @@
 import BigInt
 class problem63 {
     
-    init() {}
-    
     func digits(_ x: BigUInt) -> Int {
         return String(x).count
     }

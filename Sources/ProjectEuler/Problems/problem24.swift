@@ -1,7 +1,6 @@
 import Algorithms
 
 class problem24 {
-    init() {}
     
     func to_string(_ list: [Int]) -> String {
         var str = ""

@@ -1,7 +1,6 @@
 import Foundation
 
 class problem42 {
-    init() {}
     
     func triangle_numbers(count: Int) -> [Int] {
         var triangle_numbers: Array<Int> = []

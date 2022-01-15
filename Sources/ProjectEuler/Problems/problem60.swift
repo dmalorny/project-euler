@@ -1,7 +1,6 @@
 import BigInt
 
 class problem60 {
-    init() {}
     
     func test(_ arr: [Int]) -> Bool {
         for c in arr.map({String($0)}).permutations(ofCount: 2) {

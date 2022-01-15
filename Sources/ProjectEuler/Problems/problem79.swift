@@ -1,7 +1,6 @@
 import Foundation
 
 class problem79 {
-    init() {}
     
     func readKeyLogFile() -> [Int] {
         var res: Array<Int> = []

@@ -1,7 +1,6 @@
 import BigInt
 
 class problem48 {
-    init() {}
     
     func run(max: Int) -> String {
         var sum: BigUInt = 0

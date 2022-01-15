@@ -1,7 +1,6 @@
 import Foundation
 
 class problem89 {
-    init() {}
     
     func run() -> Int {
         let url = Bundle.module.url(forResource: "Resources/roman", withExtension: "txt")!

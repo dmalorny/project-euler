@@ -1,5 +1,4 @@
 class problem9 {
-    init() {}
 
     func run(sum: Int) -> Int{
         for c in 1 ... sum {

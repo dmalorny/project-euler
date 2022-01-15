@@ -1,5 +1,4 @@
 class problem5 {
-    init() {}
 
     func run(max: Int) -> Int {
         var num = max

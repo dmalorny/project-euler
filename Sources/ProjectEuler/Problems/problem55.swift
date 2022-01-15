@@ -1,7 +1,6 @@
 import BigInt
 
 class problem55 {
-    init() {}
     
     func isPalindome(_ n: BigUInt) -> Bool {
         return String(n).isPalindrome()

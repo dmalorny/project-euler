@@ -1,5 +1,4 @@
 class problem12 {
-    init() {}
     
     func factor(n: Int) -> Set<Int> {
         var factors = Set<Int>()

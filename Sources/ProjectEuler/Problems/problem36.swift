@@ -1,5 +1,4 @@
 class problem36 {
-    init() {}
     
     func is_double_base_palindromic(_ n: Int) -> Bool {
         let dec = String(n)

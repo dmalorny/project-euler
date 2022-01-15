@@ -1,7 +1,6 @@
 import Algorithms
 
 class problem32 {
-    init() {}
     
     func check(_ arr: [Int], _ result: inout Set<Int>) {
         let p = fromDigits(Array(arr[0...3]))

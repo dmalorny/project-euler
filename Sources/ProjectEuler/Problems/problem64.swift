@@ -1,5 +1,4 @@
 class problem64 {
-    init() {}
     
     func period_length(_ n: Int) -> Int {
         var (a_0, b_0, c_0, a, b, c, result) = (0,0,0,0,0,0,0);

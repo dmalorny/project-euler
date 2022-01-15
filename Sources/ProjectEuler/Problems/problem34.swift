@@ -1,7 +1,6 @@
 import BigInt
 
 class problem34 {
-    init() {}
     
     func run() -> Int {
         var sum = 0

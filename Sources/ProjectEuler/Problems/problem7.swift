@@ -1,5 +1,4 @@
 class problem7 {
-    init() {}
 
     func is_dividable(n: Int, primes: [Int]) -> Bool {
         for p in primes {

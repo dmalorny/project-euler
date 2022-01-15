@@ -1,7 +1,6 @@
 import BigInt
 
 class problem56 {
-    init() {}
     
     func digitSum(_ n: BigUInt) -> Int {
         let str = String(n)

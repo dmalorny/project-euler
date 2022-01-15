@@ -1,5 +1,4 @@
 class problem46 {
-    init() {}
     
     func test_goldbach(_ n: Int) -> Bool {
         let max = Int((Double(n)/2.0).squareRoot())

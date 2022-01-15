@@ -1,5 +1,4 @@
 class problem51 {
-    init() {}
     
     func replaceCharacters(str: String, positions: [Int], by: Character) -> String {
         var d = Array(str)

@@ -1,4 +1,3 @@
-import Darwin
 class problem68 {
     
     func check(n: Int, outerNumbers: [Int], innerNumbers: [Int]) -> Int {

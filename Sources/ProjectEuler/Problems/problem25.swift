@@ -1,7 +1,6 @@
 import BigInt
 
 class problem25 {
-    init() {}
     
     func run(_ max: BigUInt) -> Int {
         var i = 1

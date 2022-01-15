@@ -1,5 +1,4 @@
 class problem53 {
-    init() {}
     
     func run(maxN: Int, maxResult: Int) -> Int {
         var count = 0

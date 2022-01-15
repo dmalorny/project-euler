@@ -1,7 +1,6 @@
 import BigInt
 
 class problem66 {
-    init() {}
     
     func test(_ D: BigUInt, _ x: BigUInt, _ y: BigUInt) -> Bool {
         if (x.power(2) == D * y.power(2) + 1) {

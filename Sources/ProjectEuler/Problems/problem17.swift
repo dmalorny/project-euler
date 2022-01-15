@@ -1,5 +1,4 @@
 class problem17 {
-    init() {}
     
     func number(n: Int, _ dict: [Int:String]) -> String {
         if (n<21) {

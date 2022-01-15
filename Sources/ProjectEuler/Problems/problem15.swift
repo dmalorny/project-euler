@@ -1,5 +1,4 @@
 class problem15 {
-    init() {}
     
     func run(maxX: Int, maxY: Int, x: Int, y: Int, _ routes: inout [[Int?]]) -> Int {
         if (routes[x][y] != nil) {

@@ -1,5 +1,4 @@
 class problem69 {
-    init() {}
     
     // Brute force implementation:
     //func run(max: Int) -> Int {

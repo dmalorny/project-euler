@@ -1,5 +1,4 @@
 class problem39 {
-    init() {}
     
     func check_right_angle(a : Int, b: Int, c: Int) -> Bool {
         return a^^2 + b^^2 == c^^2

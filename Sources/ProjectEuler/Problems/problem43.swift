@@ -1,7 +1,6 @@
 import Algorithms
 
 class problem43 {
-    init() {}
     
     func check(_ arr: [Int]) -> Bool {
         if (fromDigits(Array(arr[1...3])) % 2 != 0) {
