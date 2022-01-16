@@ -75,6 +75,7 @@ func primeFactors(_ n: Int) -> [Int] {
     return result
 }
 
+/// generattes a list of prime to a given maxiumum
 func primes(to n: Int) -> [Int] {
     if n <= 5 {
         return [2, 3, 5].filter { $0 <= n }
@@ -94,6 +95,7 @@ func primes(to n: Int) -> [Int] {
     return arr
 }
 
+/// returns the nth fibinacci number
 func fibonacci(_ n: Int) -> Int {
     if (n<3) {
         return 1
