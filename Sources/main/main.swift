@@ -1,4 +1,4 @@
 @testable import ProjectEuler
 
-let problem = problem68()
-print(problem.run(n: 3))
+let problem = problem70()
+print(problem.run(maxN: 10^^7))

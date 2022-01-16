@@ -225,6 +225,9 @@ func phi(_ n: Int) -> Int {
 }
 
 func hasSameDigits(_ a: Int, _ b: Int) -> Bool {
+    if (String(a).count != String(b).count) {
+        return false
+    }
     return Array(String(a)).sorted() == Array(String(b)).sorted()
 }
 

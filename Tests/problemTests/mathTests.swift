@@ -181,12 +181,14 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(phi(9), 6)
         XCTAssertEqual(phi(10), 4)
         XCTAssertEqual(phi(900), 240)
+        XCTAssertEqual(phi(87109), 79180)
     }
     
     func testHasSameDigits() throws {
         XCTAssertEqual(hasSameDigits(12345, 53241), true)
         XCTAssertEqual(hasSameDigits(97531, 15379), true)
         XCTAssertEqual(hasSameDigits(97531, 16379), false)
+        XCTAssertEqual(hasSameDigits(97531, 153790), false)
     }
     
     func testDigitSum() throws {
