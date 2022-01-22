@@ -170,6 +170,12 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(lcm(391,544), 12512)
     }
     
+    func testReduceFraction() throws {
+        XCTAssertTrue(reduceFraction(1,2) == (1,2))
+        XCTAssertTrue(reduceFraction(4,6) == (2,3))
+        XCTAssertTrue(reduceFraction(5988,12000) == (499,1000))
+    }
+    
     func testPhi() throws {
         XCTAssertEqual(phi(2), 1)
         XCTAssertEqual(phi(3), 2)

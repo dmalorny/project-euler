@@ -218,6 +218,11 @@ func lcm(_ a: Int, _ b: Int) -> Int {
     return a*b/gcd(a,b)
 }
 
+func reduceFraction(_ n: Int, _ d: Int) -> (Int,Int) {
+    let gcd = gcd(n,d)
+    return (n / gcd, d / gcd)
+}
+
 func phi(_ n: Int) -> Int {
     var prod = n
     for d in primeFactors(n) {
