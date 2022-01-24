@@ -2,13 +2,15 @@ import Foundation
 
 class problem67 {
     
+    var cache = [[Int?]](repeating: [Int?](repeating: nil, count: 100), count: 100)
+    
     func readFile() -> String {
         let url = Bundle.module.url(forResource: "Resources/triangle", withExtension: "txt")!
         let str = try! String(contentsOf: url, encoding: .utf8)
         return str
     }
 
-    func maxsum(arr: [[Int]], row: Int, column: Int, _ cache: inout [[Int?]]) -> Int {
+    func maxsum(arr: [[Int]], row: Int, column: Int) -> Int {
         if (row == arr.count-1) {
             return arr[row][column]
         }
@@ -17,8 +19,8 @@ class problem67 {
             return cache[row][column]!;
         }
         
-        let sum1 = arr[row][column] + maxsum(arr: arr, row: row+1, column: column, &cache)
-        let sum2 = arr[row][column] + maxsum(arr: arr, row: row+1, column: column+1, &cache)
+        let sum1 = arr[row][column] + maxsum(arr: arr, row: row+1, column: column)
+        let sum2 = arr[row][column] + maxsum(arr: arr, row: row+1, column: column+1)
         let maxi = [sum1, sum2].max()!
         
         cache[row][column] = maxi
@@ -27,10 +29,8 @@ class problem67 {
     }
 
     func run(str: String) -> Int {
-        var cache = [[Int?]](repeating: [Int?](repeating: nil, count: 100), count: 100)
-        
         let triangle = split_text_to_array(str: str)
-        let maxsum = maxsum(arr: triangle, row: 0, column: 0, &cache)
+        let maxsum = maxsum(arr: triangle, row: 0, column: 0)
         print("maxsum = \(maxsum)")
         return maxsum
     }
