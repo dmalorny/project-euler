@@ -24,9 +24,9 @@ final class arrayTests: XCTestCase {
     
     func testSplitTextToArray() throws {
         let text1 = """
-        1 2 3
-        4 5 6
-        7 8 9
+        1,2,3
+        4,5,6
+        7,8,9
         """
         let text2 = """
         3
@@ -34,8 +34,13 @@ final class arrayTests: XCTestCase {
         2 4 6
         8 5 9 3
         """
+        let text3 = """
+        1 2 3;4 5 6;7 8 9
+        """
         
-        XCTAssertEqual(split_text_to_array(str: text1), [[1,2,3],[4,5,6],[7,8,9]])
-        XCTAssertEqual(split_text_to_array(str: text2), [[3],[7,4],[2,4,6],[8,5,9,3]])
+        
+        XCTAssertEqual(split_text_to_array(text1), [[1,2,3],[4,5,6],[7,8,9]])
+        XCTAssertEqual(split_text_to_array(text2, columnSeparator: " "), [[3],[7,4],[2,4,6],[8,5,9,3]])
+        XCTAssertEqual(split_text_to_array(text3, lineSeparator: ";", columnSeparator: " "), [[1,2,3],[4,5,6],[7,8,9]])
     }
 }

@@ -19,11 +19,11 @@ func fromDigits(_ digits: [Int]) -> Int {
     return sum
 }
 
-func split_text_to_array(str: String) -> [[Int]] {
+func split_text_to_array(_ str: String, lineSeparator: Character = "\n", columnSeparator: Character = ",") -> [[Int]] {
     var result = [[Int]]()
-    for line in str.split(separator:"\n") {
+    for line in str.split(separator:lineSeparator) {
         var lineresult = [Int]()
-        for item in String(line).split(separator:" ") {
+        for item in String(line).split(separator:columnSeparator) {
             lineresult.append(Int(item)!)
         }
         result.append(lineresult)

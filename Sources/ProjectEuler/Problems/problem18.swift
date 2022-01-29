@@ -12,7 +12,7 @@ class problem18 {
     }
 
     func run(str: String) -> Int {
-        let triangle = split_text_to_array(str: str)
+        let triangle = split_text_to_array(str, columnSeparator: " ")
         let maxsum = maxsum(arr: triangle, row: 0, column: 0)
         print("maxsum = \(maxsum)")
         return maxsum
