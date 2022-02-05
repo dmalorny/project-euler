@@ -8,5 +8,5 @@ let grid = [
     [805, 732, 524, 37, 331]
 ]
 
-let problem = problem81()
+let problem = problem82()
 print(problem.run())

@@ -408,6 +408,18 @@ final class problemTests: XCTestCase {
         XCTAssertEqual(p.run(grid: grid), 2427)
         XCTAssertEqual(p.run(), 427337)
     }
+    func testProblem82() throws {
+        let p = problem82()
+        let grid = [
+            [131, 673, 234, 103, 18],
+            [201, 96, 342, 965, 150],
+            [630, 803, 746, 422, 111],
+            [537, 699, 497, 121, 956],
+            [805, 732, 524, 37, 331]
+        ]
+        XCTAssertEqual(p.run(grid: grid), 994)
+        XCTAssertEqual(p.run(), 260324)
+    }
     func testProblem89() throws {
         let p = problem89()
         XCTAssertEqual(p.run(), 743)
