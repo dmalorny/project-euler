@@ -1,12 +1,9 @@
 @testable import ProjectEuler
 
-let grid = [
-    [131, 673, 234, 103, 18],
-    [201, 96, 342, 965, 150],
-    [630, 803, 746, 422, 111],
-    [537, 699, 497, 121, 956],
-    [805, 732, 524, 37, 331]
-]
+let text = """
+519432,525806
+632382,518061
+"""
 
-let problem = problem82()
-print(problem.run())
+let problem = problem99()
+print(problem.run(text))
