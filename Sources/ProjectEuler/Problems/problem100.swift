@@ -3,30 +3,41 @@ import BigInt
 
 class problem100 {
     
-    func test(_ b: BigInt, _ r: BigInt) -> Bool {
-        return (r*r) - (b*b) + 2*b*r + b - r == 0
+    func calcS(_ n: Int) -> Int64 {
+        let sq = sqrt(2)
+        let dn = Double(n)
+        
+        let x = (1+sq) * pow(3-2*sq,dn)
+        let y = (sq-1) * pow(3+2*sq,dn)
+        let s = 1/4*(-x+y+2)
+        return Int64(s)
     }
     
-    func run(min: BigInt, max: BigInt) -> BigInt {
+    func calcB(_ n: Int) -> Int64 {
+        let sq = sqrt(2)
+        let dn = Double(n)
         
-        let minb = min * 60 / 100
-        let maxb = min * 80 / 100
-        
-        for b in minb ... maxb {
-            
-            let minr = min - b
-            let maxr = max - b
-            
-            print("b = \(b)... min = \(minr), max = \(maxr)")
-            for r in minr ... maxr {
-                if test(BigInt(b), BigInt(r)) {
-                    print("found solution (b=\(b), r=\(r))")
-                    return BigInt(b)
-                }
-            }
-        }
+        let x = (2+sq) * pow(3-2*sq,dn)
+        let y = (sq-2) * pow(3+2*sq,dn)
+        let b = 1/8*(x-y+4)+1
+        return Int64(b)
+    }
     
-        return 0
+    func run(start: Int64) -> Int64 {
+        
+        var n: Int = 3
+        var s: Int64 = 0
+        var b: Int64 = 0
+        
+        while (s < start) {
+            b = calcB(n)
+            s = calcS(n)
+            
+            print("b = \(b), r = \(s-b), sum = \(s)")
+            n += 1
+        }
+        
+        return b
     }
     
 }
