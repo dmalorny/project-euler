@@ -1,6 +1,8 @@
 import Foundation
 import BigInt
 
+/// calculates the power of integers
+///  i.e.  2^^8 = 256
 precedencegroup PowerPrecedence { higherThan: MultiplicationPrecedence }
 infix operator ^^ : PowerPrecedence
 func ^^ (radix: Int, power: Int) -> Int {
@@ -8,14 +10,17 @@ func ^^ (radix: Int, power: Int) -> Int {
 }
 
 extension Int {
+    /// true if number is even
     var isEven: Bool {
         return self % 2 == 0
     }
     
+    /// true if number is odd
     var isOdd: Bool {
         return self % 2 != 0
     }
     
+    /// true if number is a prime number
     var isPrime: Bool {
         guard self >= 2     else { return false }
         guard self != 2     else { return true  }
@@ -23,6 +28,7 @@ extension Int {
         return !stride(from: 3, through: Int(sqrt(Double(self))), by: 2).contains { self % $0 == 0 }
     }
     
+    /// returns the square of the number
     var squared: Int {
         return self*self
     }
@@ -30,8 +36,8 @@ extension Int {
 
 /// Calculates the factorial n! of a given integer
 /// - Parameters:
-///     - n: an integer to calculate the factoriel
-/// - Returns: the factorial n! of a given integer
+///     - n: an integer
+/// - Returns: the factorial n! of the given integer
 func factorial(_ n: Int) -> BigUInt {
     if (n <= 1) {
         return 1
@@ -40,6 +46,9 @@ func factorial(_ n: Int) -> BigUInt {
 }
 
 /// returns a list of all divisors (incl. 1 and the number itself)
+/// - Parameters:
+///     - n: an integer, i.e. 6
+/// - Returns: the divisors of the given integer. i.e. [1, 2, 3, 6]
 func divisors(_ n: Int) -> [Int] {
     var divisors = [Int]()
     for i in 1 ... Int(Double(n).squareRoot()) {
@@ -57,6 +66,9 @@ func divisors(_ n: Int) -> [Int] {
 }
 
 /// calculates all prime factors of the given integer
+/// - Parameters:
+///     - n: an integer, i.e. 13195
+/// - Returns: the prime factors of the given integer. i.e. [5, 7, 13, 29]
 func primeFactors(_ n: Int) -> [Int] {
     var factor = 2
     var rest = n
@@ -75,7 +87,10 @@ func primeFactors(_ n: Int) -> [Int] {
     return result
 }
 
-/// generattes a list of prime to a given maxiumum
+/// generates a list of prime to a given maxiumum
+/// - Parameters:
+///     - n: an integer, i.e. 13
+/// - Returns: all prime factors of the given integer, i.e. [2, 3, 5, 7, 11, 13]
 func primes(to n: Int) -> [Int] {
     if n <= 5 {
         return [2, 3, 5].filter { $0 <= n }
@@ -96,6 +111,9 @@ func primes(to n: Int) -> [Int] {
 }
 
 /// returns the nth fibinacci number
+/// - Parameters:
+///     - n: an integer, i.e. 10
+/// - Returns: the nth fibinacci number, i.e. 55
 func fibonacci(_ n: Int) -> Int {
     if (n<3) {
         return 1
@@ -103,30 +121,58 @@ func fibonacci(_ n: Int) -> Int {
     return fibonacci(n-1) + fibonacci(n-2)
 }
 
+/// returns the nth triangle number Tn = n(n + 1)/2
+/// - Parameters:
+///     - n: an integer, i.e. 5
+/// - Returns: the nth triangle number, i.e. 15
 func triangle(_ n: Int) -> Int {
     return n*(n + 1)/2
 }
 
+/// returns the square number Sn = n*n
+/// - Parameters:
+///     - n: an integer, i.e. 5
+/// - Returns: the nth square number, i.e. 25
 func square(_ n: Int) -> Int {
     return n*n
 }
 
+/// returns the nth pentagonal number Pn = n(3n - 1)/2
+/// - Parameters:
+///     - n: an integer, i.e. 5
+/// - Returns: the nth pentagonal number, i.e. 35
 func pentagonal(_ n: Int) -> Int {
     return n*(3*n - 1)/2
 }
 
+/// returns the nth hexagonal number Hn = n(2n - 1)
+/// - Parameters:
+///     - n: an integer, i.e. 5
+/// - Returns: the nth hexagonal number, i.e. 45
 func hexagonal(_ n: Int) -> Int {
     return n*(2*n - 1)
 }
 
+/// returns the nth heptagonal number Hn = n(5n - 3)/2
+/// - Parameters:
+///     - n: an integer, i.e. 5
+/// - Returns: the nth heptagonal number, i.e. 55
 func heptagonal(_ n: Int) -> Int {
     return n*(5*n - 3)/2
 }
 
+/// returns the nth octagonal number On = n(3n - 2)
+/// - Parameters:
+///     - n: an integer, i.e. 5
+/// - Returns: the nth octagonal number, i.e. 65
 func octagonal(_ n: Int) -> Int {
     return n*(3*n - 2)
 }
 
+/// check if number is a triangle number
+/// - Parameters:
+///     - n: an integer,
+/// - Returns: true if the number is a triangle number
 func isTriangle(_ t: Int) -> Bool {
     let d = Double(8*t + 1)
     
@@ -138,6 +184,10 @@ func isTriangle(_ t: Int) -> Bool {
     return false
 }
 
+/// check if number is a square number
+/// - Parameters:
+///     - n: an integer,
+/// - Returns: true if the number is a square number
 func isSquare(_ s: Int) -> Bool {
     let d = Double(s)
     
@@ -149,6 +199,10 @@ func isSquare(_ s: Int) -> Bool {
     return false
 }
 
+/// check if number is a pentagonal number
+/// - Parameters:
+///     - n: an integer,
+/// - Returns: true if the number is a pentagonal number
 func isPentagonal(_ p: Int) -> Bool {
     let d = Double(24*p + 1)
     
@@ -160,6 +214,10 @@ func isPentagonal(_ p: Int) -> Bool {
     return false
 }
 
+/// check if number is a hexagonal number
+/// - Parameters:
+///     - n: an integer,
+/// - Returns: true if the number is a hexagonal number
 func isHexagonal(_ h: Int) -> Bool {
     let d = Double(8*h + 1)
     
@@ -171,6 +229,10 @@ func isHexagonal(_ h: Int) -> Bool {
     return false
 }
 
+/// check if number is a heptagonal number
+/// - Parameters:
+///     - n: an integer,
+/// - Returns: true if the number is a heptagonal number
 func isHeptagonal(_ h: Int) -> Bool {
     let d = Double(40*h + 9)
     
@@ -182,6 +244,10 @@ func isHeptagonal(_ h: Int) -> Bool {
     return false
 }
 
+/// check if number is a octagonal number
+/// - Parameters:
+///     - n: an integer,
+/// - Returns: true if the number is a octagonal number
 func isOctagonal(_ o: Int) -> Bool {
     let d = Double(3*o + 1)
     
@@ -193,11 +259,21 @@ func isOctagonal(_ o: Int) -> Bool {
     return false
 }
 
-func binom(_ n: Int, _ r: Int) -> BigUInt? {
-    guard r <= n else { return nil }
-    return factorial(n) / (factorial(r) * factorial(n-r))
+/// calculates binom n over k
+/// - Parameters:
+///     - n: an integer,
+///     - k: an integer,
+/// - Returns: the binom (n over k)
+func binom(_ n: Int, _ k: Int) -> BigUInt? {
+    guard k <= n else { return nil }
+    return factorial(n) / (factorial(k) * factorial(n-k))
 }
 
+/// calculates greatest common divisor
+/// - Parameters:
+///     - a: an integer,
+///     - b: an integer,
+/// - Returns: the gcd of a and b
 func gcd(_ a: Int, _ b: Int) -> Int {
     if (a == b) {
         return a
@@ -214,15 +290,29 @@ func gcd(_ a: Int, _ b: Int) -> Int {
     return z
 }
 
+/// calculates least common multiplier
+/// - Parameters:
+///     - a: an integer,
+///     - b: an integer,
+/// - Returns: the lcm of a and b
 func lcm(_ a: Int, _ b: Int) -> Int {
     return a*b/gcd(a,b)
 }
 
+/// reduces a fraction
+/// - Parameters:
+///     - n: an integer, the nominator of the fraction
+///     - d: an integer, the denominator of the fraction
+/// - Returns: a reduced fraction, i.e. reduceFraction(4,6) = (2,3)
 func reduceFraction(_ n: Int, _ d: Int) -> (Int,Int) {
     let gcd = gcd(n,d)
     return (n / gcd, d / gcd)
 }
 
+/// Euler's totient function, sometimes called the phi function
+/// - Parameters:
+///     - n: an integer
+/// - Returns: ɸ(n)
 func phi(_ n: Int) -> Int {
     var prod = n
     for d in primeFactors(n) {
@@ -231,6 +321,11 @@ func phi(_ n: Int) -> Int {
     return prod
 }
 
+/// check if two numbers have the same digits
+/// - Parameters:
+///     - a: an integer
+///     - b: an integer
+/// - Returns: true, if both numbers have the same digits
 func hasSameDigits(_ a: Int, _ b: Int) -> Bool {
     if (String(a).count != String(b).count) {
         return false
@@ -238,6 +333,14 @@ func hasSameDigits(_ a: Int, _ b: Int) -> Bool {
     return Array(String(a)).sorted() == Array(String(b)).sorted()
 }
 
+/// calculates the sum of all digits of a number
+/// - Parameters:
+///     - n: an integer
+///     - complete: if true, the function repeates until the result is a single digit
+/// - Returns: true, the sum of all digits of a number
+/// Examples:
+///   digitSum(1457) = 17
+///   digitSum(1457, complete: true) = 8
 func digitSum(_ n: BigUInt, complete: Bool = false) -> Int {
     var sum = 0;
     
@@ -252,6 +355,10 @@ func digitSum(_ n: BigUInt, complete: Bool = false) -> Int {
     return sum
 }
 
+/// converts numer to roman format
+/// - Parameters:
+///     - n: an integer, i.e 9
+/// - Returns: the roman numer of n, i.e. IX
 func toRoman(_ n: Int) -> String {
     var str = ""
     var r = n
@@ -288,6 +395,10 @@ func toRoman(_ n: Int) -> String {
     return str
 }
 
+/// converts roman numer to integer format
+/// - Parameters:
+///     - s: an roman number, i.e IX
+/// - Returns: the integer representaion of s, i.e. 9
 func fromRoman(_ s: String) -> Int {
     var str = s
     var r = 0
