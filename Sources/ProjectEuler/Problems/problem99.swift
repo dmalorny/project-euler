@@ -1,22 +1,32 @@
 import Foundation
-import BigInt
 
 class problem99 {
     
     func run(_ text: String) -> Int {
         let arr = split_text_to_array(text)
+        var line = 1
+        var max = 0.0
+        var maxLine = 0
         
         for pair in arr {
-            let base = BigUInt(pair[0])
+            let base = Int(pair[0])
             let exp = Int(pair[1])
             
-            print(base, exp)
-            let pow = base.power(exp)
+            let b = Double(base)
+            let e = Double(exp) / 1_000_000
             
-            print(pow.magnitude)
+            let p = pow(b,e)
+            
+            if (p > max) {
+                max = p
+                maxLine = line
+            }
+            //print(line, b, e, p)
+        
+            line += 1
         }
         
-        return 0
+        return maxLine
     }
     
     func run() -> Int {
