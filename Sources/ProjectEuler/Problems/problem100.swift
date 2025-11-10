@@ -9,8 +9,8 @@ class problem100 {
         
         let x = (1+sq) * pow(3-2*sq,dn)
         let y = (sq-1) * pow(3+2*sq,dn)
-        let s = 1/4*(-x+y+2)
-        return Int64(s)
+        let s = (y-x+2) / 4
+        return Int64(round(s))
     }
     
     func calcB(_ n: Int) -> Int64 {
@@ -19,8 +19,8 @@ class problem100 {
         
         let x = (2+sq) * pow(3-2*sq,dn)
         let y = (sq-2) * pow(3+2*sq,dn)
-        let b = 1/8*(x-y+4)+1
-        return Int64(b)
+        let b = (x-y+4) / 8
+        return Int64(round(b))
     }
     
     func run(start: Int64) -> Int64 {
