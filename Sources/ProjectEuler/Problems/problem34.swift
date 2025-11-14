@@ -7,7 +7,7 @@ class problem34 {
         for n in 3 ... 100000 {
             let digits = digits(n)
             
-            var factsum: BigUInt = 0
+            var factsum: Int = 0
             for d in digits {
                 factsum += factorial(d)
                 if(factsum > n) {

@@ -38,11 +38,12 @@ extension Int {
 /// - Parameters:
 ///     - n: an integer
 /// - Returns: the factorial n! of the given integer
-func factorial(_ n: Int) -> BigUInt {
+///
+func factorial(_ n: Int) -> Int {
     if (n <= 1) {
         return 1
     }
-    return (1 ... n).map { BigUInt($0) }.reduce(BigUInt(1), *)
+    return (1 ... n).map { $0 }.reduce(Int(1), *)
 }
 
 /// returns a list of all divisors (incl. 1 and the number itself)
@@ -264,7 +265,7 @@ func isOctagonal(_ o: Int) -> Bool {
 ///     - n: an integer,
 ///     - k: an integer,
 /// - Returns: the binom (n over k)
-func binom(_ n: Int, _ k: Int) -> BigUInt? {
+func binom(_ n: Int, _ k: Int) -> Int? {
     guard k <= n else { return nil }
     return factorial(n) / (factorial(k) * factorial(n-k))
 }
