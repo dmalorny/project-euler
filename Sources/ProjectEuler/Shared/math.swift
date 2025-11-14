@@ -196,14 +196,12 @@ func isTriangle(_ t: Int) -> Bool {
 ///     - n: an integer,
 /// - Returns: true if the number is a square number
 func isSquare(_ s: Int) -> Bool {
-    let d = Double(s)
-    
-    if (d > 0) {
-        let candidate = Int(d.squareRoot())
-        return (square(candidate) == s)
+    if (s < 0) {
+        return false
     }
     
-    return false
+    let candidate = Int(Double(s).squareRoot())
+    return (square(candidate) == s)
 }
 
 /// check if number is a pentagonal number
