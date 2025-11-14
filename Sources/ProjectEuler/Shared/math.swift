@@ -45,6 +45,12 @@ func factorial(_ n: Int) -> Int {
     }
     return (1 ... n).map { $0 }.reduce(Int(1), *)
 }
+func factorialBigInt(_ n: BigUInt) -> BigUInt {
+    if (n <= 1) {
+        return 1
+    }
+    return (1 ... n).map { $0 }.reduce(BigUInt(1), *)
+}
 
 /// returns a list of all divisors (incl. 1 and the number itself)
 /// - Parameters:
@@ -268,6 +274,10 @@ func isOctagonal(_ o: Int) -> Bool {
 func binom(_ n: Int, _ k: Int) -> Int? {
     guard k <= n else { return nil }
     return factorial(n) / (factorial(k) * factorial(n-k))
+}
+func binomBigInt(_ n: Int, _ k: Int) -> BigUInt? {
+    guard k <= n else { return nil }
+    return factorialBigInt(BigUInt(n)) / (factorialBigInt(BigUInt(k)) * factorialBigInt(BigUInt(n-k)))
 }
 
 /// calculates greatest common divisor

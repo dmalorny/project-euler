@@ -27,7 +27,7 @@ class problem27 {
                     max_length = len
                     (best_a, best_b) = (a,b)
                 }
-                print("\(a),\(b): \(len)")
+                //print("\(a),\(b): \(len)")
             }
         }
         

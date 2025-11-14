@@ -36,7 +36,7 @@ class problem12 {
             triangle_num += i
             i += 1
             divisors = countDivisors(n: triangle_num);
-            print ("\(triangle_num): \(divisors)");
+            //print ("\(triangle_num): \(divisors)");
         }
         return triangle_num
     }

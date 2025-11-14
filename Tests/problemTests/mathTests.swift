@@ -1,4 +1,5 @@
 import XCTest
+import BigInt
 @testable import ProjectEuler
 
 final class mathTests: XCTestCase {
@@ -40,6 +41,7 @@ final class mathTests: XCTestCase {
         XCTAssertEqual(factorial(5), 120)
         XCTAssertEqual(factorial(10), 3628800)
         XCTAssertEqual(factorial(20), 2432902008176640000)
+        XCTAssertEqual(factorialBigInt(BigUInt(50)), BigUInt("30414093201713378043612608166064768844377641568960512000000000000"))
     }
     
     func testDivisors() throws {
@@ -156,8 +158,8 @@ final class mathTests: XCTestCase {
     func testBinom() throws {
         XCTAssertEqual(binom(5,5), 1)
         XCTAssertEqual(binom(5,3), 10)
-        XCTAssertEqual(binom(23, 10), 1144066)
         XCTAssertEqual(binom(5,6), nil)
+        XCTAssertEqual(binomBigInt(23, 10), 1144066)
     }
     
     func testGcd() throws {
