@@ -39,7 +39,7 @@ final class problemTests: XCTestCase {
     func testProblem7() throws {
         let p = problem7()
         XCTAssertEqual(p.run(n: 6), 13)
-        //XCTAssertEqual(problem7(n: 10001), 104743)
+        //XCTAssertEqual(p.run(n: 10001), 104743)
     }
     func testProblem8() throws {
         let p = problem8()
@@ -54,7 +54,7 @@ final class problemTests: XCTestCase {
     func testProblem10() throws {
         let p = problem10()
         XCTAssertEqual(p.run(max: 10), 17)
-        //XCTAssertEqual(problem10(max: 2000000), 142913828922)
+        //XCTAssertEqual(p.run(max: 2000000), 142913828922)
     }
     func testProblem11() throws {
         let p = problem11()
@@ -63,7 +63,7 @@ final class problemTests: XCTestCase {
     func testProblem12() throws {
         let p = problem12()
         XCTAssertEqual(p.run(n: 5), 28)
-        //XCTAssertEqual(problem12(n: 500), 76576500)
+        //XCTAssertEqual(p.run(n: 500), 76576500)
     }
     func testProblem13() throws {
         let p = problem13()
@@ -141,7 +141,7 @@ final class problemTests: XCTestCase {
         let p = problem23()
         XCTAssertEqual(p.run(23), 276)
         XCTAssertEqual(p.run(24), 276)
-        //XCTAssertEqual(problem23(28123), 4179871)
+        //XCTAssertEqual(p.run(28123), 4179871)
     }
     func testProblem24() throws {
         let p = problem24()
@@ -151,7 +151,7 @@ final class problemTests: XCTestCase {
     func testProblem25() throws {
         let p = problem25()
         XCTAssertEqual(p.run(3), 12)
-        //XCTAssertEqual(problem25(1000), 4782)
+        //XCTAssertEqual(p.run(1000), 4782)
     }
     func testProblem26() throws {
         let p = problem26()
@@ -161,7 +161,7 @@ final class problemTests: XCTestCase {
     func testProblem27() throws {
         let p = problem27()
         XCTAssertEqual(p.run(min: -9, max: 9), -21)
-        //XCTAssertEqual(problem27(min: -999, max: 999), -59231)
+        //XCTAssertEqual(p.run(min: -999, max: 999), -59231)
     }
     func testProblem28() throws {
         let p = problem28()
@@ -217,7 +217,7 @@ final class problemTests: XCTestCase {
     func testProblem39() throws {
         let p = problem39()
         XCTAssertEqual(p.run(max: 120), 120)
-        //XCTAssertEqual(problem39(max: 1000), 840)
+        //XCTAssertEqual(p.run(max: 1000), 840)
     }
     func testProblem40() throws {
         let p = problem40()
@@ -273,7 +273,7 @@ final class problemTests: XCTestCase {
         let p = problem51()
         XCTAssertEqual(p.run(expectedSize: 6, primedigits: 2), 13)
         XCTAssertEqual(p.run(expectedSize: 7, primedigits: 5), 56003)
-        //XCTAssertEqual(problem51(expectedSize: 8, primedigits: 6), 121313)
+        //XCTAssertEqual(p.run(expectedSize: 8, primedigits: 6), 121313)
     }
     func testProblem52() throws {
         let p = problem52()
