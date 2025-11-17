@@ -86,6 +86,19 @@ $$
 
 Find the minimal path sum from the left column to the right column in `matrix.txt`, a 31K text file containing an 80 by 80 matrix.
 
+## Problem 87
+
+The smallest number expressible as the sum of a prime square, prime cube, and prime fourth power is $$28$$. In fact, there are exactly four numbers below fifty that can be expressed in such a way:
+
+$$
+28 = 2^2 + 2^3 + 2^4 \\
+33 = 3^2 + 3^3 + 2^4 \\
+49 = 5^2 + 3^3 + 2^4 \\
+47 = 2^2 + 3^3 + 2^4
+$$
+
+How many numbers below fifty million can be expressed as the sum of a prime square, prime cube, and prime fourth power?
+
 ## Problem 89
 
 Roman numerals
