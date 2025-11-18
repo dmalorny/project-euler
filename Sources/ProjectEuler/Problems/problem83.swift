@@ -7,33 +7,48 @@ class problem83 {
     var results: [[Int?]] = []
     
     func get(x: Int, y: Int) -> Int {
+        // known value
         if (results[x][y] != nil) {
             return results[x][y]!
         }
         
+        // bottom right
         if (x == max && y == max) {
             results[x][y] = source[x][y]
             return results[x][y]!
         }
         
-        if (x == max && y < max) {
-            results[x][y] = source[x][y] + get(x: x, y: y+1)
-            return results[x][y]!
+        // other
+        var candidates:[Int] = []
+        if (x < max) { // R
+            candidates.append(get(x: x+1, y: y))
+        }
+        if (y < max) { // D
+            candidates.append(get(x: x, y: y+1))
         }
         
-        if (x < max && y == max) {
-            results[x][y] = source[x][y] + get(x: x+1, y: y)
-            return results[x][y]!
+        for n in 1 ... 10 {
+            if (y > 0 && x+n-1 < max) { // U,n*R,D
+                var sum = source[x][y-1]
+                for i in 1 ... n {
+                    sum += source[x+i][y-1]
+                }
+                candidates.append(sum + get(x: x+n, y: y))
+            }
+            if (x > 0 && y+n-1 < max) { // L,n*D,R
+                var sum = source[x-1][y]
+                for i in 1 ... n {
+                    sum += source[x-1][y+i]
+                }
+                candidates.append(sum + get(x: x, y: y+n))
+            }
         }
-        
-        if (x < max && y < max) {
-            let r = get(x: x+1, y: y)
-            let u = get(x: x, y: y+1)
-            results[x][y] = source[x][y] + [r,u].min()!
-            return results[x][y]!
+
+        if (candidates.isEmpty) {
+            return -1
         }
-        
-        return 0
+        results[x][y] = source[x][y] + candidates.min()!
+        return results[x][y]!
     }
     
     func run(grid: [[Int]]) -> Int {

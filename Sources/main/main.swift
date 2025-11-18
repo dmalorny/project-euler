@@ -9,3 +9,4 @@ let grid = [
     [805, 732, 524, 37, 331]
 ]
 print(problem.run(grid: grid))
+print(problem.run())
