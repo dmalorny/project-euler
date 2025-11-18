@@ -86,6 +86,14 @@ $$
 
 Find the minimal path sum from the left column to the right column in `matrix.txt`, a 31K text file containing an 80 by 80 matrix.
 
+## Problem 85
+
+By counting carefully it can be seen that a rectangular grid measuring $$3$$ by $$2$$ contains eighteen rectangles:
+
+![](https://projecteuler.net/project/images/p085.png)
+
+Although there exists no rectangular grid that contains exactly two million rectangles, find the area of the grid with the nearest solution.
+
 ## Problem 87
 
 The smallest number expressible as the sum of a prime square, prime cube, and prime fourth power is $$28$$. In fact, there are exactly four numbers below fifty that can be expressed in such a way:
