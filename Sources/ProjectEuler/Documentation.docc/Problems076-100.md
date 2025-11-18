@@ -22,7 +22,7 @@ How many different ways can one hundred be written as a sum of at least two posi
 
 ### Coin Partitions
 
-Let $$p(n)$$ represent the number of different ways in which $$n$$ coins can be separated into piles. For example, five coins can be separated into piles in exactly seven different ways, so $$p(5) = 7$$.
+Let $p(n)$ represent the number of different ways in which $n$ coins can be separated into piles. For example, five coins can be separated into piles in exactly seven different ways, so $p(5) = 7$.
 
     OOOOO
     OOOO   O
@@ -32,7 +32,7 @@ Let $$p(n)$$ represent the number of different ways in which $$n$$ coins can be 
     OO   O   O   O
     O   O   O   O   O
 
-Find the least value of $$n$$ for which $$p(n)$$ is divisible by one million.
+Find the least value of $n$ for which $p(n)$ is divisible by one million.
 
 ##  Problem 79
 
@@ -50,7 +50,7 @@ Given that the three characters are always asked for in order, analyse the file 
 
 It is well known that if the square root of a natural number is not an integer, then it is irrational. The decimal expansion of such square roots is infinite without any repeating pattern at all.
 
-The square root of two is $$1.41421356237309504880...$$, and the digital sum of the first one hundred decimal digits is $$475$$.
+The square root of two is $1.41421356237309504880...$, and the digital sum of the first one hundred decimal digits is $475$.
 
 For the first one hundred natural numbers, find the total of the digital sums of the first one hundred decimal digits for all the irrational square roots.
 
@@ -58,7 +58,7 @@ For the first one hundred natural numbers, find the total of the digital sums of
 
 ### Path sum: two ways
 
-In the 5 by 5 matrix below, the minimal path sum from the top left to the bottom right, by only moving to the right and down, is indicated in bold red and is equal to 2427.
+In the $5$ by $5$ matrix below, the minimal path sum from the top left to the bottom right, by only moving to the right and down, is indicated in bold red and is equal to $2427$.
 
 $$
 \begin{pmatrix}
@@ -70,7 +70,7 @@ $$
 \end{pmatrix}
 $$
 
-Find the minimal path sum from the top left to the bottom right by only moving right and down in `matrix.txt`, a 31K text file containing an 80 by 80 matrix.
+Find the minimal path sum from the top left to the bottom right by only moving right and down in `matrix.txt`, a 31K text file containing an $8$0 by $80$ matrix.
 
 ## Problem 82
 
@@ -78,7 +78,7 @@ Find the minimal path sum from the top left to the bottom right by only moving r
 
 > Note: This problem is a more challenging version of Problem 81.
 
-The minimal path sum in the 5 by 5 matrix below, by starting in any cell in the left column and finishing in any cell in the right column, and only moving up, down, and right, is indicated in red and bold; the sum is equal to 994.
+The minimal path sum in the $5$ by $5$ matrix below, by starting in any cell in the left column and finishing in any cell in the right column, and only moving up, down, and right, is indicated in red and bold; the sum is equal to $994$.
 
 $$
 \begin{pmatrix}
@@ -90,7 +90,7 @@ $$
 \end{pmatrix}
 $$
 
-Find the minimal path sum from the left column to the right column in `matrix.txt`, a 31K text file containing an 80 by 80 matrix.
+Find the minimal path sum from the left column to the right column in `matrix.txt`, a 31K text file containing an $80$ by $80$ matrix.
 
 ## Problem 83
 
@@ -98,7 +98,7 @@ Find the minimal path sum from the left column to the right column in `matrix.tx
 
 > Note: This problem is a more challenging version of Problem 81.
 
-In the $$5$$ by $$5$$ matrix below, the minimal path sum from the top left to the bottom right, by moving left, right, up, and down, is indicated in bold red and is equal to $$2297$$.
+In the $5$ by $5$ matrix below, the minimal path sum from the top left to the bottom right, by moving left, right, up, and down, is indicated in bold red and is equal to $2297$.
 
 $$
 \begin{pmatrix}
@@ -110,13 +110,13 @@ $$
 \end{pmatrix}
 $$
 
-Find the minimal path sum from the top left to the bottom right by moving left, right, up, and down in `matrix.txt`, a 31K text file containing an 80 by 80 matrix.
+Find the minimal path sum from the top left to the bottom right by moving left, right, up, and down in `matrix.txt`, a 31K text file containing an $80$ by $80$ matrix.
 
 ## Problem 85
 
 ### Counting Rectangles
 
-By counting carefully it can be seen that a rectangular grid measuring $$3$$ by $$2$$ contains eighteen rectangles:
+By counting carefully it can be seen that a rectangular grid measuring $3$ by $2$ contains eighteen rectangles:
 
 ![](https://projecteuler.net/project/images/p085.png)
 
@@ -126,7 +126,7 @@ Although there exists no rectangular grid that contains exactly two million rect
 
 ### Prime Power Triples
 
-The smallest number expressible as the sum of a prime square, prime cube, and prime fourth power is $$28$$. In fact, there are exactly four numbers below fifty that can be expressed in such a way:
+The smallest number expressible as the sum of a prime square, prime cube, and prime fourth power is $28$. In fact, there are exactly four numbers below fifty that can be expressed in such a way:
 
 $$
 28 = 2^2 + 2^3 + 2^4 \\
@@ -164,15 +164,15 @@ Find the number of characters saved by writing each of these in their minimal fo
 
 ### Right Triangles with Integer Coordinates
 
-The points $$P(x_1,y_1)$$ and $$Q(x_2,y_2)$$ are plotted at integer co-ordinates and are joined to the origin, $$O(0,0)$$, to form $$△OPQ$$.
+The points $P(x_1,y_1)$ and $Q(x_2,y_2)$ are plotted at integer co-ordinates and are joined to the origin, $O(0,0)$, to form $△OPQ$.
 
 ![](https://projecteuler.net/resources/images/0091_1.png)
 
-There are exactly fourteen triangles containing a right angle that can be formed when each co-ordinate lies between $$0$$ and $$2$$ inclusive; that is, $$0 \leq x_1,y_1,x_2,y_2 \leq 2$$.
+There are exactly fourteen triangles containing a right angle that can be formed when each co-ordinate lies between $0$ and $2$ inclusive; that is, $0 \leq x_1,y_1,x_2,y_2 \leq 2$.
 
 ![](https://projecteuler.net/resources/images/0091_2.png)
 
-Given that $$0 \leq x_1,y_1,x_2,y_2 \leq 50$$, how many right triangles can be formed?
+Given that $0 \leq x_1,y_1,x_2,y_2 \leq 50$, how many right triangles can be formed?
 
 ## Problem 92
 
@@ -186,19 +186,17 @@ $$44 → 32 → 13 → 10 → \boldsymbol{1} → \boldsymbol{1}$$
  
 $$85 → \boldsymbol{89} → 145 → 42 → 20 → 4 → 16 → 37 → 58 → \boldsymbol{89}$$
 
-Therefore any chain that arrives at $$1$$ or $$89$$ will become stuck in an endless loop. What is most amazing is that EVERY starting number will eventually arrive at $$1$$ or $$89$$.
+Therefore any chain that arrives at $1$ or $89$ will become stuck in an endless loop. What is most amazing is that EVERY starting number will eventually arrive at $1$ or $89$.
 
-How many starting numbers below ten million will arrive at $$89$$?
+How many starting numbers below ten million will arrive at $89$?
 
 ## Problem 97
 
 ### Large non-Mersenne prime
 
-The first known prime found to exceed one million digits was discovered in 1999, and is a Mersenne prime of the form $$2^{6972593} − 1$$; it contains exactly 2,098,960 digits.
+The first known prime found to exceed one million digits was discovered in 1999, and is a Mersenne prime of the form $2^{6972593} − 1$; it contains exactly $2\ 098\ 960$ digits. Subsequently other Mersenne primes, of the form $2^p − 1$, have been found which contain more digits.
 
-Subsequently other Mersenne primes, of the form $$2^p − 1$$, have been found which contain more digits.
-
-However, in 2004 there was found a massive non-Mersenne prime which contains 2,357,207 digits: $$28433 × 2^{7830457} + 1$$.
+However, in 2004 there was found a massive non-Mersenne prime which contains $2\ 357\ 207$ digits: $28433 × 2^{7830457} + 1$.
 
 Find the last ten digits of this prime number.
 
@@ -206,9 +204,9 @@ Find the last ten digits of this prime number.
 
 ### Largest exponential
 
-Comparing two numbers written in index form like $$2^{11}$$ and $$3^7$$ is not difficult, as any calculator would confirm that $$2^{11} = 2048 < 3^7 = 2187$$.
+Comparing two numbers written in index form like $2^{11}$ and $3^7$ is not difficult, as any calculator would confirm that $2^{11} = 2048 < 3^7 = 2187$.
 
-However, confirming that $$632382^{518061} > 519432^{525806}$$ would be much more difficult, as both numbers contain over three million digits.
+However, confirming that $632382^{518061} > 519432^{525806}$ would be much more difficult, as both numbers contain over three million digits.
 
 Using `base_exp.txt`, a 22K text file containing one thousand lines with a base/exponent pair on each line, determine which line number has the greatest numerical value.
 
@@ -219,8 +217,8 @@ Using `base_exp.txt`, a 22K text file containing one thousand lines with a base/
 
 ### Arranged Probability
 
-If a box contains twenty-one coloured discs, composed of fifteen blue discs and six red discs, and two discs were taken at random, it can be seen that the probability of taking two blue discs, $$P(BB) = (15/21) * (14/20) = 1/2$$.
+If a box contains twenty-one coloured discs, composed of fifteen blue discs and six red discs, and two discs were taken at random, it can be seen that the probability of taking two blue discs, $P(BB) = (15/21) * (14/20) = 1/2$.
 
-The next such arrangement, for which there is exactly $$50\%$$ chance of taking two blue discs at random, is a box containing eighty-five blue discs and thirty-five red discs.
+The next such arrangement, for which there is exactly $50\%$ chance of taking two blue discs at random, is a box containing eighty-five blue discs and thirty-five red discs.
 
-By finding the first arrangement to contain over $$10^{12} = 1\ 000\ 000\ 000\ 000$$ discs in total, determine the number of blue discs that the box would contain.
+By finding the first arrangement to contain over $10^{12} = 1\ 000\ 000\ 000\ 000$ discs in total, determine the number of blue discs that the box would contain.

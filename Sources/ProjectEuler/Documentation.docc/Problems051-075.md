@@ -24,17 +24,17 @@ Find the smallest positive integer, x, such that 2x, 3x, 4x, 5x, and 6x, contain
 
 ### Combinatoric selections
 
-There are exactly ten ways of selecting three from five, $$12345$$:
+There are exactly ten ways of selecting three from five, $12345$:
 
 $$123, 124, 125, 134, 135, 145, 234, 235, 245, and 345$$
 
-In combinatorics, we use the notation, $$\displaystyle \binom 5 3 = 10$$.
+In combinatorics, we use the notation, $\displaystyle \binom 5 3 = 10$.
 
-In general, $$\displaystyle \binom n r = \dfrac{n!}{r!(n-r)!}$$, where $$r \le n$$, $$n! = n \times (n-1) \times ... \times 3 \times 2 \times 1$$, and $$0! = 1$$
+In general, $\displaystyle \binom n r = \dfrac{n!}{r!(n-r)!}$, where $r \le n$, $n! = n \times (n-1) \times ... \times 3 \times 2 \times 1$, and $0! = 1$
 
-It is not until $$n = 23$$, that a value exceeds one-million: $$\displaystyle \binom {23} {10} = 1144066$$.
+It is not until $n = 23$, that a value exceeds one-million: $\displaystyle \binom {23} {10} = 1144066$.
 
-How many, not necessarily distinct, values of $$\displaystyle \binom n r$$ for $$1 \le n \le 100$$, are greater than one-million?
+How many, not necessarily distinct, values of $\displaystyle \binom n r$ for $1 \le n \le 100$, are greater than one-million?
 
 ## Problem 54
 
@@ -80,9 +80,11 @@ If we take 47, reverse and add, 47 + 74 = 121, which is palindromic.
 
 Not all numbers produce palindromes so quickly. For example,
 
-     349 +  943 = 1292,
-    1292 + 2921 = 4213
-    4213 + 3124 = 7337
+$$
+349 +  943 = 1292\\
+1292 + 2921 = 4213\\
+4213 + 3124 = 7337
+$$
 
 That is, 349 took three iterations to arrive at a palindrome.
 
@@ -98,9 +100,9 @@ How many Lychrel numbers are there below ten-thousand?
 
 ### Powerful digit sum
 
-A googol ($$10^{100}$$) is a massive number: one followed by one-hundred zeros; $$100^{100}$$ is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the sum of the digits in each number is only 1.
+A googol ($10^{100}$) is a massive number: one followed by one-hundred zeros; $100^{100}$ is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the sum of the digits in each number is only 1.
 
-Considering natural numbers of the form, $$a^b$$, where $$a, b < 100$$, what is the maximum digital sum?
+Considering natural numbers of the form, $a^b$, where $a, b < 100$, what is the maximum digital sum?
 
 ## Problem 57
 
@@ -120,7 +122,7 @@ $$1 + \frac 1 {2 + \frac 1 {2+\frac 1 2}} = \frac {17}{12} = 1.41666 \dots$$
 
 $$1 + \frac 1 {2 + \frac 1 {2+\frac 1 {2+\frac 1 2}}} = \frac {41}{29} = 1.41379 \dots$$
 
-The next three expansions are $$\frac {99}{70}$$, $$\frac {239}{169}$$ and $$\frac {577}{408}$$, but the eighth expansion, $$\frac {1393}{985}$$ is the first example where the number of digits in the numerator exceeds the number of digits in the denominator.
+The next three expansions are $\frac {99}{70}$, $\frac {239}{169}$ and $\frac {577}{408}$, but the eighth expansion, $\frac {1393}{985}$ is the first example where the number of digits in the numerator exceeds the number of digits in the denominator.
 
 In the first one-thousand expansions, how many fractions contain a numerator with more digits than the denominator?
 
@@ -184,7 +186,7 @@ Triangle, square, pentagonal, hexagonal, heptagonal, and octagonal numbers are a
 The ordered set of three 4-digit numbers: 8128, 2882, 8281, has three interesting properties.
 
 1. The set is cyclic, in that the last two digits of each number is the first two digits of the next number (including the last number with the first).
-2. Each polygonal type: triangle $$(P_{3,127}=8128)$$, square $$(P_{4,91}=8281)$$, and pentagonal $$(P_{5,44}=2882)$$, is represented by a different number in the set.
+2. Each polygonal type: triangle $(P_{3,127}=8128)$, square $(P_{4,91}=8281)$, and pentagonal $(P_{5,44}=2882)$, is represented by a different number in the set.
 3. This is the only set of 4-digit numbers with this property.
 
 Find the sum of the only ordered set of six cyclic 4-digit numbers for which each polygonal type: triangle, square, pentagonal, hexagonal, heptagonal, and octagonal, is represented by a different number in the set.
@@ -193,7 +195,7 @@ Find the sum of the only ordered set of six cyclic 4-digit numbers for which eac
 
 ### Cubic permutations
 
-The cube, 41063625 $$(345^3)$$, can be permuted to produce two other cubes: 56623104 $$(384^3)$$ and 66430125 $$(405^3)$$. In fact, 41063625 is the smallest cube which has exactly three permutations of its digits which are also cube.
+The cube, $41063625$ $(345^3)$, can be permuted to produce two other cubes: $56623104$ $(384^3)$ and $66430125$ $(405^3)$. In fact, $41063625$ is the smallest cube which has exactly three permutations of its digits which are also cube.
 
 Find the smallest cube for which exactly five permutations of its digits are cube.
 
@@ -201,9 +203,9 @@ Find the smallest cube for which exactly five permutations of its digits are cub
 
 ### Powerful digit counts
 
-The 5-digit number, $$16807=7^5$$, is also a fifth power. Similarly, the 9-digit number, $$134217728=8^9$$, is a ninth power.
+The 5-digit number, $16807=7^5$, is also a fifth power. Similarly, the 9-digit number, $134217728=8^9$, is a ninth power.
 
-How many n-digit positive integers exist which are also an $$n^{th}$$ power?
+How many n-digit positive integers exist which are also an $n^{th}$ power?
 
 ## Problem 64 
 
@@ -213,7 +215,7 @@ All square roots are periodic when written as continued fractions and can be wri
 
 $$\displaystyle \quad \quad \sqrt{N}=a_0+\frac 1 {a_1+\frac 1 {a_2+ \frac 1 {a3+ \dots}}}$$
 
-For example, let us consider $$\sqrt{23}$$:
+For example, let us consider $\sqrt{23}$:
 
 $$\quad \quad \sqrt{23}=4+\sqrt{23}-4=4+\frac 1 {\frac 1 {\sqrt{23}-4}}=4+\frac 1  {1+\frac{\sqrt{23}-3}7}$$
 
@@ -237,20 +239,20 @@ It can be seen that the sequence is repeating. For conciseness, we use the notat
 
 The first ten continued fraction representations of (irrational) square roots are:
 
-$$\quad \quad \sqrt{2}=[1;(2)]$$, period=1  
-$$\quad \quad \sqrt{3}=[1;(1,2)]$$, period=2  
-$$\quad \quad \sqrt{5}=[2;(4)]$$, period=1  
-$$\quad \quad \sqrt{6}=[2;(2,4)]$$, period=2  
-$$\quad \quad \sqrt{7}=[2;(1,1,1,4)]$$, period=4  
-$$\quad \quad \sqrt{8}=[2;(1,4)]$$, period=2  
-$$\quad \quad \sqrt{10}=[3;(6)]$$, period=1  
-$$\quad \quad \sqrt{11}=[3;(3,6)]$$, period=2  
-$$\quad \quad \sqrt{12}=[3;(2,6)]$$, period=2  
-$$\quad \quad \sqrt{13}=[3;(1,1,1,1,6)]$$, period=5  
+$\quad \quad \sqrt{2}=[1;(2)]$, period=1  
+$\quad \quad \sqrt{3}=[1;(1,2)]$, period=2  
+$\quad \quad \sqrt{5}=[2;(4)]$, period=1  
+$\quad \quad \sqrt{6}=[2;(2,4)]$, period=2  
+$\quad \quad \sqrt{7}=[2;(1,1,1,4)]$, period=4  
+$\quad \quad \sqrt{8}=[2;(1,4)]$, period=2  
+$\quad \quad \sqrt{10}=[3;(6)]$, period=1  
+$\quad \quad \sqrt{11}=[3;(3,6)]$, period=2  
+$\quad \quad \sqrt{12}=[3;(2,6)]$, period=2  
+$\quad \quad \sqrt{13}=[3;(1,1,1,1,6)]$, period=5  
 
-Exactly four continued fractions, for $$N \le 13$$ have an odd period.
+Exactly four continued fractions, for $N \le 13$ have an odd period.
 
-How many continued fractions for $$N \le 10\,000$$ have an odd period?
+How many continued fractions for $N \le 10\,000$ have an odd period?
 
 ## Problem 65
 
@@ -260,18 +262,18 @@ The square root of 2 can be written as an infinite continued fraction.
 
 $$\sqrt{2} = 1 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2 + ...}}}}$$
 
-The infinite continued fraction can be written, $$\sqrt{2} = [1; (2)]$$, $$(2)$$ indicates that 2 repeats ad infinitum. In a similar way, $$\sqrt{23} = [4; (1, 3, 1, 8)]$$
+The infinite continued fraction can be written, $\sqrt{2} = [1; (2)]$, $(2)$ indicates that 2 repeats ad _infinitum_. In a similar way, $\sqrt{23} = [4; (1, 3, 1, 8)]$
 
-It turns out that the sequence of partial values of continued fractions for square roots provide the best rational approximations. Let us consider the convergents for $$\sqrt{2}$$.
+It turns out that the sequence of partial values of continued fractions for square roots provide the best rational approximations. Let us consider the convergents for $\sqrt{2}$.
 
 $$\begin{align}
-&1 + \dfrac{1}{2} = \dfrac{3}{2} \\
-&1 + \dfrac{1}{2 + \dfrac{1}{2}} = \dfrac{7}{5}\\
-&1 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2}}} = \dfrac{17}{12}\\
+&1 + \dfrac{1}{2} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ = \dfrac{3}{2} \\
+&1 + \dfrac{1}{2 + \dfrac{1}{2}} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ = \dfrac{7}{5}\\
+&1 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2}}} \ \ \ \ \ \ \ \ = \dfrac{17}{12}\\
 &1 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2}}}} = \dfrac{41}{29}
 \end{align}$$
 
-Hence the sequence of the first ten convergents for $$\sqrt{2}$$ are:
+Hence the sequence of the first ten convergents for $\sqrt{2}$ are:
 
 $$1, \dfrac{3}{2}, \dfrac{7}{5}, \dfrac{17}{12}, \dfrac{41}{29}, \dfrac{99}{70}, \dfrac{239}{169}, \dfrac{577}{408}, \dfrac{1393}{985}, \dfrac{3363}{2378}, ...$$
 
@@ -279,13 +281,13 @@ What is most surprising is that the important mathematical constant,
 
 $$e = [2; 1, 2, 1, 1, 4, 1, 1, 6, 1, ... , 1, 2k, 1, ...]$$
 
-The first ten terms in the sequence of convergents for $$e$$ are:
+The first ten terms in the sequence of convergents for $e$ are:
 
 $$2, 3, \dfrac{8}{3}, \dfrac{11}{4}, \dfrac{19}{7}, \dfrac{87}{32}, \dfrac{106}{39}, \dfrac{193}{71}, \dfrac{1264}{465}, \dfrac{1457}{536}, ...$$
 
-The sum of digits in the numerator of the $$10^{th}$$ convergent is $$1 + 4 + 5 + 7 = 17$$.
+The sum of digits in the numerator of the $10^{th}$ convergent is $1 + 4 + 5 + 7 = 17$.
 
-Find the sum of digits in the numerator of the $$100^{th}$$ convergent of the continued fraction for $$e$$.
+Find the sum of digits in the numerator of the $100^{th}$ convergent of the continued fraction for $e$.
 
 ## Problem 66
 
@@ -295,22 +297,23 @@ Consider quadratic Diophantine equations of the form:
 
 $$x^2 – Dy^2 = 1$$
 
-For example, when $$D=13$$, the minimal solution in $$x$$ is $$649^2 – 13×180^2 = 1$$.
+For example, when $D=13$, the minimal solution in $x$ is $649^2 – 13×180^2 = 1$.
 
 It can be assumed that there are no solutions in positive integers when D is square.
 
-By finding minimal solutions in $$x$$ for $$D = \{2, 3, 5, 6, 7\}$$, we obtain the following:
+By finding minimal solutions in $x$ for $D = \{2, 3, 5, 6, 7\}$, we obtain the following:
 
-$$3^2 – 2×2^2 = 1$$  
-$$2^2 – 3×1^2 = 1$$  
-$$\color{red}{9}^2 – 5×4^2 = 1$$  
-$$5^2 – 6×2^2 = 1$$  
-$$8^2 – 7×3^2 = 1$$  
-$$$$
+$$
+3^2 – 2×2^2 = 1\\
+2^2 – 3×1^2 = 1\\ 
+\color{red}{9}^2 – 5×4^2 = 1\\
+5^2 – 6×2^2 = 1\\
+8^2 – 7×3^2 = 1
+$$
 
-Hence, by considering minimal solutions in $$x$$ for $$D \le 7$$, the largest $$x$$ is obtained when $$D=5$$.
+Hence, by considering minimal solutions in $x$ for $D \le 7$, the largest $x$ is obtained when $D=5$.
 
-Find the value of $$D \le 1000$$ in minimal solutions of $$x$$ for which the largest value of $$x$$ is obtained.
+Find the value of $D \le 1000$ in minimal solutions of $x$ for which the largest value of $x$ is obtained.
 
 ## Problem 67
 
@@ -364,7 +367,7 @@ Using the numbers 1 to 10, and depending on arrangements, it is possible to form
 
 ### Totient maximum
 
-Euler's Totient function, $$\phi(n)$$ [sometimes called the phi function], is used to determine the number of numbers less than n which are relatively prime to n. For example, as 1, 2, 4, 5, 7, and 8, are all less than nine and relatively prime to nine, $$\phi(9)=6$$.
+Euler's Totient function, $\phi(n)$ [sometimes called the phi function], is used to determine the number of numbers less than n which are relatively prime to n. For example, as $1, 2, 4, 5, 7$ and $8$, are all less than nine and relatively prime to nine, $\phi(9)=6$.
 
 |  n | Relatively Prime | φ(n) | n/φ(n)    |
 |----|------------------|------|-----------|
@@ -378,45 +381,45 @@ Euler's Totient function, $$\phi(n)$$ [sometimes called the phi function], is us
 |  9 | 1,2,4,5,7,8      |   6  | 1.5       |
 | 10 | 1,3,7,9          |   4  | 2.5       |
 
-It can be seen that $$n=6$$ produces a maximum $$n/\phi(n)$$ for $$n \le 10$$.
+It can be seen that $n=6$ produces a maximum $n/\phi(n)$ for $n \le 10$.
 
-Find the value of $$n \le 1\ 000\ 000$$ for which $$n/\phi(n)$$ is a maximum.
+Find the value of $n \le 1\ 000\ 000$ for which $n/\phi(n)$ is a maximum.
 
 ## Problem 70
 
 ### Totient permutation
 
-Euler's Totient function, $$\phi(n)$$ [sometimes called the phi function], is used to determine the number of positive numbers less than or equal to n which are relatively prime to $$n$$. For example, as 1, 2, 4, 5, 7, and 8, are all less than nine and relatively prime to nine, $$\phi(9)=6$$.
+Euler's Totient function, $\phi(n)$ [sometimes called the phi function], is used to determine the number of positive numbers less than or equal to n which are relatively prime to $n$. For example, as $1, 2, 4, 5, 7$ and $8$, are all less than nine and relatively prime to nine, $\phi(9)=6$.
 
-The number $$1$$ is considered to be relatively prime to every positive number, so $$\phi(1)=1$$.
+The number $1$ is considered to be relatively prime to every positive number, so $\phi(1)=1$.
 
-Interestingly, $$\phi(87109)=79180$$, and it can be seen that $$87109$$ is a permutation of $$79180$$.
+Interestingly, $\phi(87109)=79180$, and it can be seen that $87109$ is a permutation of $79180$.
 
-Find the value of $$n, 1 < n < 107$$, for which $$\phi(n)$$ is a permutation of $$n$$ and the ratio $$n/\phi(n)$$ produces a minimum.
+Find the value of $n, 1 < n < 107$, for which $\phi(n)$ is a permutation of $n$ and the ratio $n/\phi(n)$ produces a minimum.
 
 ## Problem 71
 
 ### Ordered fractions
 
-Consider the fraction, $$\dfrac{n}{d}$$, where $$n$$ and $$d$$ are positive integers. If $$n<d$$ and $$HCF(n,d)=1$$, it is called a reduced proper fraction.
+Consider the fraction, $\dfrac{n}{d}$, where $n$ and $d$ are positive integers. If $n<d$ and $HCF(n,d)=1$, it is called a reduced proper fraction.
 
-If we list the set of reduced proper fractions for $$d \leq 8$$ in ascending order of size, we get:
+If we list the set of reduced proper fractions for $d \leq 8$ in ascending order of size, we get:
 
 $$
 \dfrac{1}{8}, \dfrac{1}{7}, \dfrac{1}{6}, \dfrac{1}{5}, \dfrac{1}{4}, \dfrac{2}{7}, \dfrac{1}{3}, \dfrac{3}{8}, \boldsymbol{\dfrac{2}{5}}, \dfrac{3}{7}, \dfrac{1}{2}, \dfrac{4}{7}, \dfrac{3}{5}, \dfrac{5}{8}, \dfrac{2}{3}, \dfrac{5}{7}, \dfrac{3}{4}, \dfrac{4}{5}, \dfrac{5}{6}, \dfrac{6}{7}, \dfrac{7}{8}
 $$
 
-It can be seen that $$\dfrac{2}{5}$$ is the fraction immediately to the left of $$\dfrac{3}{7}$$.
+It can be seen that $\dfrac{2}{5}$ is the fraction immediately to the left of $\dfrac{3}{7}$.
 
-By listing the set of reduced proper fractions for $$d \leq 1\ 000\ 000$$ in ascending order of size, find the numerator of the fraction immediately to the left of $$\dfrac{3}{7}$$.
+By listing the set of reduced proper fractions for $d \leq 1\ 000\ 000$ in ascending order of size, find the numerator of the fraction immediately to the left of $\dfrac{3}{7}$.
 
 ## Problem 72
 
 ### Counting fractions
 
-Consider the fraction, $$\dfrac{n}{d}$$, where $$n$$ and $$d$$ are positive integers. If $$n<d$$ and $$HCF(n,d)=1$$, it is called a reduced proper fraction.
+Consider the fraction, $\dfrac{n}{d}$, where $n$ and $d$ are positive integers. If $n<d$ and $HCF(n,d)=1$, it is called a reduced proper fraction.
 
-If we list the set of reduced proper fractions for $$d \leq 8$$ in ascending order of size, we get:
+If we list the set of reduced proper fractions for $d \leq 8$ in ascending order of size, we get:
 
 $$
 \dfrac{1}{8}, \dfrac{1}{7}, \dfrac{1}{6}, \dfrac{1}{5}, \dfrac{1}{4}, \dfrac{2}{7}, \dfrac{1}{3}, \dfrac{3}{8}, \dfrac{2}{5}, \dfrac{3}{7}, \dfrac{1}{2}, \dfrac{4}{7}, \dfrac{3}{5}, \dfrac{5}{8}, \dfrac{2}{3}, \dfrac{5}{7}, \dfrac{3}{4}, \dfrac{4}{5}, \dfrac{5}{6}, \dfrac{6}{7}, \dfrac{7}{8}
@@ -424,33 +427,33 @@ $$
 
 It can be seen that there are 21 elements in this set.
 
-How many elements would be contained in the set of reduced proper fractions for $$d \leq 1\ 000\ 000$$?
+How many elements would be contained in the set of reduced proper fractions for $d \leq 1\ 000\ 000$?
 
 ## Problem 73
 
 ### Counting fractions in a range
 
-Consider the fraction, $$\dfrac{n}{d}$$, where $$n$$ and $$d$$ are positive integers. If $$n<d$$ and $$HCF(n,d)=1$$, it is called a reduced proper fraction.
+Consider the fraction, $\dfrac{n}{d}$, where $n$ and $d$ are positive integers. If $n<d$ and $HCF(n,d)=1$, it is called a reduced proper fraction.
 
-If we list the set of reduced proper fractions for $$d \leq 8$$ in ascending order of size, we get:
+If we list the set of reduced proper fractions for $d \leq 8$ in ascending order of size, we get:
 
 $$
 \dfrac{1}{8}, \dfrac{1}{7}, \dfrac{1}{6}, \dfrac{1}{5}, \dfrac{1}{4}, \dfrac{2}{7}, \dfrac{1}{3}, \boldsymbol{\dfrac{3}{8}}, \boldsymbol{\dfrac{2}{5}}, \boldsymbol{\dfrac{3}{7}}, \dfrac{1}{2}, \dfrac{4}{7}, \dfrac{3}{5}, \dfrac{5}{8}, \dfrac{2}{3}, \dfrac{5}{7}, \dfrac{3}{4}, \dfrac{4}{5}, \dfrac{5}{6}, \dfrac{6}{7}, \dfrac{7}{8}
 $$
 
-It can be seen that there are 3 fractions between $$1/3$$ and $$1/2$$.
+It can be seen that there are 3 fractions between $1/3$ and $1/2$.
 
-How many fractions lie between $$\dfrac{1}{3}$$ and $$\dfrac{1}{2}$$ in the sorted set of reduced proper fractions for $$d \leq 12\ 000$$?
+How many fractions lie between $\dfrac{1}{3}$ and $\dfrac{1}{2}$ in the sorted set of reduced proper fractions for $d \leq 12\ 000$?
 
 ## Problem 74
 
 ### Digit Factorial Chains
 
-The number $$145$$ is well known for the property that the sum of the factorial of its digits is equal to $$145$$:
+The number $145$ is well known for the property that the sum of the factorial of its digits is equal to $145$:
 
 $$1! + 4! + 5! = 1 + 24 + 120 = 145$$
 
-Perhaps less well known is $$169$$, in that it produces the longest chain of numbers that link back to $$169$$; it turns out that there are only three such loops that exist:
+Perhaps less well known is $169$, in that it produces the longest chain of numbers that link back to $169$; it turns out that there are only three such loops that exist:
 
 $$
 169 → 363601 → 1454 → 169 \\
@@ -466,7 +469,7 @@ $$
 540 → 145 (→ 145)\\
 $$
 
-Starting with $$69$$ produces a chain of five non-repeating terms, but the longest non-repeating chain with a starting number below one million is sixty terms.
+Starting with $69$ produces a chain of five non-repeating terms, but the longest non-repeating chain with a starting number below one million is sixty terms.
 
 How many chains, with a starting number below one million, contain exactly sixty non-repeating terms?
 
@@ -474,7 +477,7 @@ How many chains, with a starting number below one million, contain exactly sixty
 
 ### Singular Integer Right Triangles
 
-It turns out that $$12 cm$$ is the smallest length of wire that can be bent to form an integer sided right angle triangle in exactly one way, but there are many more examples.
+It turns out that $12 cm$ is the smallest length of wire that can be bent to form an integer sided right angle triangle in exactly one way, but there are many more examples.
 
 $$
 12 cm: (3,4,5) \\
@@ -485,10 +488,10 @@ $$
 48 cm: (12,16,20) \\
 $$
 
-In contrast, some lengths of wire, like $$20 cm$$, cannot be bent to form an integer sided right angle triangle, and other lengths allow more than one solution to be found; for example, using $$120 cm$$ it is possible to form exactly three different integer sided right angle triangles.
+In contrast, some lengths of wire, like $20 cm$, cannot be bent to form an integer sided right angle triangle, and other lengths allow more than one solution to be found; for example, using $120 cm$ it is possible to form exactly three different integer sided right angle triangles.
 
 $$
 120 cm: (30,40,50), (20,48,52), (24,45,51)
 $$
 
-Given that $$L$$ is the length of the wire, for how many values of $$L \leq 1\ 500\ 000$$ can exactly one integer sided right angle triangle be formed?
+Given that $L$ is the length of the wire, for how many values of $L \leq 1\ 500\ 000$ can exactly one integer sided right angle triangle be formed?
