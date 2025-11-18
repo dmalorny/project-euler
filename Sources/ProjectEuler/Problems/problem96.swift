@@ -2,10 +2,52 @@ import Foundation
 
 class problem96 {
     
+    let all_numbers = [1,2,3,4,5,6,7,8,9]
+    
     func solveSudoku(_ grid: [[Int]]) -> Int {
         printSudoku(grid)
         
+        print(checkSudoku(grid) ? "✅" : "❌")
         return 100 * grid[0][0] + 10 * grid[0][1] + grid[0][2]
+    }
+    
+    func checkSudoku(_ grid: [[Int]]) -> Bool {
+        // check rows
+        for row in 0 ... 8 {
+            let intersection = Array(Set(grid[row]).intersection(all_numbers))
+            if (intersection.count != 9) {
+                print("row \(row): ❌")
+                return false
+            }
+        }
+        
+        // check columns
+        for column in 0 ... 8 {
+            let intersection = Array(Set(grid.transposed()[column]).intersection(all_numbers))
+            if (intersection.count != 9) {
+                print("column \(column): ❌")
+                return false
+            }
+        }
+        
+        // check blocks
+        for block_row in 0 ... 2 {
+            for block_column in 0 ... 2 {
+                var block: [Int] = []
+                for row in block_row * 3 + 0 ... block_row * 3 + 2 {
+                    for col in block_column * 3 + 0 ... block_column * 3 + 2 {
+                        block.append(grid[row][col])
+                    }
+                }
+                let intersection = Array(Set(block).intersection(all_numbers))
+                if (intersection.count != 9) {
+                    print("block \(block_row) \(block_column): ❌")
+                    return false
+                }
+            }
+        }
+        
+        return true
     }
     
     func printSudoku(_ grid: [[Int]]) {

@@ -43,4 +43,20 @@ final class arrayTests: XCTestCase {
         XCTAssertEqual(split_text_to_array(text2, columnSeparator: " "), [[3],[7,4],[2,4,6],[8,5,9,3]])
         XCTAssertEqual(split_text_to_array(text3, lineSeparator: ";", columnSeparator: " "), [[1,2,3],[4,5,6],[7,8,9]])
     }
+    
+    func testTranspose() throws {
+        let grid = [
+            [1,2,3],
+            [4,5,6],
+            [7,8,9]
+        ]
+        let expected = [
+            [1,4,7],
+            [2,5,8],
+            [3,6,9]
+        ]
+        
+        XCTAssertEqual(grid.transposed(), expected)
+        XCTAssertEqual(grid.transposed().transposed(), grid)
+    }
 }
