@@ -4,6 +4,8 @@ Problem descriptions of problems 76 to 100
 
 ##  Problem 76
 
+### Counting Summations
+
 It is possible to write five as a sum in exactly six different ways:
 
     4 + 1
@@ -17,6 +19,8 @@ How many different ways can one hundred be written as a sum of at least two posi
 
 
 ##  Problem 78
+
+### Coin Partitions
 
 Let $$p(n)$$ represent the number of different ways in which $$n$$ coins can be separated into piles. For example, five coins can be separated into piles in exactly seven different ways, so $$p(5) = 7$$.
 
@@ -32,7 +36,7 @@ Find the least value of $$n$$ for which $$p(n)$$ is divisible by one million.
 
 ##  Problem 79
 
-Passcode derivation
+### Passcode derivation
 
 A common security method used for online banking is to ask the user for three random characters from a passcode. For example, if the passcode was 531278, they may ask for the 2nd, 3rd, and 5th characters; the expected reply would be: 317.
 
@@ -42,6 +46,8 @@ Given that the three characters are always asked for in order, analyse the file 
 
 ## Problem 80
 
+### Square Root Digital Expansion
+
 It is well known that if the square root of a natural number is not an integer, then it is irrational. The decimal expansion of such square roots is infinite without any repeating pattern at all.
 
 The square root of two is $$1.41421356237309504880...$$, and the digital sum of the first one hundred decimal digits is $$475$$.
@@ -50,7 +56,7 @@ For the first one hundred natural numbers, find the total of the digital sums of
 
 ## Problem 81
 
-Path sum: two ways
+### Path sum: two ways
 
 In the 5 by 5 matrix below, the minimal path sum from the top left to the bottom right, by only moving to the right and down, is indicated in bold red and is equal to 2427.
 
@@ -68,7 +74,7 @@ Find the minimal path sum from the top left to the bottom right by only moving r
 
 ## Problem 82
 
-Path sum: three ways
+### Path sum: three ways
 
 > Note: This problem is a more challenging version of Problem 81.
 
@@ -88,6 +94,8 @@ Find the minimal path sum from the left column to the right column in `matrix.tx
 
 ## Problem 85
 
+### Counting Rectangles
+
 By counting carefully it can be seen that a rectangular grid measuring $$3$$ by $$2$$ contains eighteen rectangles:
 
 ![](https://projecteuler.net/project/images/p085.png)
@@ -95,6 +103,8 @@ By counting carefully it can be seen that a rectangular grid measuring $$3$$ by 
 Although there exists no rectangular grid that contains exactly two million rectangles, find the area of the grid with the nearest solution.
 
 ## Problem 87
+
+### Prime Power Triples
 
 The smallest number expressible as the sum of a prime square, prime cube, and prime fourth power is $$28$$. In fact, there are exactly four numbers below fifty that can be expressed in such a way:
 
@@ -109,7 +119,7 @@ How many numbers below fifty million can be expressed as the sum of a prime squa
 
 ## Problem 89
 
-Roman numerals
+### Roman numerals
 
 For a number written in Roman numerals to be considered valid there are basic rules which must be followed. Even though the rules allow some numbers to be expressed in more than one way there is always a "best" way of writing a particular number.
 
@@ -132,6 +142,8 @@ Find the number of characters saved by writing each of these in their minimal fo
 
 ## Problem 91
 
+### Right Triangles with Integer Coordinates
+
 The points $$P(x_1,y_1)$$ and $$Q(x_2,y_2)$$ are plotted at integer co-ordinates and are joined to the origin, $$O(0,0)$$, to form $$△OPQ$$.
 
 ![](https://projecteuler.net/resources/images/0091_1.png)
@@ -144,7 +156,7 @@ Given that $$0 \leq x_1,y_1,x_2,y_2 \leq 50$$, how many right triangles can be f
 
 ## Problem 92
 
-Square digit chains
+### Square digit chains
 
 A number chain is created by continuously adding the square of the digits in a number to form a new number until it has been seen before.
 
@@ -160,7 +172,7 @@ How many starting numbers below ten million will arrive at 89?
 
 ## Problem 97
 
-Large non-Mersenne prime
+### Large non-Mersenne prime
 
 The first known prime found to exceed one million digits was discovered in 1999, and is a Mersenne prime of the form $$2^{6972593} − 1$$; it contains exactly 2,098,960 digits.
 
@@ -172,7 +184,7 @@ Find the last ten digits of this prime number.
 
 ## Problem 99
 
-Largest exponential
+### Largest exponential
 
 Comparing two numbers written in index form like $$2^{11}$$ and $$3^7$$ is not difficult, as any calculator would confirm that $$2^{11} = 2048 < 3^7 = 2187$$.
 
@@ -185,7 +197,7 @@ Using `base_exp.txt`, a 22K text file containing one thousand lines with a base/
 
 ## Problem 100
 
-Arranged Probability
+### Arranged Probability
 
 If a box contains twenty-one coloured discs, composed of fifteen blue discs and six red discs, and two discs were taken at random, it can be seen that the probability of taking two blue discs, $$P(BB) = (15/21) * (14/20) = 1/2$$.
 
