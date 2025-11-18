@@ -6,9 +6,9 @@ Problem descriptions of problems 51 to 75
 
 ### Prime digit replacements
 
-By replacing the 1st digit of the 2-digit number *3, it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime.
+By replacing the 1st digit of the $2$-digit number $*3$, it turns out that six of the nine possible values: $13, 23, 43, 53, 73$ and $83$, are all prime.
 
-By replacing the 3rd and 4th digits of 56**3 with the same digit, this 5-digit number is the first example having seven primes among the ten generated numbers, yielding the family: 56003, 56113, 56333, 56443, 56663, 56773, and 56993. Consequently 56003, being the first member of this family, is the smallest prime with this property.
+By replacing the 3rd and 4th digits of $56**3$ with the same digit, this $5$-digit number is the first example having seven primes among the ten generated numbers, yielding the family: $56003, 56113, 56333, 56443, 56663, 56773$ and $56993$. Consequently $56003$, being the first member of this family, is the smallest prime with this property.
 
 Find the smallest prime which, by replacing part of the number (not necessarily adjacent digits) with the same digit, is part of an eight prime value family.
 
@@ -16,9 +16,9 @@ Find the smallest prime which, by replacing part of the number (not necessarily 
 
 ### Permuted multiples
 
-It can be seen that the number, 125874, and its double, 251748, contain exactly the same digits, but in a different order.
+It can be seen that the number, $125874$, and its double, $251748$, contain exactly the same digits, but in a different order.
 
-Find the smallest positive integer, x, such that 2x, 3x, 4x, 5x, and 6x, contain the same digits.
+Find the smallest positive integer, $x$, such that $2x, 3x, 4x, 5x$ and $6x$ contain the same digits.
 
 ## Problem 53
 
@@ -76,7 +76,7 @@ How many hands does Player 1 win?
 
 ### Lychrel numbers
 
-If we take 47, reverse and add, 47 + 74 = 121, which is palindromic.
+If we take $47$, reverse and add, $47 + 74 = 121$, which is palindromic.
 
 Not all numbers produce palindromes so quickly. For example,
 
@@ -86,11 +86,11 @@ $$
 4213 + 3124 = 7337
 $$
 
-That is, 349 took three iterations to arrive at a palindrome.
+That is, $349$ took three iterations to arrive at a palindrome.
 
-Although no one has proved it yet, it is thought that some numbers, like 196, never produce a palindrome. A number that never forms a palindrome through the reverse and add process is called a Lychrel number. Due to the theoretical nature of these numbers, and for the purpose of this problem, we shall assume that a number is Lychrel until proven otherwise. In addition you are given that for every number below ten-thousand, it will either (i) become a palindrome in less than fifty iterations, or, (ii) no one, with all the computing power that exists, has managed so far to map it to a palindrome. In fact, 10677 is the first number to be shown to require over fifty iterations before producing a palindrome: 4668731596684224866951378664 (53 iterations, 28-digits).
+Although no one has proved it yet, it is thought that some numbers, like $196$, never produce a palindrome. A number that never forms a palindrome through the reverse and add process is called a Lychrel number. Due to the theoretical nature of these numbers, and for the purpose of this problem, we shall assume that a number is Lychrel until proven otherwise. In addition you are given that for every number below ten-thousand, it will either (i) become a palindrome in less than fifty iterations, or, (ii) no one, with all the computing power that exists, has managed so far to map it to a palindrome. In fact, $10677$ is the first number to be shown to require over fifty iterations before producing a palindrome: $4668731596684224866951378664$ ($53$ iterations, $28$-digits).
 
-Surprisingly, there are palindromic numbers that are themselves Lychrel numbers; the first example is 4994.
+Surprisingly, there are palindromic numbers that are themselves Lychrel numbers; the first example is $4994$.
 
 How many Lychrel numbers are there below ten-thousand?
 
@@ -100,7 +100,7 @@ How many Lychrel numbers are there below ten-thousand?
 
 ### Powerful digit sum
 
-A googol ($10^{100}$) is a massive number: one followed by one-hundred zeros; $100^{100}$ is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the sum of the digits in each number is only 1.
+A googol ($10^{100}$) is a massive number: one followed by one-hundred zeros; $100^{100}$ is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the sum of the digits in each number is only $1$.
 
 Considering natural numbers of the form, $a^b$, where $a, b < 100$, what is the maximum digital sum?
 
@@ -142,9 +142,9 @@ $$
 \color{red}{43}\ 44\ 45\ 46\ 47\ 48\ 49
 $$
 
-It is interesting to note that the odd squares lie along the bottom right diagonal, but what is more interesting is that 8 out of the 13 numbers lying along both diagonals are prime; that is, a ratio of 8/13 ≈ 62%.
+It is interesting to note that the odd squares lie along the bottom right diagonal, but what is more interesting is that $8$ out of the $13$ numbers lying along both diagonals are prime; that is, a ratio of $8/13 ≈ 62\%$.
 
-If one complete new layer is wrapped around the spiral above, a square spiral with side length 9 will be formed. If this process is continued, what is the side length of the square spiral for which the ratio of primes along both diagonals first falls below 10%?
+If one complete new layer is wrapped around the spiral above, a square spiral with side length $9$ will be formed. If this process is continued, what is the side length of the square spiral for which the ratio of primes along both diagonals first falls below $10\%$?
 
 ## Problem 59
 
@@ -164,7 +164,7 @@ Your task has been made easy, as the encryption key consists of three lower case
 
 ### Prime pair sets
 
-The primes 3, 7, 109, and 673, are quite remarkable. By taking any two primes and concatenating them in any order the result will always be prime. For example, taking 7 and 109, both 7109 and 1097 are prime. The sum of these four primes, 792, represents the lowest sum for a set of four primes with this property.
+The primes $3, 7, 109$ and $673$, are quite remarkable. By taking any two primes and concatenating them in any order the result will always be prime. For example, taking $7$ and $109$, both $7109$ and $1097$ are prime. The sum of these four primes, $792$, represents the lowest sum for a set of four primes with this property.
 
 Find the lowest sum for a set of five primes for which any two primes concatenate to produce another prime.
 
@@ -235,7 +235,7 @@ $$\quad \quad a_6=3, \frac 2 {\sqrt{23}-3}=\frac {2(\sqrt{23}+3)} {14}=1+\frac {
 $$\quad \quad a_7=1, \frac 7 {\sqrt{23}-4}=\frac {7(\sqrt{23}+4)} {7}=8+\sqrt{23}-4$$
 $$ $$
 
-It can be seen that the sequence is repeating. For conciseness, we use the notation $$\sqrt{23}=[4;(1,3,1,8)]$$ to indicate that the block (1,3,1,8) repeats indefinitely.
+It can be seen that the sequence is repeating. For conciseness, we use the notation $\sqrt{23}=[4;(1,3,1,8)]$ to indicate that the block $(1,3,1,8)$ repeats indefinitely.
 
 The first ten continued fraction representations of (irrational) square roots are:
 
@@ -319,7 +319,7 @@ Find the value of $D \le 1000$ in minimal solutions of $x$ for which the largest
 
 ### Maximum path sum II
 
-By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23.
+By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is $23$.
 
 $$
 \color{red}{3} \\
@@ -328,7 +328,7 @@ $$
 8\ \ 5\ \ \color{red}{9}\ \ 3
 $$  
     
-That is, 3 + 7 + 4 + 9 = 23.
+That is, $3 + 7 + 4 + 9 = 23$.
 
 Find the maximum total from top to bottom in `triangle.txt`, a 15K text file containing a triangle with one-hundred rows.
 
@@ -425,7 +425,7 @@ $$
 \dfrac{1}{8}, \dfrac{1}{7}, \dfrac{1}{6}, \dfrac{1}{5}, \dfrac{1}{4}, \dfrac{2}{7}, \dfrac{1}{3}, \dfrac{3}{8}, \dfrac{2}{5}, \dfrac{3}{7}, \dfrac{1}{2}, \dfrac{4}{7}, \dfrac{3}{5}, \dfrac{5}{8}, \dfrac{2}{3}, \dfrac{5}{7}, \dfrac{3}{4}, \dfrac{4}{5}, \dfrac{5}{6}, \dfrac{6}{7}, \dfrac{7}{8}
 $$
 
-It can be seen that there are 21 elements in this set.
+It can be seen that there are $21$ elements in this set.
 
 How many elements would be contained in the set of reduced proper fractions for $d \leq 1\ 000\ 000$?
 

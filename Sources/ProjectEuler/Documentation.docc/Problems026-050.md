@@ -6,7 +6,7 @@ Problem descriptions of problems 26 to 50
 
 ### Reciprocal cycles
 
-A unit fraction contains 1 in the numerator. The decimal representation of the unit fractions with denominators 2 to 10 are given:
+A unit fraction contains $1$ in the numerator. The decimal representation of the unit fractions with denominators $2$ to $10$ are given:
 
     1/2        =     0.5
     1/3        =     0.(3)
@@ -18,9 +18,9 @@ A unit fraction contains 1 in the numerator. The decimal representation of the u
     1/9        =     0.(1)
     1/10       =     0.1
 
-Where 0.1(6) means 0.166666..., and has a 1-digit recurring cycle. It can be seen that 1/7 has a 6-digit recurring cycle.
+Where $0.1(6)$ means $0.166666...$, and has a $1$-digit recurring cycle. It can be seen that $1/7$ has a $6$-digit recurring cycle.
 
-Find the value of d < 1000 for which 1/d contains the longest recurring cycle in its decimal fraction part.
+Find the value of $d < 1000$ for which $1/d$ contains the longest recurring cycle in its decimal fraction part.
 
 ##  Problem 27
 
@@ -30,9 +30,9 @@ Euler discovered the remarkable quadratic formula:
 
 $$n^2 + n + 41$$
 
-It turns out that the formula will produce 40 primes for the consecutive integer values $0 \le n \le 39$. However, when $n = 40, 40^2 + 40 + 41 = 40(40 + 1) + 41$ is divisible by 41, and certainly when $n = 41, 41^2 + 41 + 41$ is clearly divisible by 41.
+It turns out that the formula will produce $40$ primes for the consecutive integer values $0 \le n \le 39$. However, when $n = 40, 40^2 + 40 + 41 = 40(40 + 1) + 41$ is divisible by $41$, and certainly when $n = 41, 41^2 + 41 + 41$ is clearly divisible by $41$.
 
-The incredible formula $n^2 - 79n + 1601$ was discovered, which produces 80 primes for the consecutive values $0 \le n \le 79$. The product of the coefficients, −79 and 1601, is −126479.
+The incredible formula $n^2 - 79n + 1601$ was discovered, which produces $80$ primes for the consecutive values $0 \le n \le 79$. The product of the coefficients, $−79$ and $1601$, is $−126479$.
 
 Considering quadratics of the form:
 
@@ -48,7 +48,7 @@ Find the product of the coefficients, $a$ and $b$, for the quadratic expression 
 
 ### Number spiral diagonals
 
-Starting with the number 1 and moving to the right in a clockwise direction a 5 by 5 spiral is formed as follows:
+Starting with the number $1$ and moving to the right in a clockwise direction a $5$ by $5$ spiral is formed as follows:
 
 $$
 \color{red}{21}\ 22\ 23\ 24\ \color{red}{25}\\
@@ -58,9 +58,9 @@ $$
 \color{red}{17}\ 16\ 15\ 14\ \color{red}{13}
 $$
 
-It can be verified that the sum of the numbers on the diagonals is 101.
+It can be verified that the sum of the numbers on the diagonals is $101$.
 
-What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed in the same way?
+What is the sum of the numbers on the diagonals in a $1001$ by $1001$ spiral formed in the same way?
 
 ##  Problem 29
 
@@ -97,7 +97,7 @@ $$
 
 As $1 = 1^4$ is not a sum it is not included.
 
-The sum of these numbers is 1634 + 8208 + 9474 = 19316.
+The sum of these numbers is $1634 + 8208 + 9474 = 19316$.
 
 Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
 
@@ -117,11 +117,11 @@ How many different ways can £2 be made using any number of coins?
 
 ### Pandigital products
 
-We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once; for example, the 5-digit number, 15234, is 1 through 5 pandigital.
+We shall say that an $n$-digit number is pandigital if it makes use of all the digits $1$ to $n$ exactly once; for example, the $5$-digit number, $15234$, is $1$ through $5$ pandigital.
 
-The product 7254 is unusual, as the identity, 39 × 186 = 7254, containing multiplicand, multiplier, and product is 1 through 9 pandigital.
+The product $7254$ is unusual, as the identity, $39 × 186 = 7254$, containing multiplicand, multiplier, and product is $1$ through $9$ pandigital.
 
-Find the sum of all products whose multiplicand/multiplier/product identity can be written as a 1 through 9 pandigital.
+Find the sum of all products whose multiplicand/multiplier/product identity can be written as a $1$ through $9$ pandigital.
 
 > Tip: Some products can be obtained in more than one way so be sure to only include it once in your sum.
 
@@ -141,19 +141,19 @@ If the product of these four fractions is given in its lowest common terms, find
 
 ### Digit factorials
 
-145 is a curious number, as 1! + 4! + 5! = 1 + 24 + 120 = 145.
+$145$ is a curious number, as $1! + 4! + 5! = 1 + 24 + 120 = 145$.
 
 Find the sum of all numbers which are equal to the sum of the factorial of their digits.
 
-> Note: As 1! = 1 and 2! = 2 are not sums they are not included.
+> Note: As $1! = 1$ and $2! = 2$ are not sums they are not included.
 
 ## Problem 35
 
 ### Circular primes
 
-The number, 197, is called a circular prime because all rotations of the digits: 197, 971, and 719, are themselves prime.
+The number, $197$, is called a circular prime because all rotations of the digits: $197, 971$ and $719$, are themselves prime.
 
-There are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.
+There are thirteen such primes below $100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79$ and $97$.
 
 How many circular primes are there below one million?
 
@@ -163,7 +163,7 @@ How many circular primes are there below one million?
 
 The decimal number, $585 = 1001001001_2$ (binary), is palindromic in both bases.
 
-Find the sum of all numbers, less than one million, which are palindromic in base 10 and base 2.
+Find the sum of all numbers, less than one million, which are palindromic in base $10$ and base $2$.
 
 > Note: Please note that the palindromic number, in either base, may not include leading zeros.
 
@@ -171,17 +171,17 @@ Find the sum of all numbers, less than one million, which are palindromic in bas
 
 ### Truncatable primes
 
-The number 3797 has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: 3797, 797, 97, and 7. Similarly we can work from right to left: 3797, 379, 37, and 3.
+The number $3797$ has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: $3797, 797, 97$ and $7$. Similarly we can work from right to left: $3797, 379, 37$ and $3$.
 
 Find the sum of the only eleven primes that are both truncatable from left to right and right to left.
 
-> Note: 2, 3, 5, and 7 are not considered to be truncatable primes.
+> Note: $2, 3, 5$ and $7$ are not considered to be truncatable primes.
 
 ## Problem 38
 
 ### Pandigital multiples
 
-Take the number 192 and multiply it by each of 1, 2, and 3:
+Take the number $192$ and multiply it by each of $1, 2$ and $3$:
 
 $$
 192 × 1 = 192\\
@@ -189,21 +189,21 @@ $$
 192 × 3 = 576
 $$
   
-By concatenating each product we get the 1 to 9 pandigital, 192384576. We will call 192384576 the concatenated product of 192 and (1,2,3)
+By concatenating each product we get the $1$ to $9$ pandigital, $192384576$. We will call $192384576$ the concatenated product of $192$ and $(1,2,3)$
 
-The same can be achieved by starting with 9 and multiplying by 1, 2, 3, 4, and 5, giving the pandigital, 918273645, which is the concatenated product of 9 and (1,2,3,4,5).
+The same can be achieved by starting with $9$ and multiplying by $1, 2, 3, 4$ and $5$, giving the pandigital, $918273645$, which is the concatenated product of $9$ and $(1,2,3,4,5)$.
 
-What is the largest 1 to 9 pandigital 9-digit number that can be formed as the concatenated product of an integer with (1,2, ... , n) where n > 1?
+What is the largest $1$ to $9$ pandigital $9$-digit number that can be formed as the concatenated product of an integer with $(1,2, ... , n)$ where $n > 1$?
 
 ## Problem 39
 
 ### Integer right triangles
 
-If p is the perimeter of a right angle triangle with integral length sides, {a,b,c}, there are exactly three solutions for p = 120.
+If $p$ is the perimeter of a right angle triangle with integral length sides, $\{a,b,c\}$, there are exactly three solutions for $p = 120$.
 
-{20,48,52}, {24,45,51}, {30,40,50}
+$$\{20,48,52\}, \{24,45,51\}, \{30,40,50\}$$
 
-For which value of p \leq 1000, is the number of solutions maximised?
+For which value of $p \leq 1000$, is the number of solutions maximised?
 
 ## Problem 40
 
@@ -225,9 +225,9 @@ $$d_1 × d_{10} × d_{100} × d_{1000} × d_{10000} × d_{100000} × d_{1000000}
 
 ### Pandigital prime
 
-We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once. For example, 2143 is a 4-digit pandigital and is also prime.
+We shall say that an n-digit number is pandigital if it makes use of all the digits $1$ to $n$ exactly once. For example, $2143$ is a $4$-digit pandigital and is also prime.
 
-What is the largest n-digit pandigital prime that exists?
+What is the largest $n$-digit pandigital prime that exists?
 
 ## Problem 42
 
@@ -245,7 +245,7 @@ Using `words.txt`, a 16K text file containing nearly two-thousand common English
 
 ### Sub-string divisibility
 
-The number, 1406357289, is a 0 to 9 pandigital number because it is made up of each of the digits 0 to 9 in some order, but it also has a rather interesting sub-string divisibility property.
+The number, $1406357289$, is a $0$ to $9$ pandigital number because it is made up of each of the digits $0$ to $9$ in some order, but it also has a rather interesting sub-string divisibility property.
 
 Let $d_1$ be the $1^st$ digit, $d_2$ be the $2^nd$ digit, and so on. In this way, we note the following:
 
@@ -257,7 +257,7 @@ Let $d_1$ be the $1^st$ digit, $d_2$ be the $2^nd$ digit, and so on. In this way
 - $d_7d_8d_9=728$ is divisible by 13  
 - $d_8d_9d_{10}=289$ is divisible by 17  
 
-Find the sum of all 0 to 9 pandigital numbers with this property.
+Find the sum of all $0$ to $9$ pandigital numbers with this property.
 
 ## Problem 44
 
