@@ -4,50 +4,70 @@ class problem96 {
     
     let all_numbers = [1,2,3,4,5,6,7,8,9]
     
-    func solveSudoku(_ grid: [[Int]]) -> Int {
-        printSudoku(grid)
-        
-        print(checkSudoku(grid) ? "✅" : "❌")
-        return 100 * grid[0][0] + 10 * grid[0][1] + grid[0][2]
-    }
-    
-    func checkSudoku(_ grid: [[Int]]) -> Bool {
-        // check rows
-        for row in 0 ... 8 {
-            let intersection = Array(Set(grid[row]).intersection(all_numbers))
-            if (intersection.count != 9) {
-                print("row \(row): ❌")
-                return false
-            }
-        }
-        
-        // check columns
-        for column in 0 ... 8 {
-            let intersection = Array(Set(grid.transposed()[column]).intersection(all_numbers))
-            if (intersection.count != 9) {
-                print("column \(column): ❌")
-                return false
-            }
-        }
-        
-        // check blocks
-        for block_row in 0 ... 2 {
-            for block_column in 0 ... 2 {
-                var block: [Int] = []
-                for row in block_row * 3 + 0 ... block_row * 3 + 2 {
-                    for col in block_column * 3 + 0 ... block_column * 3 + 2 {
-                        block.append(grid[row][col])
+    func solve(_ board: inout [[Int]]) -> Bool {
+        for row in 0..<9 {
+            for col in 0..<9 {
+                if board[row][col] == 0 {
+                    
+                    // Try numbers 1–9
+                    for num in 1...9 {
+                        if isValid(board, row, col, num) {
+                            board[row][col] = num
+                            
+                            // Recursively solve, return true if successful
+                            if solve(&board) {
+                                return true
+                            }
+                            
+                            // Backtrack
+                            board[row][col] = 0
+                        }
                     }
-                }
-                let intersection = Array(Set(block).intersection(all_numbers))
-                if (intersection.count != 9) {
-                    print("block \(block_row) \(block_column): ❌")
+                    
+                    // No valid number found → unsolvable from this path
                     return false
                 }
             }
         }
         
+        // No empty cells left → solved
         return true
+    }
+
+    func isValid(_ board: [[Int]], _ row: Int, _ col: Int, _ num: Int) -> Bool {
+        // Check row
+        for c in 0..<9 {
+            if board[row][c] == num { return false }
+        }
+        
+        // Check column
+        for r in 0..<9 {
+            if board[r][col] == num { return false }
+        }
+        
+        // Check 3×3 box
+        let startRow = (row / 3) * 3
+        let startCol = (col / 3) * 3
+        for r in 0..<3 {
+            for c in 0..<3 {
+                if board[startRow + r][startCol + c] == num { return false }
+            }
+        }
+        
+        return true
+    }
+
+    
+    func solveSudoku(_ grid: [[Int]]) -> Int {
+        var tmp = grid
+        //printSudoku(grid)
+        
+        if (solve(&tmp)) {
+            printSudoku(tmp)
+            return 100 * tmp[0][0] + 10 * tmp[0][1] + grid[0][2]
+        }
+        
+        return 0
     }
     
     func printSudoku(_ grid: [[Int]]) {
