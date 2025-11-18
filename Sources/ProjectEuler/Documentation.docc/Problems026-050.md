@@ -50,11 +50,13 @@ Find the product of the coefficients, $$a$$ and $$b$$, for the quadratic express
 
 Starting with the number 1 and moving to the right in a clockwise direction a 5 by 5 spiral is formed as follows:
 
-    21 22 23 24 25
-    20  7  8  9 10
-    19  6  1  2 11
-    18  5  4  3 12
-    17 16 15 14 13
+$$
+\color{red}{21}\ 22\ 23\ 24\ \color{red}{25}\\
+20\ \ \ \color{red}{7}\ \ \ 8\ \ \ \color{red}{9}\ 10\\
+19\ \ \ 6\ \ \ \color{red}{1}\ \ \ 2\ 11\\
+18\ \ \ \color{red}{5}\ \ \ 4\ \ \ \color{red}{3}\ 12\\
+\color{red}{17}\ 16\ 15\ 14\ \color{red}{13}
+$$
 
 It can be verified that the sum of the numbers on the diagonals is 101.
 
@@ -203,7 +205,9 @@ For which value of p \leq 1000, is the number of solutions maximised?
 
 An irrational decimal fraction is created by concatenating the positive integers:
 
-0.12345678910<span style="color:red">1</span>112131415161718192021...
+$$
+0.12345678910\color{red}{1}112131415161718192021...
+$$
 
 It can be seen that the $$12^{th}$$ digit of the fractional part is $$1$$.
 

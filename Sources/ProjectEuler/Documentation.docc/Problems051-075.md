@@ -24,9 +24,9 @@ Find the smallest positive integer, x, such that 2x, 3x, 4x, 5x, and 6x, contain
 
 ### Combinatoric selections
 
-There are exactly ten ways of selecting three from five, 12345:
+There are exactly ten ways of selecting three from five, $$12345$$:
 
-    123, 124, 125, 134, 135, 145, 234, 235, 245, and 345
+$$123, 124, 125, 134, 135, 145, 234, 235, 245, and 345$$
 
 In combinatorics, we use the notation, $$\displaystyle \binom 5 3 = 10$$.
 
@@ -130,13 +130,15 @@ In the first one-thousand expansions, how many fractions contain a numerator wit
 
 Starting with 1 and spiralling anticlockwise in the following way, a square spiral with side length 7 is formed.
 
-    37 36 35 34 33 32 31
-    38 17 16 15 14 13 30
-    39 18  5  4  3 12 29
-    40 19  6  1  2 11 28
-    41 20  7  8  9 10 27
-    42 21 22 23 24 25 26
-    43 44 45 46 47 48 49
+$$
+\color{red}{37}\ 36\ 35\ 34\ 33\ 32\ \color{red}{31}\\
+38\ \color{red}{17}\ 16\ 15\ 14\ \color{red}{13}\ 30\\
+39\ 18\ \ \ \color{red}{5}\ \ \ 4\ \ \ \color{red}{3}\ 12\ 29\\
+40\ 19\ \ \ 6\ \ \ 1\ \ \ 2\ 11\ 28\\
+41\ 20\ \ \ \color{red}{7}\ \ \ 8\ \ \ 9\ 10\ 27\\
+42\ 21\ 22\ 23\ 24\ 25\ 26\\
+\color{red}{43}\ 44\ 45\ 46\ 47\ 48\ 49
+$$
 
 It is interesting to note that the odd squares lie along the bottom right diagonal, but what is more interesting is that 8 out of the 13 numbers lying along both diagonals are prime; that is, a ratio of 8/13 ≈ 62%.
 
@@ -301,7 +303,7 @@ By finding minimal solutions in $$x$$ for $$D = \{2, 3, 5, 6, 7\}$$, we obtain t
 
 $$3^2 – 2×2^2 = 1$$  
 $$2^2 – 3×1^2 = 1$$  
-$$9^2 – 5×4^2 = 1$$  
+$$\color{red}{9}^2 – 5×4^2 = 1$$  
 $$5^2 – 6×2^2 = 1$$  
 $$8^2 – 7×3^2 = 1$$  
 $$$$
@@ -316,10 +318,12 @@ Find the value of $$D \le 1000$$ in minimal solutions of $$x$$ for which the lar
 
 By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23.
 
-       3
-      7 4
-     2 4 6
-    8 5 9 3
+$$
+\color{red}{3} \\
+\color{red}{7}\ \ 4 \\
+2\ \ \color{red}{4}\ \ 6 \\
+8\ \ 5\ \ \color{red}{9}\ \ 3
+$$  
     
 That is, 3 + 7 + 4 + 9 = 23.
 
@@ -394,25 +398,29 @@ Find the value of $$n, 1 < n < 107$$, for which $$\phi(n)$$ is a permutation of 
 
 ### Ordered fractions
 
-Consider the fraction, $$n/d$$, where $$n$$ and $$d$$ are positive integers. If $$n<d$$ and $$HCF(n,d)=1$$, it is called a reduced proper fraction.
+Consider the fraction, $$\dfrac{n}{d}$$, where $$n$$ and $$d$$ are positive integers. If $$n<d$$ and $$HCF(n,d)=1$$, it is called a reduced proper fraction.
 
 If we list the set of reduced proper fractions for $$d \leq 8$$ in ascending order of size, we get:
 
-1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, **2/5**, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8
+$$
+\dfrac{1}{8}, \dfrac{1}{7}, \dfrac{1}{6}, \dfrac{1}{5}, \dfrac{1}{4}, \dfrac{2}{7}, \dfrac{1}{3}, \dfrac{3}{8}, \boldsymbol{\dfrac{2}{5}}, \dfrac{3}{7}, \dfrac{1}{2}, \dfrac{4}{7}, \dfrac{3}{5}, \dfrac{5}{8}, \dfrac{2}{3}, \dfrac{5}{7}, \dfrac{3}{4}, \dfrac{4}{5}, \dfrac{5}{6}, \dfrac{6}{7}, \dfrac{7}{8}
+$$
 
-It can be seen that $$2/5$$ is the fraction immediately to the left of $$3/7$$.
+It can be seen that $$\dfrac{2}{5}$$ is the fraction immediately to the left of $$\dfrac{3}{7}$$.
 
-By listing the set of reduced proper fractions for $$d \leq 1\ 000\ 000$$ in ascending order of size, find the numerator of the fraction immediately to the left of $$3/7$$.
+By listing the set of reduced proper fractions for $$d \leq 1\ 000\ 000$$ in ascending order of size, find the numerator of the fraction immediately to the left of $$\dfrac{3}{7}$$.
 
 ## Problem 72
 
 ### Counting fractions
 
-Consider the fraction, $$n/d$$, where $$n$$ and $$d$$ are positive integers. If $$n<d$$ and $$HCF(n,d)=1$$, it is called a reduced proper fraction.
+Consider the fraction, $$\dfrac{n}{d}$$, where $$n$$ and $$d$$ are positive integers. If $$n<d$$ and $$HCF(n,d)=1$$, it is called a reduced proper fraction.
 
 If we list the set of reduced proper fractions for $$d \leq 8$$ in ascending order of size, we get:
 
-1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8
+$$
+\dfrac{1}{8}, \dfrac{1}{7}, \dfrac{1}{6}, \dfrac{1}{5}, \dfrac{1}{4}, \dfrac{2}{7}, \dfrac{1}{3}, \dfrac{3}{8}, \dfrac{2}{5}, \dfrac{3}{7}, \dfrac{1}{2}, \dfrac{4}{7}, \dfrac{3}{5}, \dfrac{5}{8}, \dfrac{2}{3}, \dfrac{5}{7}, \dfrac{3}{4}, \dfrac{4}{5}, \dfrac{5}{6}, \dfrac{6}{7}, \dfrac{7}{8}
+$$
 
 It can be seen that there are 21 elements in this set.
 
@@ -422,15 +430,17 @@ How many elements would be contained in the set of reduced proper fractions for 
 
 ### Counting fractions in a range
 
-Consider the fraction, $$n/d$$, where $$n$$ and $$d$$ are positive integers. If $$n<d$$ and $$HCF(n,d)=1$$, it is called a reduced proper fraction.
+Consider the fraction, $$\dfrac{n}{d}$$, where $$n$$ and $$d$$ are positive integers. If $$n<d$$ and $$HCF(n,d)=1$$, it is called a reduced proper fraction.
 
 If we list the set of reduced proper fractions for $$d \leq 8$$ in ascending order of size, we get:
 
-1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, **3/8**, **2/5**, **3/7**, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8
+$$
+\dfrac{1}{8}, \dfrac{1}{7}, \dfrac{1}{6}, \dfrac{1}{5}, \dfrac{1}{4}, \dfrac{2}{7}, \dfrac{1}{3}, \boldsymbol{\dfrac{3}{8}}, \boldsymbol{\dfrac{2}{5}}, \boldsymbol{\dfrac{3}{7}}, \dfrac{1}{2}, \dfrac{4}{7}, \dfrac{3}{5}, \dfrac{5}{8}, \dfrac{2}{3}, \dfrac{5}{7}, \dfrac{3}{4}, \dfrac{4}{5}, \dfrac{5}{6}, \dfrac{6}{7}, \dfrac{7}{8}
+$$
 
 It can be seen that there are 3 fractions between $$1/3$$ and $$1/2$$.
 
-How many fractions lie between $$1/3$$ and $$1/2$$ in the sorted set of reduced proper fractions for $$d \leq 12\ 000$$?
+How many fractions lie between $$\dfrac{1}{3}$$ and $$\dfrac{1}{2}$$ in the sorted set of reduced proper fractions for $$d \leq 12\ 000$$?
 
 ## Problem 74
 
