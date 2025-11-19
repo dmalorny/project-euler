@@ -62,7 +62,7 @@ class problem96 {
         
         if (solve(&tmp)) {
             printSudoku(tmp)
-            return 100 * tmp[0][0] + 10 * tmp[0][1] + grid[0][2]
+            return 100 * tmp[0][0] + 10 * tmp[0][1] + tmp[0][2]
         }
         
         return 0
