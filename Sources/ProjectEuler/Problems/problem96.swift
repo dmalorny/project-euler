@@ -2,15 +2,13 @@ import Foundation
 
 class problem96 {
     
-    let all_numbers = [1,2,3,4,5,6,7,8,9]
-    
     func solve(_ board: inout [[Int]]) -> Bool {
-        for row in 0..<9 {
-            for col in 0..<9 {
+        for row in 0 ... 8 {
+            for col in 0 ... 8 {
                 if board[row][col] == 0 {
                     
                     // Try numbers 1–9
-                    for num in 1...9 {
+                    for num in 1 ... 9 {
                         if isValid(board, row, col, num) {
                             board[row][col] = num
                             
@@ -36,20 +34,20 @@ class problem96 {
 
     func isValid(_ board: [[Int]], _ row: Int, _ col: Int, _ num: Int) -> Bool {
         // Check row
-        for c in 0..<9 {
+        for c in 0 ... 8 {
             if board[row][c] == num { return false }
         }
         
         // Check column
-        for r in 0..<9 {
+        for r in 0 ... 8 {
             if board[r][col] == num { return false }
         }
         
         // Check 3×3 box
         let startRow = (row / 3) * 3
         let startCol = (col / 3) * 3
-        for r in 0..<3 {
-            for c in 0..<3 {
+        for r in 0 ... 2 {
+            for c in 0 ... 2 {
                 if board[startRow + r][startCol + c] == num { return false }
             }
         }
