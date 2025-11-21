@@ -408,6 +408,11 @@ final class problemTests: XCTestCase {
         XCTAssertEqual(p.run(d: 5), 6)
         XCTAssertEqual(p.run(d: 100), 190569291)
     }
+    func testProblem77() throws {
+        let p = problem77()
+        XCTAssertEqual(p.run(d: 5), 10)
+        XCTAssertEqual(p.run(d: 5_000), 71)
+    }
     func testProblem78() throws {
         let p = problem78()
         XCTAssertEqual(p.run(d: 10), 9)
