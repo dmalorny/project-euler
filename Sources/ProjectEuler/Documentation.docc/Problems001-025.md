@@ -328,7 +328,7 @@ If all the numbers from $1$ to $1000$ (one thousand) inclusive were written out 
 
 > Note: Do not count spaces or hyphens. For example, $342$ (three hundred and forty-two) contains $23$ letters and $115$ (one hundred and fifteen) contains $20$ letters. The use of "and" when writing out numbers is in compliance with British usage.
 
-##  Problem 18
+## Problem 18
 
 ### Maximum path sum I
 
@@ -363,7 +363,7 @@ Find the maximum total from top to bottom of the triangle below:
     
 > Note: As there are only $16384$ routes, it is possible to solve this problem by trying every route. However, Problem $67$, is the same challenge with a triangle containing one-hundred rows; it cannot be solved by brute force, and requires a clever method! ;o)
 
-##  Problem 19
+## Problem 19
 
 ### Counting Sundays
 
@@ -380,7 +380,7 @@ And on leap years, twenty-nine.
 
 How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
 
-##  Problem 20
+## Problem 20
 
 ### Factorial digit sum
 
@@ -391,7 +391,7 @@ and the sum of the digits in the number $10!$ is $3 + 6 + 2 + 8 + 8 + 0 + 0 = 27
 
 Find the sum of the digits in the number $100!$
 
-##  Problem 21
+## Problem 21
 
 ### Amicable numbers
 
@@ -402,7 +402,7 @@ For example, the proper divisors of $220$ are $1, 2, 4, 5, 10, 11, 20, 22, 44, 5
 
 Evaluate the sum of all the amicable numbers under $10000$.
 
-##  Problem 22
+## Problem 22
 
 ### Names scores
 
@@ -412,7 +412,7 @@ For example, when the list is sorted into alphabetical order, `COLIN`, which is 
 
 What is the total of all the name scores in the file?
 
-##  Problem 23
+## Problem 23
 
 ### Non-abundant sums
 
@@ -424,7 +424,7 @@ As $12$ is the smallest abundant number, $1 + 2 + 3 + 4 + 6 = 16$, the smallest 
 
 Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.
 
-##  Problem 24
+## Problem 24
 
 ### Lexicographic permutations
 
@@ -434,7 +434,7 @@ $$012\ \ \ \ 021\ \ \ \ 102\ \ \ \ 120\ \ \ \ 201\ \ \ \ 210$$
 
 What is the millionth lexicographic permutation of the digits $0, 1, 2, 3, 4, 5, 6, 7, 8$ and $9$?
 
-##  Problem 25
+## Problem 25
 
 ### 1000-digit Fibonacci number
 
