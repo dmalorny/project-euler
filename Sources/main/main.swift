@@ -1,4 +1,4 @@
 @testable import ProjectEuler
 
-let problem = problem84()
-print(problem.run(d: 4))
+let problem = problem95()
+print(problem.run(max: 1_000_000))
